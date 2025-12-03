@@ -1,1 +1,3 @@
-# playwright-test-suite-for-application-automation-286725
+# Project Repository
+
+This is the initial README file for the project.
