@@ -5,12 +5,13 @@ This container provides a Playwright-based end-to-end test suite for the Kanban 
 ## Quick start (non-interactive)
 
 1. Install dependencies and browsers (non-interactive):
-   - Automatically via postinstall:
+   - Automatically via preinstall/postinstall:
      - `npm install`
    - Or explicitly:
      - `npm run pw:install`
 
    Notes:
+   - Browsers are installed to the project (`PLAYWRIGHT_BROWSERS_PATH=0`) to avoid global state across CI runs.
    - We install Chromium only by default to minimize CI footprint:
      - `PLAYWRIGHT_BROWSERS_PATH=0 npx playwright install --with-deps chromium`
      - If `--with-deps` is not permitted in your environment, the script falls back to `npx playwright install chromium`.
