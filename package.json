@@ -1,0 +1,18 @@
+{
+  "name": "playwright-kanban-tests",
+  "version": "1.0.0",
+  "description": "Data-driven Playwright tests for Kanban application",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.0",
+    "dotenv": "^16.0.0"
+  }
+}

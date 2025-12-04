@@ -1,0 +1,6 @@
+TestCaseId,TestDescription,Action,TaskTitle,TargetColumn
+TC001,Create a new task,CREATE_TASK,Test Automation Task,To Do
+TC002,Move task to In Progress,MOVE_TASK,Test Automation Task,In Progress
+TC003,Verify task moved,VERIFY_TASK,Test Automation Task,In Progress
+TC004,Create another task,CREATE_TASK,Another Task,To Do
+TC005,Delete the first task,DELETE_TASK,Test Automation Task,In Progress
