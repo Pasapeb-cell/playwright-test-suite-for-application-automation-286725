@@ -116,28 +116,28 @@
                 - generic [ref=e141]:
                   - generic [ref=e142]:
                     - generic "Status Done" [ref=e143]
-                    - generic [ref=e144]: Account Selection in Chat
-                  - generic [ref=e145]: Enable repository selection directly within the chat interface, allowing users to specify target repositories for code generation and modifications
+                    - generic [ref=e144]: B2B Onboarding Feature Enhancement
+                  - generic [ref=e145]: Direct onboarding flow during customer calls
                 - generic [ref=e146]:
                   - generic [ref=e147]: Done
-                  - generic [ref=e148]: High
+                  - generic [ref=e148]: Critical
                   - generic [ref=e149]: Babu K
                   - generic "Due" [ref=e150]:
                     - img "due" [ref=e151]: 🗓️
-                    - text: 2025-11-20
+                    - text: 2025-09-18
               - generic [ref=e154] [cursor=pointer]:
                 - generic [ref=e155]:
                   - generic [ref=e156]:
                     - generic "Status Done" [ref=e157]
-                    - generic [ref=e158]: B2B Onboarding Feature Enhancement
-                  - generic [ref=e159]: Direct onboarding flow during customer calls
+                    - generic [ref=e158]: Account Selection in Chat
+                  - generic [ref=e159]: Enable repository selection directly within the chat interface, allowing users to specify target repositories for code generation and modifications
                 - generic [ref=e160]:
                   - generic [ref=e161]: Done
-                  - generic [ref=e162]: Critical
+                  - generic [ref=e162]: High
                   - generic [ref=e163]: Babu K
                   - generic "Due" [ref=e164]:
                     - img "due" [ref=e165]: 🗓️
-                    - text: 2025-09-18
+                    - text: 2025-11-20
               - generic [ref=e168] [cursor=pointer]:
                 - generic [ref=e169]:
                   - generic [ref=e170]:
@@ -281,28 +281,28 @@
                 - generic [ref=e317]:
                   - generic [ref=e318]:
                     - generic "Status To Do" [ref=e319]
-                    - generic [ref=e320]: Cloning of Sessions and CGA
-                  - generic [ref=e321]: Allow users to clone existing chat sessions and CGA configurations to reuse successful prompts, settings, and context for similar development tasks
+                    - generic [ref=e320]: Device VM with Vantiva
+                  - generic [ref=e321]: Build command change from Manifest and Run into a VM
                 - generic [ref=e322]:
                   - generic [ref=e323]: To Do
-                  - generic [ref=e324]: High
-                  - generic [ref=e325]: Prasanth
+                  - generic [ref=e324]: Critical
+                  - generic [ref=e325]: Naveen
                   - generic "Due" [ref=e326]:
                     - img "due" [ref=e327]: 🗓️
-                    - text: 2025-11-20
+                    - text: 2025-11-27
               - generic [ref=e330] [cursor=pointer]:
                 - generic [ref=e331]:
                   - generic [ref=e332]:
                     - generic "Status To Do" [ref=e333]
-                    - generic [ref=e334]: Device VM with Vantiva
-                  - generic [ref=e335]: Build command change from Manifest and Run into a VM
+                    - generic [ref=e334]: Cloning of Sessions and CGA
+                  - generic [ref=e335]: Allow users to clone existing chat sessions and CGA configurations to reuse successful prompts, settings, and context for similar development tasks
                 - generic [ref=e336]:
                   - generic [ref=e337]: To Do
-                  - generic [ref=e338]: Critical
-                  - generic [ref=e339]: Naveen
+                  - generic [ref=e338]: High
+                  - generic [ref=e339]: Prasanth
                   - generic "Due" [ref=e340]:
                     - img "due" [ref=e341]: 🗓️
-                    - text: 2025-11-27
+                    - text: 2025-11-20
               - generic [ref=e344] [cursor=pointer]:
                 - generic [ref=e345]:
                   - generic [ref=e346]:

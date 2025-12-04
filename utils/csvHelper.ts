@@ -7,7 +7,7 @@ import { parse } from 'csv-parse/sync';
  * @param relativePath Path to the CSV file relative to the project root.
  */
 export function readCsv(relativePath: string): any[] {
-  const defaultPath = '/home/kavia/workspace/code-generation/attachments/20251204_205927_Test_cases.csv';
+  const defaultPath = path.resolve(relativePath);
   const csvPath = process.env.CSV_PATH 
     ? path.resolve(process.env.CSV_PATH) 
     : defaultPath;

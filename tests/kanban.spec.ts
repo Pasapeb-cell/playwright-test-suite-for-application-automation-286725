@@ -27,7 +27,7 @@ test.describe('Kanban Data-Driven Tests', () => {
 
       if (data.Action === 'CREATE_TASK') {
         const columnName = targetColumn || 'To Do';
-        const column = page.getByLabel(`Kanban Column: ${columnName}`);
+        const column = page.getByLabel(`Column: ${columnName}`);
         await expect(column).toBeVisible();
 
         // Click "+ Add Card" in the specific column
@@ -49,7 +49,7 @@ test.describe('Kanban Data-Driven Tests', () => {
         const card = page.locator('.kanban-card').filter({ hasText: taskTitle }).first();
         await expect(card).toBeVisible();
 
-        const targetCol = page.getByLabel(`Kanban Column: ${targetColumn}`);
+        const targetCol = page.getByLabel(`Column: ${targetColumn}`);
         await expect(targetCol).toBeVisible();
 
         await card.dragTo(targetCol);
@@ -87,7 +87,7 @@ test.describe('Kanban Data-Driven Tests', () => {
         await expect(page.locator('.kanban-card').filter({ hasText: taskTitle })).not.toBeVisible();
 
       } else if (data.Action === 'VERIFY_TASK') {
-        const targetCol = page.getByLabel(`Kanban Column: ${targetColumn}`);
+        const targetCol = page.getByLabel(`Column: ${targetColumn}`);
         await expect(targetCol).toBeVisible();
         await expect(targetCol.locator('.kanban-card').filter({ hasText: taskTitle })).toBeVisible();
       }

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
-    "test:csv": "CSV_PATH=/home/kavia/workspace/code-generation/attachments/20251204_205927_Test_cases.csv npx playwright test"
+    "test:csv": "CSV_PATH=test_cases.csv npx playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",
