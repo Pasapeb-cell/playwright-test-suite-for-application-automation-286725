@@ -9,9 +9,38 @@ test.describe.configure({ mode: 'serial' });
 
 test.describe('Kanban Data-Driven Tests', () => {
   
-  test.beforeAll(async () => {
+  test.beforeAll(async ({ browser }) => {
     // Optional: Setup or cleanup before all tests if API access was available
     console.log('Starting Kanban Test Suite in Serial Mode');
+
+    // Create required columns if they don't exist
+    const page = await browser.newPage();
+    try {
+      await page.goto('/product');
+      
+      // Wait for board to maintain stable state
+      await expect(page.getByLabel('Kanban Columns')).toBeVisible({ timeout: 15000 });
+
+      const columnsToEnsure = ['To Do', 'In Progress', 'Done'];
+      for (const colName of columnsToEnsure) {
+          // Use specific role to avoid ambiguity with content areas
+          const col = page.getByRole('listitem', { name: `Column: ${colName}` });
+          if (!await col.isVisible()) {
+              console.log(`Creating column: ${colName}`);
+              await page.getByRole('button', { name: '+ Add Column' }).click();
+              const modal = page.locator('.kanban-modal-dialog');
+              await expect(modal).toBeVisible();
+              await modal.getByPlaceholder('Column Title').fill(colName);
+              await modal.getByRole('button', { name: 'Add Column' }).click();
+              await expect(col).toBeVisible();
+          }
+      }
+    } catch (e) {
+      console.error('Error setting up columns:', e);
+      throw e;
+    } finally {
+      await page.close();
+    }
   });
 
   for (const data of testCases) {
@@ -27,7 +56,7 @@ test.describe('Kanban Data-Driven Tests', () => {
 
       if (data.Action === 'CREATE_TASK') {
         const columnName = targetColumn || 'To Do';
-        const column = page.getByLabel(`Column: ${columnName}`);
+        const column = page.getByRole('listitem', { name: `Column: ${columnName}` });
         await expect(column).toBeVisible();
 
         // Click "+ Add Card" in the specific column
@@ -49,7 +78,7 @@ test.describe('Kanban Data-Driven Tests', () => {
         const card = page.locator('.kanban-card').filter({ hasText: taskTitle }).first();
         await expect(card).toBeVisible();
 
-        const targetCol = page.getByLabel(`Column: ${targetColumn}`);
+        const targetCol = page.getByRole('listitem', { name: `Column: ${targetColumn}` });
         await expect(targetCol).toBeVisible();
 
         await card.dragTo(targetCol);
@@ -87,7 +116,7 @@ test.describe('Kanban Data-Driven Tests', () => {
         await expect(page.locator('.kanban-card').filter({ hasText: taskTitle })).not.toBeVisible();
 
       } else if (data.Action === 'VERIFY_TASK') {
-        const targetCol = page.getByLabel(`Column: ${targetColumn}`);
+        const targetCol = page.getByRole('listitem', { name: `Column: ${targetColumn}` });
         await expect(targetCol).toBeVisible();
         await expect(targetCol.locator('.kanban-card').filter({ hasText: taskTitle })).toBeVisible();
       }
