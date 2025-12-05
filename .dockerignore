@@ -1,14 +1,18 @@
+# Exclude node modules and test artifacts from Docker build context
 node_modules
-playwright-report
-test-results
-dist
-.git
-.gitignore
 npm-debug.log*
 yarn-error.log*
+pnpm-lock.yaml
+.git
+.gitignore
 .DS_Store
+playwright-report
+test-results
+# Exclude local environment files
 .env
-temp-attachments
-attachments
-assets
-logs
+.env.*
+# Exclude OS / editor files
+*.swp
+*.swo
+.vscode
+.idea

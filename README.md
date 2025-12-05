@@ -85,3 +85,10 @@ Important:
   /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/playwright-test-suite-for-application-automation-286725
   The correct project root is exactly:
   /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
+
+CI Note:
+- In CI pipelines, use the repository root of this container as the Docker build context:
+    docker build -t kanban-playwright-tests .
+  and run without cd inside the container; the WORKDIR is already set.
+- You can also use the provided helper script:
+    ./scripts/build_and_run.sh
