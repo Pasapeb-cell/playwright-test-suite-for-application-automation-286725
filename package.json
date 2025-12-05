@@ -2,8 +2,8 @@
   "name": "playwright-test-suite",
   "version": "1.0.0",
   "scripts": {
-    "test": "playwright test",
-    "test:smoke": "playwright test --grep @smoke"
+    "test": "playwright test --headed=false",
+    "test:smoke": "playwright test --grep @smoke --headed=false"
   },
   "devDependencies": {
     "playwright": "1.57.0",

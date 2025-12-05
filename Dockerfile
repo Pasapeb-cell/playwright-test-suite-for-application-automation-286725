@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Set CI to 1 to avoid interactive prompts
 ENV CI=1
+ENV PLAYWRIGHT_HEADLESS=1
 # Ensure browsers are downloaded (0 = don't skip)
 ENV PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=0
 # Set browsers path to 0 as requested (though unusual, following specific instruction)
