@@ -21,5 +21,5 @@ docker build -t "${IMAGE_NAME}" "${BUILD_CONTEXT_DIR}"
 
 echo "Running tests in container..."
 docker run --rm \
-  -e E2E_BASE_URL="${E2E_BASE_URL:-http://localhost:3000}" \
+  -e E2E_BASE_URL="${E2E_BASE_URL:-https://kanban-board-3.kavia.app/}" \
   "${IMAGE_NAME}"

@@ -21,7 +21,7 @@ if [ ! -d "node_modules" ]; then
   npm install
 fi
 
-export E2E_BASE_URL="${E2E_BASE_URL:-http://localhost:3000}"
+export E2E_BASE_URL="${E2E_BASE_URL:-https://kanban-board-3.kavia.app/}"
 echo "Running Playwright tests against: ${E2E_BASE_URL}"
 
 # Execute tests
