@@ -1,9 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// Guard: Default to forcing headless (true) unless explicitly disabled via env var '0'.
-// This override helps neutralize --headed flags if the environment demands headless.
-// Defaults to true to enforce headless execution unconditionally in CI.
-const forceHeadless = process.env.PLAYWRIGHT_FORCE_HEADLESS !== '0';
+// Guard: Always force headless to true to ignore any incoming headed flags from CLI.
+const forceHeadless = true;
 
 export default defineConfig({
   testDir: './tests',
@@ -28,7 +26,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    // Enforce headless execution unconditionally
+    
+    // Enforce headless execution unconditionally for all projects
     headless: forceHeadless,
   },
 
@@ -39,15 +38,13 @@ export default defineConfig({
       use: { 
         ...devices['Desktop Chrome'],
         launchOptions: {
+          // Hardened launch args for CI/container environments
           args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
             '--disable-gpu',
             '--disable-dev-shm-usage',
-            '--disable-features=VizDisplayCompositor',
-            '--disable-features=MojoVideoCapture',
-            '--no-first-run',
-            '--no-default-browser-check'
+            '--disable-features=VizDisplayCompositor'
           ]
         }
       },
