@@ -1,15 +1,15 @@
 # syntax=docker/dockerfile:1
 
-# Use Node 18 LTS for Playwright
+# Use official Playwright image with browsers
 FROM mcr.microsoft.com/playwright:v1.48.2-jammy
 
-# Set correct working directory (single-level path)
-WORKDIR /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
+# Use a portable working directory inside the image
+WORKDIR /app
 
-# Copy only package.json first for caching, then the rest
+# Copy only package.json first for better layer caching
 COPY package.json ./
 
-# Install dependencies
+# Install dependencies (CI-friendly)
 RUN npm ci --no-audit --no-fund
 
 # Copy the rest of the test suite files
