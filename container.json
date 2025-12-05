@@ -1,0 +1,17 @@
+{
+  "name": "playwright-test-suite-for-application-automation-286725",
+  "description": "Playwright-based automated end-to-end test suite for validating the Kanban task manager application UI and workflows.",
+  "type": "generic",
+  "framework": "playwright",
+  "workingDirectory": "/home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725",
+  "context": ".",
+  "build": {
+    "command": "npm ci --no-audit --no-fund && npx playwright install --with-deps"
+  },
+  "start": {
+    "command": "npm test"
+  },
+  "test": {
+    "command": "npm test"
+  }
+}
