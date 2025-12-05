@@ -19,6 +19,13 @@ docker build -t kanban-e2e ./playwright-test-suite-for-application-automation-28
 docker run --rm -e FRONTEND_URL=http://host.docker.internal:3000 kanban-e2e
 ```
 
+Verification log (expected path flow):
+- Orchestrator host cd: /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
+- Docker build context: ./playwright-test-suite-for-application-automation-286725
+- Dockerfile WORKDIR: /app
+- npm ci/npm test executed in: /app
+- No nested directory traversal occurs.
+
 Local (without Docker):
 ```
 cd playwright-test-suite-for-application-automation-286725
