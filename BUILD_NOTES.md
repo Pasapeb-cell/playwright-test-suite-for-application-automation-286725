@@ -32,3 +32,4 @@ npm test
 CI hint:
 - Ensure any pre-build steps run in the container root (`playwright-test-suite-for-application-automation-286725`) and do not attempt to `cd` into a nested duplicate folder name.
 - No path prefixing with the container name is required once inside the container; all scripts assume `/app` as the working directory.
+- Orchestrator manifest now includes `working_directory: /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725` to prevent any derived nested path during setup.
