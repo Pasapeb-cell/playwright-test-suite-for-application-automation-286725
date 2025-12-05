@@ -2,7 +2,7 @@
   "name": "playwright-test-suite",
   "version": "1.0.0",
   "scripts": {
-    "test": "playwright test"
+    "test": "./node_modules/.bin/playwright test"
   },
   "devDependencies": {
     "playwright": "1.57.0",
