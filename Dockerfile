@@ -14,7 +14,7 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 # Install browsers with dependencies using npx as requested, relies on package.json version
-RUN ./node_modules/.bin/playwright install --with-deps chromium firefox webkit
+RUN npx playwright install --with-deps chromium firefox webkit
 
 COPY . .
 
