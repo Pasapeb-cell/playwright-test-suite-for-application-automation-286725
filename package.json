@@ -1,0 +1,25 @@
+{
+  "name": "playwright-test-suite-for-application-automation-286725",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automated Playwright end-to-end test suite designed to execute browser-based tests against the Kanban task management application or similar web apps.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "preinstall": "node -e \"process.exit(0)\"",
+    "postinstall": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps || (echo 'Playwright install failed' && exit 1)",
+    "prepare": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps",
+    "init": "npm ci || npm install && PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps",
+    "build": "echo 'No build step required for Playwright tests'",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "test:dryrun": "npx playwright test --list"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "playwright": "^1.48.2"
+  }
+}
