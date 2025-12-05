@@ -15,11 +15,13 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
+    ['list'],
     ['html', { outputFolder: 'test-results/html', open: 'never' }],
     ['junit', { outputFile: 'test-results/junit-report.xml' }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    headless: true,
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: process.env.FRONTEND_URL || process.env.REACT_APP_FRONTEND_URL || 'http://localhost:3000',
 
