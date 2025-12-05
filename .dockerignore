@@ -1,0 +1,14 @@
+node_modules
+playwright-report
+test-results
+dist
+.git
+.gitignore
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+.env
+temp-attachments
+attachments
+assets
+logs

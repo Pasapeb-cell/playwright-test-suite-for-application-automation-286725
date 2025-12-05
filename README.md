@@ -60,3 +60,24 @@ npm run test:ui
 ## Notes
 - This container does not start or modify the frontend application. Configure the `baseURL` to point to your running frontend instance.
 - For CI, ensure the frontend is available before running the test job, or configure a webServer hook as needed.
+
+## Docker Usage
+A Dockerfile is provided to run this test suite in a container with the correct working directory.
+
+- Build:
+  docker build -t kanban-playwright-tests .
+
+- Run (headless tests by default):
+  docker run --rm \
+    -e E2E_BASE_URL="http://localhost:3000" \
+    kanban-playwright-tests
+
+- Override command (e.g., UI mode):
+  docker run --rm -it \
+    -e E2E_BASE_URL="http://localhost:3000" \
+    kanban-playwright-tests npm run test:ui
+
+Important:
+- The image sets the working directory to:
+  /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
+  Ensure any external tooling does not attempt to cd into a duplicated path segment (e.g., appending the folder name twice).
