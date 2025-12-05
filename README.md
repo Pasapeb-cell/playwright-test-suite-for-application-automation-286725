@@ -75,9 +75,13 @@ A Dockerfile is provided to run this test suite in a container with the correct 
 - Override command (e.g., UI mode):
   docker run --rm -it \
     -e E2E_BASE_URL="http://localhost:3000" \
-    kanban-playwright-tests npm run test:ui
+    kanban-playwright-tests sh -lc "npm run test:ui"
 
 Important:
 - The image sets the working directory to:
   /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
   Ensure any external tooling does not attempt to cd into a duplicated path segment (e.g., appending the folder name twice).
+  In particular, do NOT cd into:
+  /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/playwright-test-suite-for-application-automation-286725
+  The correct project root is exactly:
+  /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725

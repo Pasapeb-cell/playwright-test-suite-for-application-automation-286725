@@ -7,11 +7,11 @@
   "scripts": {
     "prepare": "echo \"Playwright test suite prepared\"",
     "postinstall": "npx --yes playwright install --with-deps",
-    "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report",
-    "test:trace": "playwright show-trace test-results/**/*.zip || echo \"No trace zip found. Ensure tracing is enabled and tests have been executed.\""
+    "test": "npx --yes playwright test",
+    "test:headed": "npx --yes playwright test --headed",
+    "test:ui": "npx --yes playwright test --ui",
+    "test:report": "npx --yes playwright show-report",
+    "test:trace": "npx --yes playwright show-trace test-results/**/*.zip || echo \"No trace zip found. Ensure tracing is enabled and tests have been executed.\""
   },
   "devDependencies": {
     "@playwright/test": "^1.46.1",
