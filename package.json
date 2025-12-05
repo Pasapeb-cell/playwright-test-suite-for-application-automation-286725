@@ -9,17 +9,17 @@
   },
   "scripts": {
     "preinstall": "node -e \"process.exit(0)\"",
-    "postinstall": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps || (echo 'Playwright install failed' && exit 1)",
-    "prepare": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps",
-    "init": "npm ci || npm install && PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 npx --yes playwright install --with-deps",
+    "postinstall": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
+    "prepare": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
+    "init": "npm ci || npm install && PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
     "build": "echo 'No build step required for Playwright tests'",
-    "test": "npx playwright test",
-    "test:headed": "npx playwright test --headed",
-    "test:report": "npx playwright show-report",
-    "test:dryrun": "npx playwright test --list"
+    "test": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test",
+    "test:headed": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:dryrun": "playwright test --list"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.2",
-    "playwright": "^1.48.2"
+    "@playwright/test": "1.57.0",
+    "playwright": "1.57.0"
   }
 }
