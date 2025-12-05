@@ -31,11 +31,13 @@ This repository contains an automated end-to-end test suite using [Playwright](h
 
 ### CI Execution
 
-In a CI environment, use the dedicated CI script which configures appropriate reporters:
+In a CI environment, use the dedicated CI script which configures appropriate reporters and enforces headless mode:
 
 ```bash
 npm run test:ci
 ```
+
+Note: This suite is configured to run in headless mode by default in CI to ensure compatibility with environments lacking an X server.
 
 To filter by tags in CI:
 
