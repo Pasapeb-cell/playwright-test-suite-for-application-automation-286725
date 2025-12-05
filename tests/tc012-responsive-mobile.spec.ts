@@ -1,5 +1,7 @@
 import { test, expect, devices } from '@playwright/test';
 
+test.use({ ...devices['iPhone 12'] });
+
 /**
  * PUBLIC_INTERFACE
  * TC012 — UI/Responsiveness — Verify layout on mobile device
@@ -22,11 +24,7 @@ import { test, expect, devices } from '@playwright/test';
  */
 
 test.describe('@tc012 Mobile Responsiveness: iPhone 12 viewport', () => {
-  // Apply mobile device emulation for this suite
-  test.use({
-    ...devices['iPhone 12'],
-    // Keep navigationTimeout/actionTimeout consistent with config defaults via inherit.
-  });
+  
 
   const DEFAULT_COLUMNS = ['To Do', 'In Progress', 'Done'];
 
