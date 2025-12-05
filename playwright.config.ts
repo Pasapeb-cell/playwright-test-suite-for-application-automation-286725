@@ -44,7 +44,8 @@ export default defineConfig({
             '--disable-setuid-sandbox',
             '--disable-gpu',
             '--disable-dev-shm-usage',
-            '--disable-features=VizDisplayCompositor'
+            '--disable-features=VizDisplayCompositor',
+            '--headless=new'
           ]
         }
       },
@@ -53,12 +54,18 @@ export default defineConfig({
       name: 'firefox',
       use: { 
         ...devices['Desktop Firefox'],
+        launchOptions: {
+          args: ['-headless']
+        }
       },
     },
     {
       name: 'webkit',
       use: { 
         ...devices['Desktop Safari'],
+        launchOptions: {
+          args: ['--headless']
+        }
       },
     },
   ],

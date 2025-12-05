@@ -1,0 +1,44 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="10.389507">
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.872" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0.384">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0.488">
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.352" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0.352">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="firefox" tests="2" failures="0" skipped="0" time="2.227" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="1.393">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0.834">
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.478" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0.478">
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="webkit" tests="2" failures="0" skipped="0" time="1.959" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0.77">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="1.189">
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:03:28.891Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.447" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0.447">
+</testcase>
+</testsuite>
+</testsuites>
