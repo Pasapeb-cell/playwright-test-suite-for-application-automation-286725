@@ -1,0 +1,24 @@
+{
+  "name": "playwright-test-suite-for-application-automation-286725",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright-based automated end-to-end test suite for validating the Kanban task manager application UI and workflows.",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "echo \"Playwright test suite prepared\"",
+    "postinstall": "npx --yes playwright install --with-deps",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:trace": "playwright show-trace test-results/**/*.zip || echo \"No trace zip found. Ensure tracing is enabled and tests have been executed.\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
