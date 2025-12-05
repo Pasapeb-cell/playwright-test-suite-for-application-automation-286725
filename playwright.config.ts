@@ -23,6 +23,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    // Force headless mode. In CI, we enforce this strictly.
     headless: true,
   },
 
@@ -34,7 +35,12 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         headless: true,
         launchOptions: {
-          args: ['--no-sandbox', '--disable-setuid-sandbox']
+          args: [
+            '--no-sandbox', 
+            '--disable-setuid-sandbox',
+            '--disable-gpu',
+            '--disable-dev-shm-usage'
+          ]
         }
       },
     },
