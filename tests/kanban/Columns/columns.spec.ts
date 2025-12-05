@@ -11,7 +11,7 @@ test.describe('Columns @Columns', () => {
 
     await test.step('1. Click on "Add Column" or "+" button', async () => {
       // Assuming a button with "Add Column" text or similar in Toolbar
-      await page.getByRole('button', { name: /add column/i }).click();
+      await page.getByRole('button', { name: '+ Add Column' }).click();
     });
 
     await test.step('2. Enter column name', async () => {
@@ -19,7 +19,7 @@ test.describe('Columns @Columns', () => {
     });
 
     await test.step('3. Confirm', async () => {
-      await page.getByRole('button', { name: /add/i }).click();
+      await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     });
 
     await test.step('Actual Result: A new column appears on the board', async () => {
@@ -35,7 +35,7 @@ test.describe('Columns @Columns', () => {
 
     await test.step('1. Click on a column title', async () => {
       // Code uses onDoubleClick to trigger edit
-      await firstColumnTitle.dblclick();
+      await firstColumnTitle.dblclick({ force: true });
     });
 
     await test.step('2. Change text', async () => {
@@ -43,7 +43,7 @@ test.describe('Columns @Columns', () => {
       await input.fill(newText);
       
       // 3. Press Enter or click away (Save button exists in code)
-      await page.getByRole('button', { name: 'Save' }).click();
+      await input.press('Enter');
     });
 
     await test.step('Actual Result: The column title updates', async () => {
@@ -53,9 +53,9 @@ test.describe('Columns @Columns', () => {
 
   test('TC-04: Delete a column @TC-04', async ({ page }) => {
     // Pre-req: Create a temp column to delete to avoid destroying default board state
-    await page.getByRole('button', { name: /add column/i }).click();
+    await page.getByRole('button', { name: '+ Add Column' }).click();
     await page.getByPlaceholder(/column title/i).fill('Delete Me');
-    await page.getByRole('button', { name: /add/i }).click();
+    await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     const colLocator = page.locator('.kanban-column', { hasText: 'Delete Me' });
     await expect(colLocator).toBeVisible();
 
@@ -77,15 +77,15 @@ test.describe('Columns @Columns', () => {
     const dupName = 'Duplicate Test';
 
     await test.step('1. Create a column named "Duplicate Test"', async () => {
-      await page.getByRole('button', { name: /add column/i }).click();
+      await page.getByRole('button', { name: '+ Add Column' }).click();
       await page.getByPlaceholder(/column title/i).fill(dupName);
-      await page.getByRole('button', { name: /add/i }).click();
+      await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     });
 
     await test.step('2. Create another column named "Duplicate Test"', async () => {
-      await page.getByRole('button', { name: /add column/i }).click();
+      await page.getByRole('button', { name: '+ Add Column' }).click();
       await page.getByPlaceholder(/column title/i).fill(dupName);
-      await page.getByRole('button', { name: /add/i }).click();
+      await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     });
 
     await test.step('Expected Result: System should either allow it or show a validation error', async () => {

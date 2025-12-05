@@ -6,9 +6,9 @@ test.describe('UI/UX @UI_UX', () => {
     await page.goto('/product');
     // Ensure col exists
     if (await page.locator('.kanban-column').count() === 0) {
-      await page.getByRole('button', { name: /add column/i }).click();
+      await page.getByRole('button', { name: '+ Add Column' }).click();
       await page.getByPlaceholder(/column title/i).fill('UI Test');
-      await page.getByRole('button', { name: /add/i }).click();
+      await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     }
   });
 
@@ -17,9 +17,9 @@ test.describe('UI/UX @UI_UX', () => {
     const col = page.locator('.kanban-column').first();
 
     await test.step('Create task with long text', async () => {
-      await col.getByRole('button', { name: /add task/i }).click();
-      await col.getByPlaceholder(/task title/i).fill(longText);
-      await col.getByRole('button', { name: /add/i }).click();
+      await col.getByRole('button', { name: /\+? ?add card/i }).click();
+      await col.locator('input[name="feature"]').fill(longText);
+      await col.getByRole('button', { name: 'Add', exact: true }).click();
     });
 
     await test.step('Actual Result: Layout should not break', async () => {
@@ -35,9 +35,9 @@ test.describe('UI/UX @UI_UX', () => {
     const col = page.locator('.kanban-column').first();
 
     await test.step('Create task with special characters', async () => {
-      await col.getByRole('button', { name: /add task/i }).click();
-      await col.getByPlaceholder(/task title/i).fill(specialChars);
-      await col.getByRole('button', { name: /add/i }).click();
+      await col.getByRole('button', { name: /\+? ?add card/i }).click();
+      await col.locator('input[name="feature"]').fill(specialChars);
+      await col.getByRole('button', { name: 'Add', exact: true }).click();
     });
 
     await test.step('Actual Result: Characters display correctly, sanitized', async () => {

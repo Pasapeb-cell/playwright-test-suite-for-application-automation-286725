@@ -6,9 +6,9 @@ test.describe('Drag & Drop @DragAndDrop', () => {
     await page.goto('/product');
     // Ensure we have at least 2 columns
     while (await page.locator('.kanban-column').count() < 2) {
-      await page.getByRole('button', { name: /add column/i }).click();
+      await page.getByRole('button', { name: '+ Add Column' }).click();
       await page.getByPlaceholder(/column title/i).fill('Col ' + Date.now());
-      await page.getByRole('button', { name: /add/i }).click();
+      await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     }
   });
 
@@ -19,9 +19,9 @@ test.describe('Drag & Drop @DragAndDrop', () => {
     const col2 = columns.nth(1);
 
     // Create task in Col 1
-    await col1.getByRole('button', { name: /add task/i }).click();
-    await col1.getByPlaceholder(/task title/i).fill(taskName);
-    await col1.getByRole('button', { name: /add/i }).click();
+    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
+    await col1.locator('input[name="feature"]').fill(taskName);
+    await col1.getByRole('button', { name: 'Add', exact: true }).click();
 
     const card = page.locator('.kanban-card', { hasText: taskName }).first();
 
@@ -43,9 +43,9 @@ test.describe('Drag & Drop @DragAndDrop', () => {
      const col2 = columns.nth(1);
  
      // Create task in Col 2
-     await col2.getByRole('button', { name: /add task/i }).click();
-     await col2.getByPlaceholder(/task title/i).fill(taskName);
-     await col2.getByRole('button', { name: /add/i }).click();
+     await col2.getByRole('button', { name: /\+? ?add card/i }).click();
+     await col2.locator('input[name="feature"]').fill(taskName);
+     await col2.getByRole('button', { name: 'Add', exact: true }).click();
  
      const card = page.locator('.kanban-card', { hasText: taskName }).first();
  
@@ -62,13 +62,13 @@ test.describe('Drag & Drop @DragAndDrop', () => {
     const col1 = page.locator('.kanban-column').nth(0);
     
     // Create 2 tasks
-    await col1.getByRole('button', { name: /add task/i }).click();
-    await col1.getByPlaceholder(/task title/i).fill('Task A');
-    await col1.getByRole('button', { name: /add/i }).click();
+    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
+    await col1.locator('input[name="feature"]').fill('Task A');
+    await col1.getByRole('button', { name: 'Add', exact: true }).click();
     
-    await col1.getByRole('button', { name: /add task/i }).click();
-    await col1.getByPlaceholder(/task title/i).fill('Task B');
-    await col1.getByRole('button', { name: /add/i }).click();
+    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
+    await col1.locator('input[name="feature"]').fill('Task B');
+    await col1.getByRole('button', { name: 'Add', exact: true }).click();
 
     const cardA = col1.locator('.kanban-card', { hasText: 'Task A' });
     const cardB = col1.locator('.kanban-card', { hasText: 'Task B' });
@@ -93,9 +93,9 @@ test.describe('Drag & Drop @DragAndDrop', () => {
     const taskName = 'Outside ' + Date.now();
     const col1 = page.locator('.kanban-column').nth(0);
     
-    await col1.getByRole('button', { name: /add task/i }).click();
-    await col1.getByPlaceholder(/task title/i).fill(taskName);
-    await col1.getByRole('button', { name: /add/i }).click();
+    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
+    await col1.locator('input[name="feature"]').fill(taskName);
+    await col1.getByRole('button', { name: 'Add', exact: true }).click();
     
     const card = page.locator('.kanban-card', { hasText: taskName });
 
