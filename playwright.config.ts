@@ -27,8 +27,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    // Enforce headless execution unconditionally
-    headless: true,
+    // Enforce headless execution unconditionally if forceHeadless is set
+    headless: forceHeadless ? true : undefined,
   },
 
   /* Configure projects for major browsers */
@@ -37,7 +37,6 @@ export default defineConfig({
       name: 'chromium',
       use: { 
         ...devices['Desktop Chrome'],
-        headless: true,
         launchOptions: {
           args: [
             '--no-sandbox', 
@@ -53,14 +52,12 @@ export default defineConfig({
       name: 'firefox',
       use: { 
         ...devices['Desktop Firefox'],
-        headless: true,
       },
     },
     {
       name: 'webkit',
       use: { 
         ...devices['Desktop Safari'],
-        headless: true,
       },
     },
   ],
