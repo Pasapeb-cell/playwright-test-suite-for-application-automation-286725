@@ -1,5 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 
+// Guard: Default to forcing headless in CI or if explicitly requested.
+// This helps neutralize --headed flags if the environment demands headless.
+const forceHeadless = process.env.PLAYWRIGHT_FORCE_HEADLESS === '1' || !!process.env.CI;
+
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -23,7 +27,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    // Force headless mode. In CI, we enforce this strictly.
+    // Enforce headless execution unconditionally
     headless: true,
   },
 
@@ -39,7 +43,8 @@ export default defineConfig({
             '--no-sandbox', 
             '--disable-setuid-sandbox',
             '--disable-gpu',
-            '--disable-dev-shm-usage'
+            '--disable-dev-shm-usage',
+            '--disable-features=VizDisplayCompositor'
           ]
         }
       },
