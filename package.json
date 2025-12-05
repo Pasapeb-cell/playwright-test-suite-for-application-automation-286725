@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Playwright end-to-end test suite",
   "scripts": {
-    "test": "playwright test",
-    "test:ci": "playwright test --reporter=github,junit,html",
+    "test": "PLAYWRIGHT_HEADLESS=1 playwright test",
+    "test:ci": "PLAYWRIGHT_HEADLESS=1 playwright test --reporter=github,junit,html",
     "test:dryrun": "playwright test --list",
     "prepare": "playwright install --with-deps",
     "postinstall": "playwright install --with-deps"
