@@ -1,25 +1,19 @@
 {
-  "name": "playwright-test-suite-for-application-automation-286725",
+  "name": "playwright-test-suite-for-application-automation",
   "version": "1.0.0",
-  "private": true,
-  "description": "Automated Playwright end-to-end test suite designed to execute browser-based tests against the Kanban task management application or similar web apps.",
-  "license": "MIT",
-  "engines": {
-    "node": ">=18.0.0"
-  },
+  "description": "Playwright end-to-end test suite",
   "scripts": {
-    "preinstall": "node -e \"process.exit(0)\"",
-    "postinstall": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
-    "prepare": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
-    "init": "npm ci || npm install && PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright install --with-deps || PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true npx --yes playwright@1.57.0 install --with-deps",
-    "build": "echo 'No build step required for Playwright tests'",
-    "test": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test",
-    "test:headed": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test --headed",
-    "test:report": "playwright show-report",
-    "test:dryrun": "playwright test --list"
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=github,junit,html",
+    "test:dryrun": "playwright test --list",
+    "prepare": "playwright install --with-deps",
+    "postinstall": "playwright install --with-deps"
   },
   "devDependencies": {
-    "@playwright/test": "1.57.0",
-    "playwright": "1.57.0"
-  }
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "license": "ISC"
 }
