@@ -20,11 +20,17 @@ docker run --rm -e FRONTEND_URL=http://host.docker.internal:3000 kanban-e2e
 ```
 
 Verification log (expected path flow):
-- Orchestrator host cd: /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
-- Docker build context: ./playwright-test-suite-for-application-automation-286725
+- Orchestrator host working_directory: /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725
+- Docker build context: ./playwright-test-suite-for-application-automation-286725 (no extra cd)
 - Dockerfile WORKDIR: /app
 - npm ci/npm test executed in: /app
 - No nested directory traversal occurs.
+
+Orchestrator configuration:
+- The repo defines .kavia/manifest.yaml to set working_directory explicitly.
+- You can hard-pin the host-side path with WORKDIR_PLAYWRIGHT in .env or CI env:
+  WORKDIR_PLAYWRIGHT=playwright-test-suite-for-application-automation-286725
+- Ensure no build hooks attempt to 'cd' before invoking docker build; the orchestrator should provide the context directly.
 
 Local (without Docker):
 ```
