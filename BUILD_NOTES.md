@@ -6,10 +6,7 @@ This container is designed to build and run entirely from a single-level path.
 - Dockerfile sets: `WORKDIR /app`
 - `npm ci`/`npm install` and `npm test` are executed from `/app` — no `cd` is required in scripts.
 
-Do NOT `cd` into nested paths such as:
-```
-playwright-test-suite-for-application-automation-286725/playwright-test-suite-for-application-automation-286725
-```
+Do NOT `cd` into a nested duplicate path (i.e., repeating the same folder name twice).
 Such paths will fail. Use the container root directory only:
 ```
 playwright-test-suite-for-application-automation-286725

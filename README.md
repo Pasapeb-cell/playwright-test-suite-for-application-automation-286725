@@ -53,5 +53,5 @@ npm run test:trace
   ```
   docker build -t kanban-e2e ./playwright-test-suite-for-application-automation-286725
   ```
-- Avoid paths like `playwright-test-suite-for-application-automation-286725/playwright-test-suite-for-application-automation-286725` which can cause build failures.
+- Avoid nested duplicate folder paths (e.g., repeating the same container folder name twice) which can cause build failures.
 - For more details, see `BUILD_NOTES.md`.
