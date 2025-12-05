@@ -11,7 +11,8 @@
     "test:ui": "npx playwright test --ui",
     "test:headed": "npx playwright test --headed",
     "test:report": "npx playwright show-report",
-    "test:trace": "npx playwright show-trace ./test-results/**/trace.zip || true"
+    "test:trace": "npx playwright show-trace ./test-results/**/trace.zip || true",
+    "test:external": "E2E_BASE_URL=\"https://kanban-board-3.kavia.app/\" npx playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.46.1",

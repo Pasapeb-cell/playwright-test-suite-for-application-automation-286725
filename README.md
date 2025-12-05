@@ -92,3 +92,16 @@ CI Note:
   and run without cd inside the container; the WORKDIR is already set.
 - You can also use the provided helper script:
     ./scripts/build_and_run.sh
+
+## Running Without Docker (local environment)
+If Docker is unavailable in your environment, you can run the tests locally:
+
+- One-time dependency install (also triggers Playwright browsers install):
+  npm install
+
+- Run tests against the external URL directly:
+  npm run test:external
+  # or
+  E2E_BASE_URL="https://kanban-board-3.kavia.app/" ./scripts/run_playwright_local.sh
+
+This approach uses the same Playwright configuration and avoids any duplicated path issues during build.
