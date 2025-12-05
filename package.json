@@ -1,0 +1,17 @@
+{
+  "name": "playwright-test-suite-for-application-automation-286725",
+  "version": "1.0.0",
+  "description": "Playwright-based end-to-end test suite for the Kanban task manager application.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node run-tests.js",
+    "test:ui": "npx playwright test --ui",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "test:trace": "npx playwright show-trace test-results/**/*.zip || true"
+  },
+  "dependencies": {
+    "@playwright/test": "latest"
+  }
+}
