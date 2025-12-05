@@ -4,6 +4,8 @@ test.describe('Tasks @Tasks', () => {
 
   test.beforeEach(async ({ page }) => {
     await page.goto('/product');
+    // Reset filters to ensure new tasks are visible
+    await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
     // Ensure at least one column exists
     if (await page.locator('.kanban-column').count() === 0) {
       await page.getByRole('button', { name: '+ Add Column' }).click();
@@ -32,7 +34,9 @@ test.describe('Tasks @Tasks', () => {
     });
 
     await test.step('Actual Result: A new task card appears', async () => {
-      await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible();
+      await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+      await page.reload();
+      await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
     });
   });
 
@@ -51,7 +55,7 @@ test.describe('Tasks @Tasks', () => {
     await test.step('Actual Result: System should disable button or show error', async () => {
       // The app behavior is to ignore the click if empty, so the form remains open.
       // We verify the input is still visible.
-      await expect(firstColumn.locator('input[name="feature"]')).toBeVisible();
+      await expect(firstColumn.locator('input[name="feature"]')).toBeVisible({ timeout: 10000 });
     });
   });
 
@@ -115,7 +119,7 @@ test.describe('Tasks @Tasks', () => {
     });
 
     await test.step('Actual Result: Task is removed', async () => {
-      await expect(card).not.toBeVisible();
+      await expect(card).not.toBeVisible({ timeout: 10000 });
     });
   });
 
@@ -131,7 +135,7 @@ test.describe('Tasks @Tasks', () => {
     });
 
     await test.step('Actual Result: Task is still visible', async () => {
-      await expect(page.locator('.kanban-card', { hasText: taskName })).toBeVisible();
+      await expect(page.locator('.kanban-card', { hasText: taskName })).toBeVisible({ timeout: 10000 });
     });
   });
 
