@@ -1,0 +1,12 @@
+{
+  "name": "playwright-test-suite",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "playwright": "1.57.0",
+    "@playwright/test": "1.57.0",
+    "typescript": "^5.3.3"
+  }
+}
