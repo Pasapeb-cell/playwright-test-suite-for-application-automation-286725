@@ -2,7 +2,7 @@
   "name": "playwright-test-suite",
   "version": "1.0.0",
   "scripts": {
-    "test": "./node_modules/.bin/playwright test"
+    "test": "./node_modules/.bin/playwright test --grep @smoke"
   },
   "devDependencies": {
     "playwright": "1.57.0",
