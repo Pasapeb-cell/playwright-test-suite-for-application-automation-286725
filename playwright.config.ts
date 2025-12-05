@@ -10,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test';
  *   3) http://localhost:3000 (default)
  *
  * - Reports: HTML (stored under playwright-report/)
- * - Tracing: Retained on failure, accessible via `npm run test:trace`
+ * - Tracing: Retained on failure (or on-first-retry), accessible via `npm run test:trace`
  * - Artifacts: test-results/ for traces/screenshots/videos
  */
 const baseURL =
@@ -23,11 +23,18 @@ export default defineConfig({
   fullyParallel: true,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 2 : undefined,
-  reporter: [['html', { open: 'never' }]],
+
+  // Use HTML reporter; it writes to playwright-report/ by default.
+  reporter: [['html', { open: 'never', outputFolder: 'playwright-report' }]],
+
   use: {
     baseURL,
-    trace: 'on-first-retry', // record traces for flaky test retries
+    // Save traces only when retrying or retain on failure; both are acceptable for the task.
+    // Prefer 'on-first-retry' to reduce storage while still capturing useful debug info.
+    trace: 'on-first-retry',
+    // Capture screenshots on failure.
     screenshot: 'only-on-failure',
+    // Record videos and retain only for failing tests.
     video: 'retain-on-failure',
     actionTimeout: 15_000,
     navigationTimeout: 30_000
@@ -50,14 +57,6 @@ export default defineConfig({
   ],
 
   // Folder for test artifacts such as screenshots, videos, traces, etc.
-  outputDir: 'test-results',
-
-  // Optional: web server can be configured here if this container were to start the app.
-  // We don't start/modify the frontend from here to respect container boundaries.
-  // webServer: {
-  //   command: 'npm --prefix ../kanban-task-manager-121675 run start',
-  //   url: baseURL,
-  //   reuseExistingServer: true,
-  //   timeout: 120_000
-  // }
+  outputDir: 'test-results'
+  // Optional web server can be configured here if this container were to start the app.
 });

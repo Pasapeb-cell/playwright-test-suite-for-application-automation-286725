@@ -10,8 +10,8 @@
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
     "test:headed": "npx playwright test --headed",
-    "test:report": "npx playwright show-report",
-    "test:trace": "npx playwright show-trace ./test-results/**/trace.zip || true",
+    "test:report": "npx playwright show-report ./playwright-report",
+    "test:trace": "npx playwright show-trace $(ls -t ./test-results/**/trace.zip 2>/dev/null | head -n 1) || echo \"No trace.zip found in test-results/\"",
     "test:external": "E2E_BASE_URL=\"https://kanban-board-3.kavia.app/\" npx playwright test"
   },
   "devDependencies": {
