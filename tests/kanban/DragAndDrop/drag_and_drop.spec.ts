@@ -59,33 +59,40 @@ test.describe('Drag & Drop @DragAndDrop', () => {
   });
 
   test('TC-13: Reorder tasks within column @TC-13', async ({ page }) => {
-    const col1 = page.locator('.kanban-column').nth(0);
+    // Create a new column to ensure a clean state for ordering
+    const colName = 'Order Col ' + Date.now();
+    await page.getByRole('button', { name: '+ Add Column' }).click();
+    await page.getByPlaceholder(/column title/i).fill(colName);
+    await page.getByRole('button', { name: 'Add Column', exact: true }).click();
     
-    // Create 2 tasks
-    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
-    await col1.locator('input[name="feature"]').fill('Task A');
-    await col1.getByRole('button', { name: 'Add', exact: true }).click();
-    
-    await col1.getByRole('button', { name: /\+? ?add card/i }).click();
-    await col1.locator('input[name="feature"]').fill('Task B');
-    await col1.getByRole('button', { name: 'Add', exact: true }).click();
+    const column = page.locator('.kanban-column', { hasText: colName });
+    const taskA = 'Task A ' + Date.now();
+    const taskB = 'Task B ' + Date.now();
 
-    const cardA = col1.locator('.kanban-card', { hasText: 'Task A' });
-    const cardB = col1.locator('.kanban-card', { hasText: 'Task B' });
+    // Create 2 tasks
+    await column.getByRole('button', { name: /\+? ?add card/i }).click();
+    await column.locator('input[name="feature"]').fill(taskA);
+    await column.getByRole('button', { name: 'Add', exact: true }).click();
+    
+    await column.getByRole('button', { name: /\+? ?add card/i }).click();
+    await column.locator('input[name="feature"]').fill(taskB);
+    await column.getByRole('button', { name: 'Add', exact: true }).click();
+
+    const cardA = column.locator('.kanban-card', { hasText: taskA });
+    const cardB = column.locator('.kanban-card', { hasText: taskB });
+
+    // Initial check to ensure order is A, B
+    await expect(column.locator('.kanban-card')).toHaveText([taskA, taskB]);
 
     await test.step('Drag bottom task to top', async () => {
       // Drag B to A
       await cardB.dragTo(cardA);
     });
 
-    // Verification of precise order is tricky without specific IDs in DOM order
-    // But we can check if they simply exist and no errors occurred.
-    // Precise order verification requires checking DOM index
     await test.step('Actual Result: Task order changes', async () => {
-      // Logic to check if B is now before A in DOM
-      // This is approximate
-      await expect(cardB).toBeVisible();
-      await expect(cardA).toBeVisible();
+      // Strictly verify the new order is [Task B, Task A]
+      // .toHaveText() on a list locator asserts exact order and contents and waits for DOM to settle
+      await expect(column.locator('.kanban-card')).toHaveText([taskB, taskA]);
     });
   });
 
