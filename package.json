@@ -6,6 +6,7 @@
     "test": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test",
     "test:ci": "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 CI=true playwright test --reporter=github,junit,html",
     "test:dryrun": "playwright test --list",
+    "lint": "eslint \"tests/**/*.{ts,js}\" || true",
     "prepare": "playwright install --with-deps",
     "postinstall": "playwright install --with-deps"
   },
@@ -13,7 +14,10 @@
     "@playwright/test": "^1.57.0",
     "playwright": "^1.57.0",
     "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "ts-node": "^10.9.0",
+    "eslint": "^8.57.1",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0"
   },
   "license": "ISC"
 }
