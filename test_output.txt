@@ -1,0 +1,359 @@
+<testsuites id="" name="" tests="69" failures="1" skipped="62" errors="0" time="900.0979669999999">
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.807" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0.335">
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0.472">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.652" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="1.652">
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="4" failures="1" skipped="0" time="609.053" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="1.708">
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="600.056">
+<failure message="columns.spec.ts:30:7 TC-03: Rename an existing column @TC-03" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Columns/columns.spec.ts:30:7 › Columns @Columns › TC-03: Rename an existing column @TC-03 › 2. Change text 
+
+    Test timeout of 600000ms exceeded.
+
+    Error: locator.click: Test timeout of 600000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Save' })
+        - locator resolved to <button class="btn" type="button">Save</button>
+      - attempting click action
+        2 × waiting for element to be visible, enabled and stable
+          - element is not stable
+        - retrying click action
+        - waiting 20ms
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+      44 |       
+      45 |       // 3. Press Enter or click away (Save button exists in code)
+    > 46 |       await input.press('Enter');
+         |                                  ^
+      47 |     });
+      48 |
+      49 |     await test.step('Actual Result: The column title updates', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Columns/columns.spec.ts:46:56
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Columns/columns.spec.ts:41:5
+
+    Error Context: ../test-results/kanban-Columns-columns-Col-20a6c-me-an-existing-column-TC-03-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment test-results/kanban-Columns-columns-Col-20a6c-me-an-existing-column-TC-03-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="3.245">
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="4.044">
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-05T18:35:04.830Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
