@@ -23,20 +23,14 @@ test.describe('Search/Filter @SearchFilter', () => {
     await col.getByRole('button', { name: 'Add', exact: true }).click();
 
     await test.step('1. Enter keyword in search bar', async () => {
-       // The UI doesn't seem to have a feature text search, so we check for its existence
        const searchInput = page.getByPlaceholder(/search|filter/i);
-       if (await searchInput.count() > 0) {
-         await searchInput.fill('Apple');
-       } else {
-         test.skip('Text search input not found in UI implementation', () => {});
-       }
+       await expect(searchInput).toBeVisible();
+       await searchInput.fill('Apple');
     });
 
     await test.step('Actual Result: Only matching tasks shown', async () => {
-      if (!test.info().skipped) {
-        await expect(page.locator('.kanban-card', { hasText: 'Apple' })).toBeVisible();
-        await expect(page.locator('.kanban-card', { hasText: 'Banana' })).toBeHidden();
-      }
+      await expect(page.locator('.kanban-card', { hasText: 'Apple' })).toBeVisible();
+      await expect(page.locator('.kanban-card', { hasText: 'Banana' })).toBeHidden();
     });
   });
 
