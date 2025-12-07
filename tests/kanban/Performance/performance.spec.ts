@@ -25,7 +25,7 @@ test.describe('Performance @Performance', () => {
     });
   });
 
-  test('TC-20: Clear Board / Reset @TC-20', async ({ page }) => {
+  test('TC-20: Clear Board / Reset @TC-20', async () => {
     // This test wasn't in the original read file but was in the file list.
     // If it exists, I should probably preserve it or update it.
     // However, I only read the first 28 lines of performance.spec.ts in the previous step?

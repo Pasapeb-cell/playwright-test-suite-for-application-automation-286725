@@ -30,7 +30,6 @@ test.describe('Columns @Columns', () => {
   test('TC-03: Rename an existing column @TC-03', async ({ page }) => {
     // Pre-req: Ensure a column exists to rename
     const firstColumnTitle = page.locator('.kanban-column-title').first();
-    const originalText = await firstColumnTitle.textContent();
     const newText = 'Backlog ' + Date.now();
 
     await test.step('1. Click on a column title', async () => {

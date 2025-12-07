@@ -1,6 +1,7 @@
 import tseslint from 'typescript-eslint';
 import js from '@eslint/js';
 import playwright from 'eslint-plugin-playwright';
+import prettierConfig from 'eslint-config-prettier';
 
 export default [
   {
@@ -30,5 +31,6 @@ export default [
       'playwright/no-conditional-in-test': 'warn',
       'playwright/no-networkidle': 'off'
     }
-  }
+  },
+  prettierConfig,
 ];
