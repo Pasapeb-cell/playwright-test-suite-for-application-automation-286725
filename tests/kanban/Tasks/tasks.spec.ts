@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Tasks @Tasks', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('/product');
+    await page.goto('/');
     // Reset filters to ensure new tasks are visible
     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
     // Ensure at least one column exists
@@ -14,7 +14,7 @@ test.describe('Tasks @Tasks', () => {
     }
   });
 
-  test('TC-06: Create a new task @TC-06', async ({ page }) => {
+  test('TC-06: Create a new task @TC-06 @smoke', async ({ page }) => {
     const taskTitle = 'New Task ' + Date.now();
     const firstColumn = page.locator('.kanban-column').first();
 

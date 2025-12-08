@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('UI/UX @UI_UX', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('/product');
+    await page.goto('/');
     // Ensure col exists
     if (await page.locator('.kanban-column').count() === 0) {
       await page.getByRole('button', { name: '+ Add Column' }).click();

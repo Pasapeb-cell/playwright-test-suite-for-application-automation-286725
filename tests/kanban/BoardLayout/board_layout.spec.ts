@@ -2,9 +2,9 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Board Layout @BoardLayout', () => {
   
-  test('TC-01: Verify default board load @TC-01', async ({ page }) => {
+  test('TC-01: Verify default board load @TC-01 @smoke', async ({ page }) => {
     await test.step('1. Open the application URL', async () => {
-      await page.goto('/product');
+      await page.goto('/');
     });
 
     await test.step('2. Observe the initial state', async () => {

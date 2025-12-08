@@ -22,7 +22,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: process.env.BASE_URL || 'https://vscode-internal-21794-beta.beta01.cloud.kavia.ai:3000/',
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -69,4 +69,9 @@ export default defineConfig({
       },
     },
   ],
+
+  /* Grep patterns for smoke tests */
+  // Use CLI: npx playwright test --grep @smoke
+  // Or environment: SMOKE=true to run only smoke tests
+  grep: process.env.SMOKE === 'true' ? /@smoke/ : undefined,
 });

@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('System @System', () => {
 
-  test('TC-20: Clear Board / Reset @TC-20', async ({ page }) => {
-    await page.goto('/product');
+  test('TC-20: Clear Board / Reset @TC-20 @smoke', async ({ page }) => {
+    await page.goto('/');
 
     // Wait for the page to load
     await page.waitForLoadState('networkidle');

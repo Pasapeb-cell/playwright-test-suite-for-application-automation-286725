@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Columns @Columns', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('/product');
+    await page.goto('/');
   });
 
   test('TC-02: Add a new column @TC-02', async ({ page }) => {

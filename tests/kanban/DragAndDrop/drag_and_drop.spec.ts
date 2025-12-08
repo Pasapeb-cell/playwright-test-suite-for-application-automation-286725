@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Drag & Drop @DragAndDrop', () => {
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('/product');
+    await page.goto('/');
     // Ensure we have at least 2 columns
     while (await page.locator('.kanban-column').count() < 2) {
       await page.getByRole('button', { name: '+ Add Column' }).click();

@@ -24,7 +24,7 @@ test.describe('Search/Filter @SearchFilter', () => {
   test('TC-18: Filter tasks using FilterPanel @TC-18', async ({ page }) => {
     const timestamp = Date.now();
     
-    await page.goto('/product');
+    await page.goto('/');
     
     // Wait for the page to be ready
     await page.waitForLoadState('networkidle');

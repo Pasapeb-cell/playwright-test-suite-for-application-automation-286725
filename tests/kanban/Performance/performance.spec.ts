@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Performance @Performance', () => {
 
   test('TC-19: Rapid task creation @TC-19', async ({ page }) => {
-    await page.goto('/product');
+    await page.goto('/');
     // Ensure col
     const col = page.locator('.kanban-column').first();
     if (await col.count() === 0) {
@@ -25,20 +25,6 @@ test.describe('Performance @Performance', () => {
     });
   });
 
-  test('TC-20: Clear Board / Reset @TC-20', async ({ page }) => {
-    // This test wasn't in the original read file but was in the file list.
-    // If it exists, I should probably preserve it or update it.
-    // However, I only read the first 28 lines of performance.spec.ts in the previous step?
-    // The read output said "lines_read": 28, "is_full_content_loaded": true.
-    // So TC-20 wasn't in the file content I read?
-    // Wait, the file list said "kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20" error context exists.
-    // But the file content I read only showed TC-19.
-    // Maybe TC-20 is in System/system.spec.ts?
-    // Let's check the file structure again.
-    // kanban/System/system.spec.ts exists.
-    // kanban/Performance/performance.spec.ts only has TC-19.
-    // Okay, so I don't need to write TC-20 here.
-    // But I should probably check system.spec.ts too if it creates tasks.
-  });
+
 
 });
