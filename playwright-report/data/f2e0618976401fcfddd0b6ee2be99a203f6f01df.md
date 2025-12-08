@@ -1,0 +1,2897 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: "*"
+        - text: Kavia Kanban
+      - navigation "Primary" [ref=e9]:
+        - link "Dashboard" [ref=e10]:
+          - /url: /
+        - link "Product" [ref=e11]:
+          - /url: /product
+        - link "Summary" [ref=e12]:
+          - /url: /summary
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - button "+ Add Column" [ref=e16] [cursor=pointer]
+        - button "Download Excel Template" [ref=e17] [cursor=pointer]
+        - button "Shorten all cards" [ref=e18] [cursor=pointer]: Shorten
+        - generic [ref=e19] [cursor=pointer]: Bulk Upload Excel
+        - button "Enter fullscreen" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+          - generic [ref=e23]: Fullscreen
+      - region "Live status summary" [ref=e24]:
+        - generic [ref=e26]:
+          - generic "To Do" [ref=e27]:
+            - generic [ref=e29]: To Do
+            - generic [ref=e30]: "17"
+          - generic "In Progress" [ref=e31]:
+            - generic [ref=e33]: In Progress
+            - generic [ref=e34]: "8"
+          - generic "Done" [ref=e35]:
+            - generic [ref=e37]: Done
+            - generic [ref=e38]: "7"
+          - generic "On Hold" [ref=e39]:
+            - generic [ref=e41]: On Hold
+            - generic [ref=e42]: "1"
+      - region "Kanban Filter Panel" [ref=e43]:
+        - form "Kanban Filters" [ref=e44]:
+          - generic [ref=e48]:
+            - img [ref=e50]
+            - combobox "Assignees" [ref=e52]
+            - button "Open" [ref=e54] [cursor=pointer]
+            - group
+          - generic [ref=e58]:
+            - img [ref=e60]
+            - combobox "Priority" [ref=e62]
+            - button "Open" [ref=e64] [cursor=pointer]
+            - group
+          - generic [ref=e68]:
+            - img [ref=e70]
+            - combobox "Status" [ref=e72]
+            - button "Open" [ref=e74] [cursor=pointer]
+            - group
+          - generic [ref=e78]:
+            - img [ref=e80]
+            - combobox "Columns" [ref=e82]
+            - button "Open" [ref=e84] [cursor=pointer]
+            - group
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - textbox "Due date from" [ref=e88]
+            - generic [ref=e89]: –
+            - textbox "Due date to" [ref=e90]
+          - button "Reset all filters" [ref=e91] [cursor=pointer]: Reset
+        - list "Active filter list" [ref=e92]
+      - list "Kanban Columns" [ref=e93]:
+        - 'listitem "Column: Backlog 1765209694407" [ref=e94]':
+          - 'generic "Kanban Column: Backlog 1765209694407" [ref=e95]':
+            - generic [ref=e96]:
+              - generic "Double-click to edit column name" [ref=e97] [cursor=pointer]:
+                - text: Backlog 1765209694407
+                - button "Edit column name" [ref=e98]: ✎
+              - button "×" [ref=e99] [cursor=pointer]
+            - button "+ Add Card" [ref=e101] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e102]':
+          - 'generic "Kanban Column: To Do" [ref=e103]':
+            - generic [ref=e104]:
+              - generic "Double-click to edit column name" [ref=e105] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e106]: ✎
+              - button "×" [ref=e107] [cursor=pointer]
+            - button "+ Add Card" [ref=e109] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e110]':
+          - 'generic "Kanban Column: To Do" [ref=e111]':
+            - generic [ref=e112]:
+              - generic "Double-click to edit column name" [ref=e113] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e114]: ✎
+              - button "×" [ref=e115] [cursor=pointer]
+            - button "+ Add Card" [ref=e117] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e118]':
+          - 'generic "Kanban Column: To Do" [ref=e119]':
+            - generic [ref=e120]:
+              - generic "Double-click to edit column name" [ref=e121] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e122]: ✎
+              - button "×" [ref=e123] [cursor=pointer]
+            - button "+ Add Card" [ref=e125] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e126]':
+          - 'generic "Kanban Column: To Do" [ref=e127]':
+            - generic [ref=e128]:
+              - generic "Double-click to edit column name" [ref=e129] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e130]: ✎
+              - button "×" [ref=e131] [cursor=pointer]
+            - button "+ Add Card" [ref=e133] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e134]':
+          - 'generic "Kanban Column: To Do" [ref=e135]':
+            - generic [ref=e136]:
+              - generic "Double-click to edit column name" [ref=e137] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e138]: ✎
+              - button "×" [ref=e139] [cursor=pointer]
+            - button "+ Add Card" [ref=e141] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e142]':
+          - 'generic "Kanban Column: To Do" [ref=e143]':
+            - generic [ref=e144]:
+              - generic "Double-click to edit column name" [ref=e145] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e146]: ✎
+              - button "×" [ref=e147] [cursor=pointer]
+            - button "+ Add Card" [ref=e149] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e150]':
+          - 'generic "Kanban Column: To Do" [ref=e151]':
+            - generic [ref=e152]:
+              - generic "Double-click to edit column name" [ref=e153] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e154]: ✎
+              - button "×" [ref=e155] [cursor=pointer]
+            - button "+ Add Card" [ref=e157] [cursor=pointer]
+        - 'listitem "Column: Col 1764961887388" [ref=e158]':
+          - 'generic "Kanban Column: Col 1764961887388" [ref=e159]':
+            - generic [ref=e160]:
+              - generic "Double-click to edit column name" [ref=e161] [cursor=pointer]:
+                - text: Col 1764961887388
+                - button "Edit column name" [ref=e162]: ✎
+              - button "×" [ref=e163] [cursor=pointer]
+            - button "+ Add Card" [ref=e165] [cursor=pointer]
+        - 'listitem "Column: Review 1764961887015" [ref=e166]':
+          - 'generic "Kanban Column: Review 1764961887015" [ref=e167]':
+            - generic [ref=e168]:
+              - generic "Double-click to edit column name" [ref=e169] [cursor=pointer]:
+                - text: Review 1764961887015
+                - button "Edit column name" [ref=e170]: ✎
+              - button "×" [ref=e171] [cursor=pointer]
+            - button "+ Add Card" [ref=e173] [cursor=pointer]
+        - 'listitem "Column: Backlog 1764960014594" [ref=e174]':
+          - 'generic "Kanban Column: Backlog 1764960014594" [ref=e175]':
+            - generic [ref=e176]:
+              - generic "Double-click to edit column name" [ref=e177] [cursor=pointer]:
+                - text: Backlog 1764960014594
+                - button "Edit column name" [ref=e178]: ✎
+              - button "×" [ref=e179] [cursor=pointer]
+            - button "+ Add Card" [ref=e181] [cursor=pointer]
+        - 'listitem "Column: Col 1764961887441" [ref=e182]':
+          - 'generic "Kanban Column: Col 1764961887441" [ref=e183]':
+            - generic [ref=e184]:
+              - generic "Double-click to edit column name" [ref=e185] [cursor=pointer]:
+                - text: Col 1764961887441
+                - button "Edit column name" [ref=e186]: ✎
+              - button "×" [ref=e187] [cursor=pointer]
+            - button "+ Add Card" [ref=e189] [cursor=pointer]
+        - 'listitem "Column: Review 1764959230980" [ref=e190]':
+          - 'generic "Kanban Column: Review 1764959230980" [ref=e191]':
+            - generic [ref=e192]:
+              - generic "Double-click to edit column name" [ref=e193] [cursor=pointer]:
+                - text: Review 1764959230980
+                - button "Edit column name" [ref=e194]: ✎
+              - button "×" [ref=e195] [cursor=pointer]
+            - button "+ Add Card" [ref=e197] [cursor=pointer]
+        - 'listitem "Column: Review 1764959328904" [ref=e198]':
+          - 'generic "Kanban Column: Review 1764959328904" [ref=e199]':
+            - generic [ref=e200]:
+              - generic "Double-click to edit column name" [ref=e201] [cursor=pointer]:
+                - text: Review 1764959328904
+                - button "Edit column name" [ref=e202]: ✎
+              - button "×" [ref=e203] [cursor=pointer]
+            - button "+ Add Card" [ref=e205] [cursor=pointer]
+        - 'listitem "Column: Review 1764959363802" [ref=e206]':
+          - 'generic "Kanban Column: Review 1764959363802" [ref=e207]':
+            - generic [ref=e208]:
+              - generic "Double-click to edit column name" [ref=e209] [cursor=pointer]:
+                - text: Review 1764959363802
+                - button "Edit column name" [ref=e210]: ✎
+              - button "×" [ref=e211] [cursor=pointer]
+            - button "+ Add Card" [ref=e213] [cursor=pointer]
+        - 'listitem "Column: Backlog 1764959861632" [ref=e214]':
+          - 'generic "Kanban Column: Backlog 1764959861632" [ref=e215]':
+            - generic [ref=e216]:
+              - generic "Double-click to edit column name" [ref=e217] [cursor=pointer]:
+                - text: Backlog 1764959861632
+                - button "Edit column name" [ref=e218]: ✎
+              - button "×" [ref=e219] [cursor=pointer]
+            - button "+ Add Card" [ref=e221] [cursor=pointer]
+        - 'listitem "Column: Review 1764959708690" [ref=e222]':
+          - 'generic "Kanban Column: Review 1764959708690" [ref=e223]':
+            - generic [ref=e224]:
+              - generic "Double-click to edit column name" [ref=e225] [cursor=pointer]:
+                - text: Review 1764959708690
+                - button "Edit column name" [ref=e226]: ✎
+              - button "×" [ref=e227] [cursor=pointer]
+            - button "+ Add Card" [ref=e229] [cursor=pointer]
+        - 'listitem "Column: Review 1764959772191" [ref=e230]':
+          - 'generic "Kanban Column: Review 1764959772191" [ref=e231]':
+            - generic [ref=e232]:
+              - generic "Double-click to edit column name" [ref=e233] [cursor=pointer]:
+                - text: Review 1764959772191
+                - button "Edit column name" [ref=e234]: ✎
+              - button "×" [ref=e235] [cursor=pointer]
+            - button "+ Add Card" [ref=e237] [cursor=pointer]
+        - 'listitem "Column: Review 1764959812428" [ref=e238]':
+          - 'generic "Kanban Column: Review 1764959812428" [ref=e239]':
+            - generic [ref=e240]:
+              - generic "Double-click to edit column name" [ref=e241] [cursor=pointer]:
+                - text: Review 1764959812428
+                - button "Edit column name" [ref=e242]: ✎
+              - button "×" [ref=e243] [cursor=pointer]
+            - button "+ Add Card" [ref=e245] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e246]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e247]':
+            - generic [ref=e248]:
+              - generic "Double-click to edit column name" [ref=e249] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e250]: ✎
+              - button "×" [ref=e251] [cursor=pointer]
+            - button "+ Add Card" [ref=e253] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e254]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e255]':
+            - generic [ref=e256]:
+              - generic "Double-click to edit column name" [ref=e257] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e258]: ✎
+              - button "×" [ref=e259] [cursor=pointer]
+            - button "+ Add Card" [ref=e261] [cursor=pointer]
+        - 'listitem "Column: Backlog 1764959900109" [ref=e262]':
+          - 'generic "Kanban Column: Backlog 1764959900109" [ref=e263]':
+            - generic [ref=e264]:
+              - generic "Double-click to edit column name" [ref=e265] [cursor=pointer]:
+                - text: Backlog 1764959900109
+                - button "Edit column name" [ref=e266]: ✎
+              - button "×" [ref=e267] [cursor=pointer]
+            - button "+ Add Card" [ref=e269] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e270]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e271]':
+            - generic [ref=e272]:
+              - generic "Double-click to edit column name" [ref=e273] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e274]: ✎
+              - button "×" [ref=e275] [cursor=pointer]
+            - button "+ Add Card" [ref=e277] [cursor=pointer]
+        - 'listitem "Column: Review 1764959910867" [ref=e278]':
+          - 'generic "Kanban Column: Review 1764959910867" [ref=e279]':
+            - generic [ref=e280]:
+              - generic "Double-click to edit column name" [ref=e281] [cursor=pointer]:
+                - text: Review 1764959910867
+                - button "Edit column name" [ref=e282]: ✎
+              - button "×" [ref=e283] [cursor=pointer]
+            - button "+ Add Card" [ref=e285] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e286]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e287]':
+            - generic [ref=e288]:
+              - generic "Double-click to edit column name" [ref=e289] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e290]: ✎
+              - button "×" [ref=e291] [cursor=pointer]
+            - button "+ Add Card" [ref=e293] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e294]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e295]':
+            - generic [ref=e296]:
+              - generic "Double-click to edit column name" [ref=e297] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e298]: ✎
+              - button "×" [ref=e299] [cursor=pointer]
+            - button "+ Add Card" [ref=e301] [cursor=pointer]
+        - 'listitem "Column: Review 1764959955289" [ref=e302]':
+          - 'generic "Kanban Column: Review 1764959955289" [ref=e303]':
+            - generic [ref=e304]:
+              - generic "Double-click to edit column name" [ref=e305] [cursor=pointer]:
+                - text: Review 1764959955289
+                - button "Edit column name" [ref=e306]: ✎
+              - button "×" [ref=e307] [cursor=pointer]
+            - button "+ Add Card" [ref=e309] [cursor=pointer]
+        - 'listitem "Column: Col 1764961887453" [ref=e310]':
+          - 'generic "Kanban Column: Col 1764961887453" [ref=e311]':
+            - generic [ref=e312]:
+              - generic "Double-click to edit column name" [ref=e313] [cursor=pointer]:
+                - text: Col 1764961887453
+                - button "Edit column name" [ref=e314]: ✎
+              - button "×" [ref=e315] [cursor=pointer]
+            - button "+ Add Card" [ref=e317] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e318]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e319]':
+            - generic [ref=e320]:
+              - generic "Double-click to edit column name" [ref=e321] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e322]: ✎
+              - button "×" [ref=e323] [cursor=pointer]
+            - button "+ Add Card" [ref=e325] [cursor=pointer]
+        - 'listitem "Column: Review 1764959989461" [ref=e326]':
+          - 'generic "Kanban Column: Review 1764959989461" [ref=e327]':
+            - generic [ref=e328]:
+              - generic "Double-click to edit column name" [ref=e329] [cursor=pointer]:
+                - text: Review 1764959989461
+                - button "Edit column name" [ref=e330]: ✎
+              - button "×" [ref=e331] [cursor=pointer]
+            - button "+ Add Card" [ref=e333] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e334]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e335]':
+            - generic [ref=e336]:
+              - generic "Double-click to edit column name" [ref=e337] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e338]: ✎
+              - button "×" [ref=e339] [cursor=pointer]
+            - button "+ Add Card" [ref=e341] [cursor=pointer]
+        - 'listitem "Column: Review 1764960011901" [ref=e342]':
+          - 'generic "Kanban Column: Review 1764960011901" [ref=e343]':
+            - generic [ref=e344]:
+              - generic "Double-click to edit column name" [ref=e345] [cursor=pointer]:
+                - text: Review 1764960011901
+                - button "Edit column name" [ref=e346]: ✎
+              - button "×" [ref=e347] [cursor=pointer]
+            - button "+ Add Card" [ref=e349] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e350]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e351]':
+            - generic [ref=e352]:
+              - generic "Double-click to edit column name" [ref=e353] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e354]: ✎
+              - button "×" [ref=e355] [cursor=pointer]
+            - button "+ Add Card" [ref=e357] [cursor=pointer]
+        - 'listitem "Column: Backlog 1764961889203" [ref=e358]':
+          - 'generic "Kanban Column: Backlog 1764961889203" [ref=e359]':
+            - generic [ref=e360]:
+              - generic "Double-click to edit column name" [ref=e361] [cursor=pointer]:
+                - text: Backlog 1764961889203
+                - button "Edit column name" [ref=e362]: ✎
+              - button "×" [ref=e363] [cursor=pointer]
+            - button "+ Add Card" [ref=e365] [cursor=pointer]
+        - 'listitem "Column: Col 1764961950296" [ref=e366]':
+          - 'generic "Kanban Column: Col 1764961950296" [ref=e367]':
+            - generic [ref=e368]:
+              - generic "Double-click to edit column name" [ref=e369] [cursor=pointer]:
+                - text: Col 1764961950296
+                - button "Edit column name" [ref=e370]: ✎
+              - button "×" [ref=e371] [cursor=pointer]
+            - button "+ Add Card" [ref=e373] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e374]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e375]':
+            - generic [ref=e376]:
+              - generic "Double-click to edit column name" [ref=e377] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e378]: ✎
+              - button "×" [ref=e379] [cursor=pointer]
+            - button "+ Add Card" [ref=e381] [cursor=pointer]
+        - 'listitem "Column: Col 1764960160293" [ref=e382]':
+          - 'generic "Kanban Column: Col 1764960160293" [ref=e383]':
+            - generic [ref=e384]:
+              - generic "Double-click to edit column name" [ref=e385] [cursor=pointer]:
+                - text: Col 1764960160293
+                - button "Edit column name" [ref=e386]: ✎
+              - button "×" [ref=e387] [cursor=pointer]
+            - button "+ Add Card" [ref=e389] [cursor=pointer]
+        - 'listitem "Column: Col 1764960191331" [ref=e390]':
+          - 'generic "Kanban Column: Col 1764960191331" [ref=e391]':
+            - generic [ref=e392]:
+              - generic "Double-click to edit column name" [ref=e393] [cursor=pointer]:
+                - text: Col 1764960191331
+                - button "Edit column name" [ref=e394]: ✎
+              - button "×" [ref=e395] [cursor=pointer]
+            - button "+ Add Card" [ref=e397] [cursor=pointer]
+        - 'listitem "Column: Col 1764960222312" [ref=e398]':
+          - 'generic "Kanban Column: Col 1764960222312" [ref=e399]':
+            - generic [ref=e400]:
+              - generic "Double-click to edit column name" [ref=e401] [cursor=pointer]:
+                - text: Col 1764960222312
+                - button "Edit column name" [ref=e402]: ✎
+              - button "×" [ref=e403] [cursor=pointer]
+            - button "+ Add Card" [ref=e405] [cursor=pointer]
+        - 'listitem "Column: Col 1764960253595" [ref=e406]':
+          - 'generic "Kanban Column: Col 1764960253595" [ref=e407]':
+            - generic [ref=e408]:
+              - generic "Double-click to edit column name" [ref=e409] [cursor=pointer]:
+                - text: Col 1764960253595
+                - button "Edit column name" [ref=e410]: ✎
+              - button "×" [ref=e411] [cursor=pointer]
+            - button "+ Add Card" [ref=e413] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e414]':
+          - 'generic "Kanban Column: Perf" [ref=e415]':
+            - generic [ref=e416]:
+              - generic "Double-click to edit column name" [ref=e417] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e418]: ✎
+              - button "×" [ref=e419] [cursor=pointer]
+            - button "+ Add Card" [ref=e421] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e422]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e423]':
+            - generic [ref=e424]:
+              - generic "Double-click to edit column name" [ref=e425] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e426]: ✎
+              - button "×" [ref=e427] [cursor=pointer]
+            - button "+ Add Card" [ref=e429] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e430]':
+          - 'generic "Kanban Column: Search Test" [ref=e431]':
+            - generic [ref=e432]:
+              - generic "Double-click to edit column name" [ref=e433] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e434]: ✎
+              - button "×" [ref=e435] [cursor=pointer]
+            - button "+ Add Card" [ref=e437] [cursor=pointer]
+        - 'listitem "Column: Col 1764961890319" [ref=e438]':
+          - 'generic "Kanban Column: Col 1764961890319" [ref=e439]':
+            - generic [ref=e440]:
+              - generic "Double-click to edit column name" [ref=e441] [cursor=pointer]:
+                - text: Col 1764961890319
+                - button "Edit column name" [ref=e442]: ✎
+              - button "×" [ref=e443] [cursor=pointer]
+            - button "+ Add Card" [ref=e445] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e446]':
+          - 'generic "Kanban Column: Perf" [ref=e447]':
+            - generic [ref=e448]:
+              - generic "Double-click to edit column name" [ref=e449] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e450]: ✎
+              - button "×" [ref=e451] [cursor=pointer]
+            - button "+ Add Card" [ref=e453] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e454]':
+          - 'generic "Kanban Column: Search Test" [ref=e455]':
+            - generic [ref=e456]:
+              - generic "Double-click to edit column name" [ref=e457] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e458]: ✎
+              - button "×" [ref=e459] [cursor=pointer]
+            - button "+ Add Card" [ref=e461] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e462]':
+          - 'generic "Kanban Column: To Do" [ref=e463]':
+            - generic [ref=e464]:
+              - generic "Double-click to edit column name" [ref=e465] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e466]: ✎
+              - button "×" [ref=e467] [cursor=pointer]
+            - button "+ Add Card" [ref=e469] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e470]':
+          - 'generic "Kanban Column: To Do" [ref=e471]':
+            - generic [ref=e472]:
+              - generic "Double-click to edit column name" [ref=e473] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e474]: ✎
+              - button "×" [ref=e475] [cursor=pointer]
+            - button "+ Add Card" [ref=e477] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e478]':
+          - 'generic "Kanban Column: To Do" [ref=e479]':
+            - generic [ref=e480]:
+              - generic "Double-click to edit column name" [ref=e481] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e482]: ✎
+              - button "×" [ref=e483] [cursor=pointer]
+            - button "+ Add Card" [ref=e485] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e486]':
+          - 'generic "Kanban Column: To Do" [ref=e487]':
+            - generic [ref=e488]:
+              - generic "Double-click to edit column name" [ref=e489] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e490]: ✎
+              - button "×" [ref=e491] [cursor=pointer]
+            - button "+ Add Card" [ref=e493] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e494]':
+          - 'generic "Kanban Column: UI Test" [ref=e495]':
+            - generic [ref=e496]:
+              - generic "Double-click to edit column name" [ref=e497] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e498]: ✎
+              - button "×" [ref=e499] [cursor=pointer]
+            - button "+ Add Card" [ref=e501] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e502]':
+          - 'generic "Kanban Column: UI Test" [ref=e503]':
+            - generic [ref=e504]:
+              - generic "Double-click to edit column name" [ref=e505] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e506]: ✎
+              - button "×" [ref=e507] [cursor=pointer]
+            - button "+ Add Card" [ref=e509] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e510]':
+          - 'generic "Kanban Column: To Do" [ref=e511]':
+            - generic [ref=e512]:
+              - generic "Double-click to edit column name" [ref=e513] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e514]: ✎
+              - button "×" [ref=e515] [cursor=pointer]
+            - button "+ Add Card" [ref=e517] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e518]':
+          - 'generic "Kanban Column: UI Test" [ref=e519]':
+            - generic [ref=e520]:
+              - generic "Double-click to edit column name" [ref=e521] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e522]: ✎
+              - button "×" [ref=e523] [cursor=pointer]
+            - button "+ Add Card" [ref=e525] [cursor=pointer]
+        - 'listitem "Column: Review 1764961927434" [ref=e526]':
+          - 'generic "Kanban Column: Review 1764961927434" [ref=e527]':
+            - generic [ref=e528]:
+              - generic "Double-click to edit column name" [ref=e529] [cursor=pointer]:
+                - text: Review 1764961927434
+                - button "Edit column name" [ref=e530]: ✎
+              - button "×" [ref=e531] [cursor=pointer]
+            - button "+ Add Card" [ref=e533] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e534]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e535]':
+            - generic [ref=e536]:
+              - generic "Double-click to edit column name" [ref=e537] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e538]: ✎
+              - button "×" [ref=e539] [cursor=pointer]
+            - button "+ Add Card" [ref=e541] [cursor=pointer]
+        - 'listitem "Column: Col 1764961933444" [ref=e542]':
+          - 'generic "Kanban Column: Col 1764961933444" [ref=e543]':
+            - generic [ref=e544]:
+              - generic "Double-click to edit column name" [ref=e545] [cursor=pointer]:
+                - text: Col 1764961933444
+                - button "Edit column name" [ref=e546]: ✎
+              - button "×" [ref=e547] [cursor=pointer]
+            - button "+ Add Card" [ref=e549] [cursor=pointer]
+        - 'listitem "Column: Col 1764961933650" [ref=e550]':
+          - 'generic "Kanban Column: Col 1764961933650" [ref=e551]':
+            - generic [ref=e552]:
+              - generic "Double-click to edit column name" [ref=e553] [cursor=pointer]:
+                - text: Col 1764961933650
+                - button "Edit column name" [ref=e554]: ✎
+              - button "×" [ref=e555] [cursor=pointer]
+            - button "+ Add Card" [ref=e557] [cursor=pointer]
+        - 'listitem "Column: Col 1764961950337" [ref=e558]':
+          - 'generic "Kanban Column: Col 1764961950337" [ref=e559]':
+            - generic [ref=e560]:
+              - generic "Double-click to edit column name" [ref=e561] [cursor=pointer]:
+                - text: Col 1764961950337
+                - button "Edit column name" [ref=e562]: ✎
+              - button "×" [ref=e563] [cursor=pointer]
+            - button "+ Add Card" [ref=e565] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e566]':
+          - 'generic "Kanban Column: Perf" [ref=e567]':
+            - generic [ref=e568]:
+              - generic "Double-click to edit column name" [ref=e569] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e570]: ✎
+              - button "×" [ref=e571] [cursor=pointer]
+            - button "+ Add Card" [ref=e573] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e574]':
+          - 'generic "Kanban Column: Search Test" [ref=e575]':
+            - generic [ref=e576]:
+              - generic "Double-click to edit column name" [ref=e577] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e578]: ✎
+              - button "×" [ref=e579] [cursor=pointer]
+            - button "+ Add Card" [ref=e581] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e582]':
+          - 'generic "Kanban Column: To Do" [ref=e583]':
+            - generic [ref=e584]:
+              - generic "Double-click to edit column name" [ref=e585] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e586]: ✎
+              - button "×" [ref=e587] [cursor=pointer]
+            - button "+ Add Card" [ref=e589] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e590]':
+          - 'generic "Kanban Column: To Do" [ref=e591]':
+            - generic [ref=e592]:
+              - generic "Double-click to edit column name" [ref=e593] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e594]: ✎
+              - button "×" [ref=e595] [cursor=pointer]
+            - button "+ Add Card" [ref=e597] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e598]':
+          - 'generic "Kanban Column: To Do" [ref=e599]':
+            - generic [ref=e600]:
+              - generic "Double-click to edit column name" [ref=e601] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e602]: ✎
+              - button "×" [ref=e603] [cursor=pointer]
+            - button "+ Add Card" [ref=e605] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e606]':
+          - 'generic "Kanban Column: To Do" [ref=e607]':
+            - generic [ref=e608]:
+              - generic "Double-click to edit column name" [ref=e609] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e610]: ✎
+              - button "×" [ref=e611] [cursor=pointer]
+            - button "+ Add Card" [ref=e613] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e614]':
+          - 'generic "Kanban Column: To Do" [ref=e615]':
+            - generic [ref=e616]:
+              - generic "Double-click to edit column name" [ref=e617] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e618]: ✎
+              - button "×" [ref=e619] [cursor=pointer]
+            - button "+ Add Card" [ref=e621] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e622]':
+          - 'generic "Kanban Column: UI Test" [ref=e623]':
+            - generic [ref=e624]:
+              - generic "Double-click to edit column name" [ref=e625] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e626]: ✎
+              - button "×" [ref=e627] [cursor=pointer]
+            - button "+ Add Card" [ref=e629] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e630]':
+          - 'generic "Kanban Column: UI Test" [ref=e631]':
+            - generic [ref=e632]:
+              - generic "Double-click to edit column name" [ref=e633] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e634]: ✎
+              - button "×" [ref=e635] [cursor=pointer]
+            - button "+ Add Card" [ref=e637] [cursor=pointer]
+        - 'listitem "Column: Review 1764961988292" [ref=e638]':
+          - 'generic "Kanban Column: Review 1764961988292" [ref=e639]':
+            - generic [ref=e640]:
+              - generic "Double-click to edit column name" [ref=e641] [cursor=pointer]:
+                - text: Review 1764961988292
+                - button "Edit column name" [ref=e642]: ✎
+              - button "×" [ref=e643] [cursor=pointer]
+            - button "+ Add Card" [ref=e645] [cursor=pointer]
+        - 'listitem "Column: Col 1764961997734" [ref=e646]':
+          - 'generic "Kanban Column: Col 1764961997734" [ref=e647]':
+            - generic [ref=e648]:
+              - generic "Double-click to edit column name" [ref=e649] [cursor=pointer]:
+                - text: Col 1764961997734
+                - button "Edit column name" [ref=e650]: ✎
+              - button "×" [ref=e651] [cursor=pointer]
+            - button "+ Add Card" [ref=e653] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e654]':
+          - 'generic "Kanban Column: UI Test" [ref=e655]':
+            - generic [ref=e656]:
+              - generic "Double-click to edit column name" [ref=e657] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e658]: ✎
+              - button "×" [ref=e659] [cursor=pointer]
+            - button "+ Add Card" [ref=e661] [cursor=pointer]
+        - 'listitem "Column: Backlog 1764961992112" [ref=e662]':
+          - 'generic "Kanban Column: Backlog 1764961992112" [ref=e663]':
+            - generic [ref=e664]:
+              - generic "Double-click to edit column name" [ref=e665] [cursor=pointer]:
+                - text: Backlog 1764961992112
+                - button "Edit column name" [ref=e666]: ✎
+              - button "×" [ref=e667] [cursor=pointer]
+            - button "+ Add Card" [ref=e669] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e670]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e671]':
+            - generic [ref=e672]:
+              - generic "Double-click to edit column name" [ref=e673] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e674]: ✎
+              - button "×" [ref=e675] [cursor=pointer]
+            - button "+ Add Card" [ref=e677] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e678]':
+          - 'generic "Kanban Column: Perf" [ref=e679]':
+            - generic [ref=e680]:
+              - generic "Double-click to edit column name" [ref=e681] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e682]: ✎
+              - button "×" [ref=e683] [cursor=pointer]
+            - button "+ Add Card" [ref=e685] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e686]':
+          - 'generic "Kanban Column: Search Test" [ref=e687]':
+            - generic [ref=e688]:
+              - generic "Double-click to edit column name" [ref=e689] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e690]: ✎
+              - button "×" [ref=e691] [cursor=pointer]
+            - button "+ Add Card" [ref=e693] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e694]':
+          - 'generic "Kanban Column: To Do" [ref=e695]':
+            - generic [ref=e696]:
+              - generic "Double-click to edit column name" [ref=e697] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e698]: ✎
+              - button "×" [ref=e699] [cursor=pointer]
+            - button "+ Add Card" [ref=e701] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e702]':
+          - 'generic "Kanban Column: To Do" [ref=e703]':
+            - generic [ref=e704]:
+              - generic "Double-click to edit column name" [ref=e705] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e706]: ✎
+              - button "×" [ref=e707] [cursor=pointer]
+            - button "+ Add Card" [ref=e709] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e710]':
+          - 'generic "Kanban Column: To Do" [ref=e711]':
+            - generic [ref=e712]:
+              - generic "Double-click to edit column name" [ref=e713] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e714]: ✎
+              - button "×" [ref=e715] [cursor=pointer]
+            - button "+ Add Card" [ref=e717] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e718]':
+          - 'generic "Kanban Column: To Do" [ref=e719]':
+            - generic [ref=e720]:
+              - generic "Double-click to edit column name" [ref=e721] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e722]: ✎
+              - button "×" [ref=e723] [cursor=pointer]
+            - button "+ Add Card" [ref=e725] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e726]':
+          - 'generic "Kanban Column: UI Test" [ref=e727]':
+            - generic [ref=e728]:
+              - generic "Double-click to edit column name" [ref=e729] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e730]: ✎
+              - button "×" [ref=e731] [cursor=pointer]
+            - button "+ Add Card" [ref=e733] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e734]':
+          - 'generic "Kanban Column: UI Test" [ref=e735]':
+            - generic [ref=e736]:
+              - generic "Double-click to edit column name" [ref=e737] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e738]: ✎
+              - button "×" [ref=e739] [cursor=pointer]
+            - button "+ Add Card" [ref=e741] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e742]':
+          - 'generic "Kanban Column: UI Test" [ref=e743]':
+            - generic [ref=e744]:
+              - generic "Double-click to edit column name" [ref=e745] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e746]: ✎
+              - button "×" [ref=e747] [cursor=pointer]
+            - button "+ Add Card" [ref=e749] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e750]':
+          - 'generic "Kanban Column: To Do" [ref=e751]':
+            - generic [ref=e752]:
+              - generic "Double-click to edit column name" [ref=e753] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e754]: ✎
+              - button "×" [ref=e755] [cursor=pointer]
+            - button "+ Add Card" [ref=e757] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e758]':
+          - 'generic "Kanban Column: To Do" [ref=e759]':
+            - generic [ref=e760]:
+              - generic "Double-click to edit column name" [ref=e761] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e762]: ✎
+              - button "×" [ref=e763] [cursor=pointer]
+            - button "+ Add Card" [ref=e765] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e766]':
+          - 'generic "Kanban Column: To Do" [ref=e767]':
+            - generic [ref=e768]:
+              - generic "Double-click to edit column name" [ref=e769] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e770]: ✎
+              - button "×" [ref=e771] [cursor=pointer]
+            - button "+ Add Card" [ref=e773] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e774]':
+          - 'generic "Kanban Column: To Do" [ref=e775]':
+            - generic [ref=e776]:
+              - generic "Double-click to edit column name" [ref=e777] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e778]: ✎
+              - button "×" [ref=e779] [cursor=pointer]
+            - button "+ Add Card" [ref=e781] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e782]':
+          - 'generic "Kanban Column: To Do" [ref=e783]':
+            - generic [ref=e784]:
+              - generic "Double-click to edit column name" [ref=e785] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e786]: ✎
+              - button "×" [ref=e787] [cursor=pointer]
+            - button "+ Add Card" [ref=e789] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e790]':
+          - 'generic "Kanban Column: To Do" [ref=e791]':
+            - generic [ref=e792]:
+              - generic "Double-click to edit column name" [ref=e793] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e794]: ✎
+              - button "×" [ref=e795] [cursor=pointer]
+            - button "+ Add Card" [ref=e797] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e798]':
+          - 'generic "Kanban Column: To Do" [ref=e799]':
+            - generic [ref=e800]:
+              - generic "Double-click to edit column name" [ref=e801] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e802]: ✎
+              - button "×" [ref=e803] [cursor=pointer]
+            - button "+ Add Card" [ref=e805] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e806]':
+          - 'generic "Kanban Column: To Do" [ref=e807]':
+            - generic [ref=e808]:
+              - generic "Double-click to edit column name" [ref=e809] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e810]: ✎
+              - button "×" [ref=e811] [cursor=pointer]
+            - button "+ Add Card" [ref=e813] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e814]':
+          - 'generic "Kanban Column: To Do" [ref=e815]':
+            - generic [ref=e816]:
+              - generic "Double-click to edit column name" [ref=e817] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e818]: ✎
+              - button "×" [ref=e819] [cursor=pointer]
+            - button "+ Add Card" [ref=e821] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e822]':
+          - 'generic "Kanban Column: To Do" [ref=e823]':
+            - generic [ref=e824]:
+              - generic "Double-click to edit column name" [ref=e825] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e826]: ✎
+              - button "×" [ref=e827] [cursor=pointer]
+            - button "+ Add Card" [ref=e829] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e830]':
+          - 'generic "Kanban Column: To Do" [ref=e831]':
+            - generic [ref=e832]:
+              - generic "Double-click to edit column name" [ref=e833] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e834]: ✎
+              - button "×" [ref=e835] [cursor=pointer]
+            - button "+ Add Card" [ref=e837] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e838]':
+          - 'generic "Kanban Column: To Do" [ref=e839]':
+            - generic [ref=e840]:
+              - generic "Double-click to edit column name" [ref=e841] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e842]: ✎
+              - button "×" [ref=e843] [cursor=pointer]
+            - button "+ Add Card" [ref=e845] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e846]':
+          - 'generic "Kanban Column: To Do" [ref=e847]':
+            - generic [ref=e848]:
+              - generic "Double-click to edit column name" [ref=e849] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e850]: ✎
+              - button "×" [ref=e851] [cursor=pointer]
+            - button "+ Add Card" [ref=e853] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e854]':
+          - 'generic "Kanban Column: To Do" [ref=e855]':
+            - generic [ref=e856]:
+              - generic "Double-click to edit column name" [ref=e857] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e858]: ✎
+              - button "×" [ref=e859] [cursor=pointer]
+            - button "+ Add Card" [ref=e861] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e862]':
+          - 'generic "Kanban Column: To Do" [ref=e863]':
+            - generic [ref=e864]:
+              - generic "Double-click to edit column name" [ref=e865] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e866]: ✎
+              - button "×" [ref=e867] [cursor=pointer]
+            - button "+ Add Card" [ref=e869] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e870]':
+          - 'generic "Kanban Column: To Do" [ref=e871]':
+            - generic [ref=e872]:
+              - generic "Double-click to edit column name" [ref=e873] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e874]: ✎
+              - button "×" [ref=e875] [cursor=pointer]
+            - button "+ Add Card" [ref=e877] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e878]':
+          - 'generic "Kanban Column: To Do" [ref=e879]':
+            - generic [ref=e880]:
+              - generic "Double-click to edit column name" [ref=e881] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e882]: ✎
+              - button "×" [ref=e883] [cursor=pointer]
+            - button "+ Add Card" [ref=e885] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e886]':
+          - 'generic "Kanban Column: To Do" [ref=e887]':
+            - generic [ref=e888]:
+              - generic "Double-click to edit column name" [ref=e889] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e890]: ✎
+              - button "×" [ref=e891] [cursor=pointer]
+            - button "+ Add Card" [ref=e893] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e894]':
+          - 'generic "Kanban Column: To Do" [ref=e895]':
+            - generic [ref=e896]:
+              - generic "Double-click to edit column name" [ref=e897] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e898]: ✎
+              - button "×" [ref=e899] [cursor=pointer]
+            - button "+ Add Card" [ref=e901] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e902]':
+          - 'generic "Kanban Column: To Do" [ref=e903]':
+            - generic [ref=e904]:
+              - generic "Double-click to edit column name" [ref=e905] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e906]: ✎
+              - button "×" [ref=e907] [cursor=pointer]
+            - button "+ Add Card" [ref=e909] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e910]':
+          - 'generic "Kanban Column: To Do" [ref=e911]':
+            - generic [ref=e912]:
+              - generic "Double-click to edit column name" [ref=e913] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e914]: ✎
+              - button "×" [ref=e915] [cursor=pointer]
+            - button "+ Add Card" [ref=e917] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e918]':
+          - 'generic "Kanban Column: To Do" [ref=e919]':
+            - generic [ref=e920]:
+              - generic "Double-click to edit column name" [ref=e921] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e922]: ✎
+              - button "×" [ref=e923] [cursor=pointer]
+            - button "+ Add Card" [ref=e925] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e926]':
+          - 'generic "Kanban Column: To Do" [ref=e927]':
+            - generic [ref=e928]:
+              - generic "Double-click to edit column name" [ref=e929] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e930]: ✎
+              - button "×" [ref=e931] [cursor=pointer]
+            - button "+ Add Card" [ref=e933] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e934]':
+          - 'generic "Kanban Column: To Do" [ref=e935]':
+            - generic [ref=e936]:
+              - generic "Double-click to edit column name" [ref=e937] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e938]: ✎
+              - button "×" [ref=e939] [cursor=pointer]
+            - button "+ Add Card" [ref=e941] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e942]':
+          - 'generic "Kanban Column: To Do" [ref=e943]':
+            - generic [ref=e944]:
+              - generic "Double-click to edit column name" [ref=e945] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e946]: ✎
+              - button "×" [ref=e947] [cursor=pointer]
+            - button "+ Add Card" [ref=e949] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e950]':
+          - 'generic "Kanban Column: To Do" [ref=e951]':
+            - generic [ref=e952]:
+              - generic "Double-click to edit column name" [ref=e953] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e954]: ✎
+              - button "×" [ref=e955] [cursor=pointer]
+            - button "+ Add Card" [ref=e957] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e958]':
+          - 'generic "Kanban Column: To Do" [ref=e959]':
+            - generic [ref=e960]:
+              - generic "Double-click to edit column name" [ref=e961] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e962]: ✎
+              - button "×" [ref=e963] [cursor=pointer]
+            - button "+ Add Card" [ref=e965] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e966]':
+          - 'generic "Kanban Column: To Do" [ref=e967]':
+            - generic [ref=e968]:
+              - generic "Double-click to edit column name" [ref=e969] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e970]: ✎
+              - button "×" [ref=e971] [cursor=pointer]
+            - button "+ Add Card" [ref=e973] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e974]':
+          - 'generic "Kanban Column: To Do" [ref=e975]':
+            - generic [ref=e976]:
+              - generic "Double-click to edit column name" [ref=e977] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e978]: ✎
+              - button "×" [ref=e979] [cursor=pointer]
+            - button "+ Add Card" [ref=e981] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e982]':
+          - 'generic "Kanban Column: To Do" [ref=e983]':
+            - generic [ref=e984]:
+              - generic "Double-click to edit column name" [ref=e985] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e986]: ✎
+              - button "×" [ref=e987] [cursor=pointer]
+            - button "+ Add Card" [ref=e989] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e990]':
+          - 'generic "Kanban Column: To Do" [ref=e991]':
+            - generic [ref=e992]:
+              - generic "Double-click to edit column name" [ref=e993] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e994]: ✎
+              - button "×" [ref=e995] [cursor=pointer]
+            - button "+ Add Card" [ref=e997] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e998]':
+          - 'generic "Kanban Column: To Do" [ref=e999]':
+            - generic [ref=e1000]:
+              - generic "Double-click to edit column name" [ref=e1001] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1002]: ✎
+              - button "×" [ref=e1003] [cursor=pointer]
+            - button "+ Add Card" [ref=e1005] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1006]':
+          - 'generic "Kanban Column: To Do" [ref=e1007]':
+            - generic [ref=e1008]:
+              - generic "Double-click to edit column name" [ref=e1009] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1010]: ✎
+              - button "×" [ref=e1011] [cursor=pointer]
+            - button "+ Add Card" [ref=e1013] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1014]':
+          - 'generic "Kanban Column: To Do" [ref=e1015]':
+            - generic [ref=e1016]:
+              - generic "Double-click to edit column name" [ref=e1017] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1018]: ✎
+              - button "×" [ref=e1019] [cursor=pointer]
+            - button "+ Add Card" [ref=e1021] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1022]':
+          - 'generic "Kanban Column: To Do" [ref=e1023]':
+            - generic [ref=e1024]:
+              - generic "Double-click to edit column name" [ref=e1025] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1026]: ✎
+              - button "×" [ref=e1027] [cursor=pointer]
+            - button "+ Add Card" [ref=e1029] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1030]':
+          - 'generic "Kanban Column: To Do" [ref=e1031]':
+            - generic [ref=e1032]:
+              - generic "Double-click to edit column name" [ref=e1033] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1034]: ✎
+              - button "×" [ref=e1035] [cursor=pointer]
+            - button "+ Add Card" [ref=e1037] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1038]':
+          - 'generic "Kanban Column: To Do" [ref=e1039]':
+            - generic [ref=e1040]:
+              - generic "Double-click to edit column name" [ref=e1041] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1042]: ✎
+              - button "×" [ref=e1043] [cursor=pointer]
+            - button "+ Add Card" [ref=e1045] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1046]':
+          - 'generic "Kanban Column: To Do" [ref=e1047]':
+            - generic [ref=e1048]:
+              - generic "Double-click to edit column name" [ref=e1049] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1050]: ✎
+              - button "×" [ref=e1051] [cursor=pointer]
+            - button "+ Add Card" [ref=e1053] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1054]':
+          - 'generic "Kanban Column: To Do" [ref=e1055]':
+            - generic [ref=e1056]:
+              - generic "Double-click to edit column name" [ref=e1057] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1058]: ✎
+              - button "×" [ref=e1059] [cursor=pointer]
+            - button "+ Add Card" [ref=e1061] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1062]':
+          - 'generic "Kanban Column: To Do" [ref=e1063]':
+            - generic [ref=e1064]:
+              - generic "Double-click to edit column name" [ref=e1065] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1066]: ✎
+              - button "×" [ref=e1067] [cursor=pointer]
+            - button "+ Add Card" [ref=e1069] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1070]':
+          - 'generic "Kanban Column: To Do" [ref=e1071]':
+            - generic [ref=e1072]:
+              - generic "Double-click to edit column name" [ref=e1073] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1074]: ✎
+              - button "×" [ref=e1075] [cursor=pointer]
+            - button "+ Add Card" [ref=e1077] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1078]':
+          - 'generic "Kanban Column: To Do" [ref=e1079]':
+            - generic [ref=e1080]:
+              - generic "Double-click to edit column name" [ref=e1081] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1082]: ✎
+              - button "×" [ref=e1083] [cursor=pointer]
+            - button "+ Add Card" [ref=e1085] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1086]':
+          - 'generic "Kanban Column: To Do" [ref=e1087]':
+            - generic [ref=e1088]:
+              - generic "Double-click to edit column name" [ref=e1089] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1090]: ✎
+              - button "×" [ref=e1091] [cursor=pointer]
+            - button "+ Add Card" [ref=e1093] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1094]':
+          - 'generic "Kanban Column: To Do" [ref=e1095]':
+            - generic [ref=e1096]:
+              - generic "Double-click to edit column name" [ref=e1097] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1098]: ✎
+              - button "×" [ref=e1099] [cursor=pointer]
+            - button "+ Add Card" [ref=e1101] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1102]':
+          - 'generic "Kanban Column: To Do" [ref=e1103]':
+            - generic [ref=e1104]:
+              - generic "Double-click to edit column name" [ref=e1105] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1106]: ✎
+              - button "×" [ref=e1107] [cursor=pointer]
+            - button "+ Add Card" [ref=e1109] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1110]':
+          - 'generic "Kanban Column: To Do" [ref=e1111]':
+            - generic [ref=e1112]:
+              - generic "Double-click to edit column name" [ref=e1113] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1114]: ✎
+              - button "×" [ref=e1115] [cursor=pointer]
+            - button "+ Add Card" [ref=e1117] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1118]':
+          - 'generic "Kanban Column: To Do" [ref=e1119]':
+            - generic [ref=e1120]:
+              - generic "Double-click to edit column name" [ref=e1121] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1122]: ✎
+              - button "×" [ref=e1123] [cursor=pointer]
+            - button "+ Add Card" [ref=e1125] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1126]':
+          - 'generic "Kanban Column: To Do" [ref=e1127]':
+            - generic [ref=e1128]:
+              - generic "Double-click to edit column name" [ref=e1129] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1130]: ✎
+              - button "×" [ref=e1131] [cursor=pointer]
+            - button "+ Add Card" [ref=e1133] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1134]':
+          - 'generic "Kanban Column: To Do" [ref=e1135]':
+            - generic [ref=e1136]:
+              - generic "Double-click to edit column name" [ref=e1137] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1138]: ✎
+              - button "×" [ref=e1139] [cursor=pointer]
+            - button "+ Add Card" [ref=e1141] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1142]':
+          - 'generic "Kanban Column: To Do" [ref=e1143]':
+            - generic [ref=e1144]:
+              - generic "Double-click to edit column name" [ref=e1145] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1146]: ✎
+              - button "×" [ref=e1147] [cursor=pointer]
+            - button "+ Add Card" [ref=e1149] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1150]':
+          - 'generic "Kanban Column: To Do" [ref=e1151]':
+            - generic [ref=e1152]:
+              - generic "Double-click to edit column name" [ref=e1153] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1154]: ✎
+              - button "×" [ref=e1155] [cursor=pointer]
+            - button "+ Add Card" [ref=e1157] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1158]':
+          - 'generic "Kanban Column: To Do" [ref=e1159]':
+            - generic [ref=e1160]:
+              - generic "Double-click to edit column name" [ref=e1161] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1162]: ✎
+              - button "×" [ref=e1163] [cursor=pointer]
+            - button "+ Add Card" [ref=e1165] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1166]':
+          - 'generic "Kanban Column: To Do" [ref=e1167]':
+            - generic [ref=e1168]:
+              - generic "Double-click to edit column name" [ref=e1169] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1170]: ✎
+              - button "×" [ref=e1171] [cursor=pointer]
+            - button "+ Add Card" [ref=e1173] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1174]':
+          - 'generic "Kanban Column: To Do" [ref=e1175]':
+            - generic [ref=e1176]:
+              - generic "Double-click to edit column name" [ref=e1177] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1178]: ✎
+              - button "×" [ref=e1179] [cursor=pointer]
+            - button "+ Add Card" [ref=e1181] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1182]':
+          - 'generic "Kanban Column: To Do" [ref=e1183]':
+            - generic [ref=e1184]:
+              - generic "Double-click to edit column name" [ref=e1185] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1186]: ✎
+              - button "×" [ref=e1187] [cursor=pointer]
+            - button "+ Add Card" [ref=e1189] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1190]':
+          - 'generic "Kanban Column: To Do" [ref=e1191]':
+            - generic [ref=e1192]:
+              - generic "Double-click to edit column name" [ref=e1193] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1194]: ✎
+              - button "×" [ref=e1195] [cursor=pointer]
+            - button "+ Add Card" [ref=e1197] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1198]':
+          - 'generic "Kanban Column: To Do" [ref=e1199]':
+            - generic [ref=e1200]:
+              - generic "Double-click to edit column name" [ref=e1201] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1202]: ✎
+              - button "×" [ref=e1203] [cursor=pointer]
+            - button "+ Add Card" [ref=e1205] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1206]':
+          - 'generic "Kanban Column: To Do" [ref=e1207]':
+            - generic [ref=e1208]:
+              - generic "Double-click to edit column name" [ref=e1209] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1210]: ✎
+              - button "×" [ref=e1211] [cursor=pointer]
+            - button "+ Add Card" [ref=e1213] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1214]':
+          - 'generic "Kanban Column: To Do" [ref=e1215]':
+            - generic [ref=e1216]:
+              - generic "Double-click to edit column name" [ref=e1217] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1218]: ✎
+              - button "×" [ref=e1219] [cursor=pointer]
+            - button "+ Add Card" [ref=e1221] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1222]':
+          - 'generic "Kanban Column: To Do" [ref=e1223]':
+            - generic [ref=e1224]:
+              - generic "Double-click to edit column name" [ref=e1225] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1226]: ✎
+              - button "×" [ref=e1227] [cursor=pointer]
+            - button "+ Add Card" [ref=e1229] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1230]':
+          - 'generic "Kanban Column: To Do" [ref=e1231]':
+            - generic [ref=e1232]:
+              - generic "Double-click to edit column name" [ref=e1233] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1234]: ✎
+              - button "×" [ref=e1235] [cursor=pointer]
+            - button "+ Add Card" [ref=e1237] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1238]':
+          - 'generic "Kanban Column: To Do" [ref=e1239]':
+            - generic [ref=e1240]:
+              - generic "Double-click to edit column name" [ref=e1241] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1242]: ✎
+              - button "×" [ref=e1243] [cursor=pointer]
+            - button "+ Add Card" [ref=e1245] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1246]':
+          - 'generic "Kanban Column: To Do" [ref=e1247]':
+            - generic [ref=e1248]:
+              - generic "Double-click to edit column name" [ref=e1249] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1250]: ✎
+              - button "×" [ref=e1251] [cursor=pointer]
+            - button "+ Add Card" [ref=e1253] [cursor=pointer]
+        - 'listitem "Column: Col 1764963438773" [ref=e1254]':
+          - 'generic "Kanban Column: Col 1764963438773" [ref=e1255]':
+            - generic [ref=e1256]:
+              - generic "Double-click to edit column name" [ref=e1257] [cursor=pointer]:
+                - text: Col 1764963438773
+                - button "Edit column name" [ref=e1258]: ✎
+              - button "×" [ref=e1259] [cursor=pointer]
+            - button "+ Add Card" [ref=e1261] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e1262]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e1263]':
+            - generic [ref=e1264]:
+              - generic "Double-click to edit column name" [ref=e1265] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e1266]: ✎
+              - button "×" [ref=e1267] [cursor=pointer]
+            - button "+ Add Card" [ref=e1269] [cursor=pointer]
+        - 'listitem "Column: Col 1764963438877" [ref=e1270]':
+          - 'generic "Kanban Column: Col 1764963438877" [ref=e1271]':
+            - generic [ref=e1272]:
+              - generic "Double-click to edit column name" [ref=e1273] [cursor=pointer]:
+                - text: Col 1764963438877
+                - button "Edit column name" [ref=e1274]: ✎
+              - button "×" [ref=e1275] [cursor=pointer]
+            - button "+ Add Card" [ref=e1277] [cursor=pointer]
+        - 'listitem "Column: Review 1764963438450" [ref=e1278]':
+          - 'generic "Kanban Column: Review 1764963438450" [ref=e1279]':
+            - generic [ref=e1280]:
+              - generic "Double-click to edit column name" [ref=e1281] [cursor=pointer]:
+                - text: Review 1764963438450
+                - button "Edit column name" [ref=e1282]: ✎
+              - button "×" [ref=e1283] [cursor=pointer]
+            - button "+ Add Card" [ref=e1285] [cursor=pointer]
+        - 'listitem "Column: Col 1764963438916" [ref=e1286]':
+          - 'generic "Kanban Column: Col 1764963438916" [ref=e1287]':
+            - generic [ref=e1288]:
+              - generic "Double-click to edit column name" [ref=e1289] [cursor=pointer]:
+                - text: Col 1764963438916
+                - button "Edit column name" [ref=e1290]: ✎
+              - button "×" [ref=e1291] [cursor=pointer]
+            - button "+ Add Card" [ref=e1293] [cursor=pointer]
+        - 'listitem "Column: Col 1764963441161" [ref=e1294]':
+          - 'generic "Kanban Column: Col 1764963441161" [ref=e1295]':
+            - generic [ref=e1296]:
+              - generic "Double-click to edit column name" [ref=e1297] [cursor=pointer]:
+                - text: Col 1764963441161
+                - button "Edit column name" [ref=e1298]: ✎
+              - button "×" [ref=e1299] [cursor=pointer]
+            - button "+ Add Card" [ref=e1301] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e1302]':
+          - 'generic "Kanban Column: Perf" [ref=e1303]':
+            - generic [ref=e1304]:
+              - generic "Double-click to edit column name" [ref=e1305] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e1306]: ✎
+              - button "×" [ref=e1307] [cursor=pointer]
+            - button "+ Add Card" [ref=e1309] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e1310]':
+          - 'generic "Kanban Column: Search Test" [ref=e1311]':
+            - generic [ref=e1312]:
+              - generic "Double-click to edit column name" [ref=e1313] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e1314]: ✎
+              - button "×" [ref=e1315] [cursor=pointer]
+            - button "+ Add Card" [ref=e1317] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1318]':
+          - 'generic "Kanban Column: To Do" [ref=e1319]':
+            - generic [ref=e1320]:
+              - generic "Double-click to edit column name" [ref=e1321] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1322]: ✎
+              - button "×" [ref=e1323] [cursor=pointer]
+            - button "+ Add Card" [ref=e1325] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1326]':
+          - 'generic "Kanban Column: To Do" [ref=e1327]':
+            - generic [ref=e1328]:
+              - generic "Double-click to edit column name" [ref=e1329] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1330]: ✎
+              - button "×" [ref=e1331] [cursor=pointer]
+            - button "+ Add Card" [ref=e1333] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1334]':
+          - 'generic "Kanban Column: To Do" [ref=e1335]':
+            - generic [ref=e1336]:
+              - generic "Double-click to edit column name" [ref=e1337] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1338]: ✎
+              - button "×" [ref=e1339] [cursor=pointer]
+            - button "+ Add Card" [ref=e1341] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1342]':
+          - 'generic "Kanban Column: To Do" [ref=e1343]':
+            - generic [ref=e1344]:
+              - generic "Double-click to edit column name" [ref=e1345] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1346]: ✎
+              - button "×" [ref=e1347] [cursor=pointer]
+            - button "+ Add Card" [ref=e1349] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1350]':
+          - 'generic "Kanban Column: To Do" [ref=e1351]':
+            - generic [ref=e1352]:
+              - generic "Double-click to edit column name" [ref=e1353] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1354]: ✎
+              - button "×" [ref=e1355] [cursor=pointer]
+            - button "+ Add Card" [ref=e1357] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1358]':
+          - 'generic "Kanban Column: UI Test" [ref=e1359]':
+            - generic [ref=e1360]:
+              - generic "Double-click to edit column name" [ref=e1361] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1362]: ✎
+              - button "×" [ref=e1363] [cursor=pointer]
+            - button "+ Add Card" [ref=e1365] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1366]':
+          - 'generic "Kanban Column: UI Test" [ref=e1367]':
+            - generic [ref=e1368]:
+              - generic "Double-click to edit column name" [ref=e1369] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1370]: ✎
+              - button "×" [ref=e1371] [cursor=pointer]
+            - button "+ Add Card" [ref=e1373] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1374]':
+          - 'generic "Kanban Column: UI Test" [ref=e1375]':
+            - generic [ref=e1376]:
+              - generic "Double-click to edit column name" [ref=e1377] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1378]: ✎
+              - button "×" [ref=e1379] [cursor=pointer]
+            - button "+ Add Card" [ref=e1381] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1382]':
+          - 'generic "Kanban Column: To Do" [ref=e1383]':
+            - generic [ref=e1384]:
+              - generic "Double-click to edit column name" [ref=e1385] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1386]: ✎
+              - button "×" [ref=e1387] [cursor=pointer]
+            - button "+ Add Card" [ref=e1389] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1390]':
+          - 'generic "Kanban Column: To Do" [ref=e1391]':
+            - generic [ref=e1392]:
+              - generic "Double-click to edit column name" [ref=e1393] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1394]: ✎
+              - button "×" [ref=e1395] [cursor=pointer]
+            - button "+ Add Card" [ref=e1397] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1398]':
+          - 'generic "Kanban Column: To Do" [ref=e1399]':
+            - generic [ref=e1400]:
+              - generic "Double-click to edit column name" [ref=e1401] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1402]: ✎
+              - button "×" [ref=e1403] [cursor=pointer]
+            - button "+ Add Card" [ref=e1405] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1406]':
+          - 'generic "Kanban Column: To Do" [ref=e1407]':
+            - generic [ref=e1408]:
+              - generic "Double-click to edit column name" [ref=e1409] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1410]: ✎
+              - button "×" [ref=e1411] [cursor=pointer]
+            - button "+ Add Card" [ref=e1413] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1414]':
+          - 'generic "Kanban Column: To Do" [ref=e1415]':
+            - generic [ref=e1416]:
+              - generic "Double-click to edit column name" [ref=e1417] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1418]: ✎
+              - button "×" [ref=e1419] [cursor=pointer]
+            - button "+ Add Card" [ref=e1421] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1422]':
+          - 'generic "Kanban Column: To Do" [ref=e1423]':
+            - generic [ref=e1424]:
+              - generic "Double-click to edit column name" [ref=e1425] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1426]: ✎
+              - button "×" [ref=e1427] [cursor=pointer]
+            - button "+ Add Card" [ref=e1429] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1430]':
+          - 'generic "Kanban Column: To Do" [ref=e1431]':
+            - generic [ref=e1432]:
+              - generic "Double-click to edit column name" [ref=e1433] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1434]: ✎
+              - button "×" [ref=e1435] [cursor=pointer]
+            - button "+ Add Card" [ref=e1437] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1438]':
+          - 'generic "Kanban Column: To Do" [ref=e1439]':
+            - generic [ref=e1440]:
+              - generic "Double-click to edit column name" [ref=e1441] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1442]: ✎
+              - button "×" [ref=e1443] [cursor=pointer]
+            - button "+ Add Card" [ref=e1445] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1446]':
+          - 'generic "Kanban Column: To Do" [ref=e1447]':
+            - generic [ref=e1448]:
+              - generic "Double-click to edit column name" [ref=e1449] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1450]: ✎
+              - button "×" [ref=e1451] [cursor=pointer]
+            - button "+ Add Card" [ref=e1453] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1454]':
+          - 'generic "Kanban Column: To Do" [ref=e1455]':
+            - generic [ref=e1456]:
+              - generic "Double-click to edit column name" [ref=e1457] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1458]: ✎
+              - button "×" [ref=e1459] [cursor=pointer]
+            - button "+ Add Card" [ref=e1461] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1462]':
+          - 'generic "Kanban Column: To Do" [ref=e1463]':
+            - generic [ref=e1464]:
+              - generic "Double-click to edit column name" [ref=e1465] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1466]: ✎
+              - button "×" [ref=e1467] [cursor=pointer]
+            - button "+ Add Card" [ref=e1469] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1470]':
+          - 'generic "Kanban Column: To Do" [ref=e1471]':
+            - generic [ref=e1472]:
+              - generic "Double-click to edit column name" [ref=e1473] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1474]: ✎
+              - button "×" [ref=e1475] [cursor=pointer]
+            - button "+ Add Card" [ref=e1477] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1478]':
+          - 'generic "Kanban Column: To Do" [ref=e1479]':
+            - generic [ref=e1480]:
+              - generic "Double-click to edit column name" [ref=e1481] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1482]: ✎
+              - button "×" [ref=e1483] [cursor=pointer]
+            - button "+ Add Card" [ref=e1485] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1486]':
+          - 'generic "Kanban Column: To Do" [ref=e1487]':
+            - generic [ref=e1488]:
+              - generic "Double-click to edit column name" [ref=e1489] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1490]: ✎
+              - button "×" [ref=e1491] [cursor=pointer]
+            - button "+ Add Card" [ref=e1493] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1494]':
+          - 'generic "Kanban Column: To Do" [ref=e1495]':
+            - generic [ref=e1496]:
+              - generic "Double-click to edit column name" [ref=e1497] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1498]: ✎
+              - button "×" [ref=e1499] [cursor=pointer]
+            - button "+ Add Card" [ref=e1501] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1502]':
+          - 'generic "Kanban Column: To Do" [ref=e1503]':
+            - generic [ref=e1504]:
+              - generic "Double-click to edit column name" [ref=e1505] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1506]: ✎
+              - button "×" [ref=e1507] [cursor=pointer]
+            - button "+ Add Card" [ref=e1509] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1510]':
+          - 'generic "Kanban Column: To Do" [ref=e1511]':
+            - generic [ref=e1512]:
+              - generic "Double-click to edit column name" [ref=e1513] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1514]: ✎
+              - button "×" [ref=e1515] [cursor=pointer]
+            - button "+ Add Card" [ref=e1517] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1518]':
+          - 'generic "Kanban Column: To Do" [ref=e1519]':
+            - generic [ref=e1520]:
+              - generic "Double-click to edit column name" [ref=e1521] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1522]: ✎
+              - button "×" [ref=e1523] [cursor=pointer]
+            - button "+ Add Card" [ref=e1525] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1526]':
+          - 'generic "Kanban Column: To Do" [ref=e1527]':
+            - generic [ref=e1528]:
+              - generic "Double-click to edit column name" [ref=e1529] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1530]: ✎
+              - button "×" [ref=e1531] [cursor=pointer]
+            - button "+ Add Card" [ref=e1533] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1534]':
+          - 'generic "Kanban Column: To Do" [ref=e1535]':
+            - generic [ref=e1536]:
+              - generic "Double-click to edit column name" [ref=e1537] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1538]: ✎
+              - button "×" [ref=e1539] [cursor=pointer]
+            - button "+ Add Card" [ref=e1541] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1542]':
+          - 'generic "Kanban Column: To Do" [ref=e1543]':
+            - generic [ref=e1544]:
+              - generic "Double-click to edit column name" [ref=e1545] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1546]: ✎
+              - button "×" [ref=e1547] [cursor=pointer]
+            - button "+ Add Card" [ref=e1549] [cursor=pointer]
+        - 'listitem "Column: Col 1765209655526" [ref=e1550]':
+          - 'generic "Kanban Column: Col 1765209655526" [ref=e1551]':
+            - generic [ref=e1552]:
+              - generic "Double-click to edit column name" [ref=e1553] [cursor=pointer]:
+                - text: Col 1765209655526
+                - button "Edit column name" [ref=e1554]: ✎
+              - button "×" [ref=e1555] [cursor=pointer]
+            - button "+ Add Card" [ref=e1557] [cursor=pointer]
+        - 'listitem "Column: Review 1765209655166" [ref=e1558]':
+          - 'generic "Kanban Column: Review 1765209655166" [ref=e1559]':
+            - generic [ref=e1560]:
+              - generic "Double-click to edit column name" [ref=e1561] [cursor=pointer]:
+                - text: Review 1765209655166
+                - button "Edit column name" [ref=e1562]: ✎
+              - button "×" [ref=e1563] [cursor=pointer]
+            - button "+ Add Card" [ref=e1565] [cursor=pointer]
+        - 'listitem "Column: Col 1765209655614" [ref=e1566]':
+          - 'generic "Kanban Column: Col 1765209655614" [ref=e1567]':
+            - generic [ref=e1568]:
+              - generic "Double-click to edit column name" [ref=e1569] [cursor=pointer]:
+                - text: Col 1765209655614
+                - button "Edit column name" [ref=e1570]: ✎
+              - button "×" [ref=e1571] [cursor=pointer]
+            - button "+ Add Card" [ref=e1573] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e1574]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e1575]':
+            - generic [ref=e1576]:
+              - generic "Double-click to edit column name" [ref=e1577] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e1578]: ✎
+              - button "×" [ref=e1579] [cursor=pointer]
+            - button "+ Add Card" [ref=e1581] [cursor=pointer]
+        - 'listitem "Column: Col 1765209655590" [ref=e1582]':
+          - 'generic "Kanban Column: Col 1765209655590" [ref=e1583]':
+            - generic [ref=e1584]:
+              - generic "Double-click to edit column name" [ref=e1585] [cursor=pointer]:
+                - text: Col 1765209655590
+                - button "Edit column name" [ref=e1586]: ✎
+              - button "×" [ref=e1587] [cursor=pointer]
+            - button "+ Add Card" [ref=e1589] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e1590]':
+          - 'generic "Kanban Column: Perf" [ref=e1591]':
+            - generic [ref=e1592]:
+              - generic "Double-click to edit column name" [ref=e1593] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e1594]: ✎
+              - button "×" [ref=e1595] [cursor=pointer]
+            - button "+ Add Card" [ref=e1597] [cursor=pointer]
+        - 'listitem "Column: Col 1765209659546" [ref=e1598]':
+          - 'generic "Kanban Column: Col 1765209659546" [ref=e1599]':
+            - generic [ref=e1600]:
+              - generic "Double-click to edit column name" [ref=e1601] [cursor=pointer]:
+                - text: Col 1765209659546
+                - button "Edit column name" [ref=e1602]: ✎
+              - button "×" [ref=e1603] [cursor=pointer]
+            - button "+ Add Card" [ref=e1605] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e1606]':
+          - 'generic "Kanban Column: Search Test" [ref=e1607]':
+            - generic [ref=e1608]:
+              - generic "Double-click to edit column name" [ref=e1609] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e1610]: ✎
+              - button "×" [ref=e1611] [cursor=pointer]
+            - button "+ Add Card" [ref=e1613] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1614]':
+          - 'generic "Kanban Column: To Do" [ref=e1615]':
+            - generic [ref=e1616]:
+              - generic "Double-click to edit column name" [ref=e1617] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1618]: ✎
+              - button "×" [ref=e1619] [cursor=pointer]
+            - button "+ Add Card" [ref=e1621] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1622]':
+          - 'generic "Kanban Column: To Do" [ref=e1623]':
+            - generic [ref=e1624]:
+              - generic "Double-click to edit column name" [ref=e1625] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1626]: ✎
+              - button "×" [ref=e1627] [cursor=pointer]
+            - button "+ Add Card" [ref=e1629] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1630]':
+          - 'generic "Kanban Column: To Do" [ref=e1631]':
+            - generic [ref=e1632]:
+              - generic "Double-click to edit column name" [ref=e1633] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1634]: ✎
+              - button "×" [ref=e1635] [cursor=pointer]
+            - button "+ Add Card" [ref=e1637] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1638]':
+          - 'generic "Kanban Column: To Do" [ref=e1639]':
+            - generic [ref=e1640]:
+              - generic "Double-click to edit column name" [ref=e1641] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1642]: ✎
+              - button "×" [ref=e1643] [cursor=pointer]
+            - button "+ Add Card" [ref=e1645] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1646]':
+          - 'generic "Kanban Column: To Do" [ref=e1647]':
+            - generic [ref=e1648]:
+              - generic "Double-click to edit column name" [ref=e1649] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1650]: ✎
+              - button "×" [ref=e1651] [cursor=pointer]
+            - button "+ Add Card" [ref=e1653] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1654]':
+          - 'generic "Kanban Column: UI Test" [ref=e1655]':
+            - generic [ref=e1656]:
+              - generic "Double-click to edit column name" [ref=e1657] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1658]: ✎
+              - button "×" [ref=e1659] [cursor=pointer]
+            - button "+ Add Card" [ref=e1661] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1662]':
+          - 'generic "Kanban Column: UI Test" [ref=e1663]':
+            - generic [ref=e1664]:
+              - generic "Double-click to edit column name" [ref=e1665] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1666]: ✎
+              - button "×" [ref=e1667] [cursor=pointer]
+            - button "+ Add Card" [ref=e1669] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1670]':
+          - 'generic "Kanban Column: UI Test" [ref=e1671]':
+            - generic [ref=e1672]:
+              - generic "Double-click to edit column name" [ref=e1673] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1674]: ✎
+              - button "×" [ref=e1675] [cursor=pointer]
+            - button "+ Add Card" [ref=e1677] [cursor=pointer]
+        - 'listitem "Column: Review 1765209692921" [ref=e1678]':
+          - 'generic "Kanban Column: Review 1765209692921" [ref=e1679]':
+            - generic [ref=e1680]:
+              - generic "Double-click to edit column name" [ref=e1681] [cursor=pointer]:
+                - text: Review 1765209692921
+                - button "Edit column name" [ref=e1682]: ✎
+              - button "×" [ref=e1683] [cursor=pointer]
+            - button "+ Add Card" [ref=e1685] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e1686]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e1687]':
+            - generic [ref=e1688]:
+              - generic "Double-click to edit column name" [ref=e1689] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e1690]: ✎
+              - button "×" [ref=e1691] [cursor=pointer]
+            - button "+ Add Card" [ref=e1693] [cursor=pointer]
+        - 'listitem "Column: Col 1765209696516" [ref=e1694]':
+          - 'generic "Kanban Column: Col 1765209696516" [ref=e1695]':
+            - generic [ref=e1696]:
+              - generic "Double-click to edit column name" [ref=e1697] [cursor=pointer]:
+                - text: Col 1765209696516
+                - button "Edit column name" [ref=e1698]: ✎
+              - button "×" [ref=e1699] [cursor=pointer]
+            - button "+ Add Card" [ref=e1701] [cursor=pointer]
+        - 'listitem "Column: Col 1765209698575" [ref=e1702]':
+          - 'generic "Kanban Column: Col 1765209698575" [ref=e1703]':
+            - generic [ref=e1704]:
+              - generic "Double-click to edit column name" [ref=e1705] [cursor=pointer]:
+                - text: Col 1765209698575
+                - button "Edit column name" [ref=e1706]: ✎
+              - button "×" [ref=e1707] [cursor=pointer]
+            - button "+ Add Card" [ref=e1709] [cursor=pointer]
+        - 'listitem "Column: Col 1765209700010" [ref=e1710]':
+          - 'generic "Kanban Column: Col 1765209700010" [ref=e1711]':
+            - generic [ref=e1712]:
+              - generic "Double-click to edit column name" [ref=e1713] [cursor=pointer]:
+                - text: Col 1765209700010
+                - button "Edit column name" [ref=e1714]: ✎
+              - button "×" [ref=e1715] [cursor=pointer]
+            - button "+ Add Card" [ref=e1717] [cursor=pointer]
+        - 'listitem "Column: Col 1765209701748" [ref=e1718]':
+          - 'generic "Kanban Column: Col 1765209701748" [ref=e1719]':
+            - generic [ref=e1720]:
+              - generic "Double-click to edit column name" [ref=e1721] [cursor=pointer]:
+                - text: Col 1765209701748
+                - button "Edit column name" [ref=e1722]: ✎
+              - button "×" [ref=e1723] [cursor=pointer]
+            - button "+ Add Card" [ref=e1725] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e1726]':
+          - 'generic "Kanban Column: Perf" [ref=e1727]':
+            - generic [ref=e1728]:
+              - generic "Double-click to edit column name" [ref=e1729] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e1730]: ✎
+              - button "×" [ref=e1731] [cursor=pointer]
+            - button "+ Add Card" [ref=e1733] [cursor=pointer]
+        - 'listitem "Column: Search Test" [ref=e1734]':
+          - 'generic "Kanban Column: Search Test" [ref=e1735]':
+            - generic [ref=e1736]:
+              - generic "Double-click to edit column name" [ref=e1737] [cursor=pointer]:
+                - text: Search Test
+                - button "Edit column name" [ref=e1738]: ✎
+              - button "×" [ref=e1739] [cursor=pointer]
+            - button "+ Add Card" [ref=e1741] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1742]':
+          - 'generic "Kanban Column: To Do" [ref=e1743]':
+            - generic [ref=e1744]:
+              - generic "Double-click to edit column name" [ref=e1745] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1746]: ✎
+              - button "×" [ref=e1747] [cursor=pointer]
+            - button "+ Add Card" [ref=e1749] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1750]':
+          - 'generic "Kanban Column: To Do" [ref=e1751]':
+            - generic [ref=e1752]:
+              - generic "Double-click to edit column name" [ref=e1753] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1754]: ✎
+              - button "×" [ref=e1755] [cursor=pointer]
+            - button "+ Add Card" [ref=e1757] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1758]':
+          - 'generic "Kanban Column: To Do" [ref=e1759]':
+            - generic [ref=e1760]:
+              - generic "Double-click to edit column name" [ref=e1761] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1762]: ✎
+              - button "×" [ref=e1763] [cursor=pointer]
+            - button "+ Add Card" [ref=e1765] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1766]':
+          - 'generic "Kanban Column: To Do" [ref=e1767]':
+            - generic [ref=e1768]:
+              - generic "Double-click to edit column name" [ref=e1769] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1770]: ✎
+              - button "×" [ref=e1771] [cursor=pointer]
+            - button "+ Add Card" [ref=e1773] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e1774]':
+          - 'generic "Kanban Column: To Do" [ref=e1775]':
+            - generic [ref=e1776]:
+              - generic "Double-click to edit column name" [ref=e1777] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e1778]: ✎
+              - button "×" [ref=e1779] [cursor=pointer]
+            - button "+ Add Card" [ref=e1781] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1782]':
+          - 'generic "Kanban Column: UI Test" [ref=e1783]':
+            - generic [ref=e1784]:
+              - generic "Double-click to edit column name" [ref=e1785] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1786]: ✎
+              - button "×" [ref=e1787] [cursor=pointer]
+            - button "+ Add Card" [ref=e1789] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1790]':
+          - 'generic "Kanban Column: UI Test" [ref=e1791]':
+            - generic [ref=e1792]:
+              - generic "Double-click to edit column name" [ref=e1793] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1794]: ✎
+              - button "×" [ref=e1795] [cursor=pointer]
+            - button "+ Add Card" [ref=e1797] [cursor=pointer]
+        - 'listitem "Column: UI Test" [ref=e1798]':
+          - 'generic "Kanban Column: UI Test" [ref=e1799]':
+            - generic [ref=e1800]:
+              - generic "Double-click to edit column name" [ref=e1801] [cursor=pointer]:
+                - text: UI Test
+                - button "Edit column name" [ref=e1802]: ✎
+              - button "×" [ref=e1803] [cursor=pointer]
+            - button "+ Add Card" [ref=e1805] [cursor=pointer]
+        - 'listitem "Column: Perf" [ref=e1806]':
+          - 'generic "Kanban Column: Perf" [ref=e1807]':
+            - generic [ref=e1808]:
+              - generic "Double-click to edit column name" [ref=e1809] [cursor=pointer]:
+                - text: Perf
+                - button "Edit column name" [ref=e1810]: ✎
+              - button "×" [ref=e1811] [cursor=pointer]
+            - button "+ Add Card" [ref=e1813] [cursor=pointer]
+        - 'listitem "Column: Enterprise V3 (Nov 12)" [ref=e1814]':
+          - 'generic "Kanban Column: Enterprise V3 (Nov 12)" [ref=e1815]':
+            - generic [ref=e1816]:
+              - generic "Double-click to edit column name" [ref=e1817] [cursor=pointer]:
+                - text: Enterprise V3 (Nov 12)
+                - button "Edit column name" [ref=e1818]: ✎
+              - button "×" [ref=e1819] [cursor=pointer]
+            - generic [ref=e1820]:
+              - button "+ Add Card" [ref=e1821] [cursor=pointer]
+              - generic [ref=e1824] [cursor=pointer]:
+                - generic [ref=e1825]:
+                  - generic [ref=e1826]:
+                    - generic "Status Done" [ref=e1827]
+                    - generic [ref=e1828]: Chat Updates (Beta to Chat, Plan, Manifest)
+                  - generic [ref=e1829]: Chat Updates (Figma, Beta to Chat, Plan)
+                - generic [ref=e1830]:
+                  - generic [ref=e1831]: Done
+                  - generic [ref=e1832]: High
+                  - generic [ref=e1833]: Babu K
+                  - generic "Due" [ref=e1834]:
+                    - img "due" [ref=e1835]: 🗓️
+                    - text: 2025-08-21
+              - generic [ref=e1838] [cursor=pointer]:
+                - generic [ref=e1839]:
+                  - generic [ref=e1840]:
+                    - generic "Status Done" [ref=e1841]
+                    - generic [ref=e1842]: Monaco vs VSCode Editor
+                  - generic [ref=e1843]: Description here
+                - generic [ref=e1844]:
+                  - generic [ref=e1845]: Done
+                  - generic [ref=e1846]: High
+                  - generic [ref=e1847]: Babu K
+                  - generic "Due" [ref=e1848]:
+                    - img "due" [ref=e1849]: 🗓️
+                    - text: 2024-01-31
+        - 'listitem "Column: Post Launch V1 (Nov 28)" [ref=e1850]':
+          - 'generic "Kanban Column: Post Launch V1 (Nov 28)" [ref=e1851]':
+            - generic [ref=e1852]:
+              - generic "Double-click to edit column name" [ref=e1853] [cursor=pointer]:
+                - text: Post Launch V1 (Nov 28)
+                - button "Edit column name" [ref=e1854]: ✎
+              - button "×" [ref=e1855] [cursor=pointer]
+            - generic [ref=e1856]:
+              - button "+ Add Card" [ref=e1857] [cursor=pointer]
+              - generic [ref=e1860] [cursor=pointer]:
+                - generic [ref=e1861]:
+                  - generic [ref=e1862]:
+                    - generic "Status Done" [ref=e1863]
+                    - generic [ref=e1864]: Account Selection in Chat
+                  - generic [ref=e1865]: Enable repository selection directly within the chat interface, allowing users to specify target repositories for code generation and modifications
+                - generic [ref=e1866]:
+                  - generic [ref=e1867]: Done
+                  - generic [ref=e1868]: High
+                  - generic [ref=e1869]: Babu K
+                  - generic "Due" [ref=e1870]:
+                    - img "due" [ref=e1871]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e1874] [cursor=pointer]:
+                - generic [ref=e1875]:
+                  - generic [ref=e1876]:
+                    - generic "Status Done" [ref=e1877]
+                    - generic [ref=e1878]: B2B Onboarding Feature Enhancement
+                  - generic [ref=e1879]: Direct onboarding flow during customer calls
+                - generic [ref=e1880]:
+                  - generic [ref=e1881]: Done
+                  - generic [ref=e1882]: Critical
+                  - generic [ref=e1883]: Babu K
+                  - generic "Due" [ref=e1884]:
+                    - img "due" [ref=e1885]: 🗓️
+                    - text: 2025-09-18
+              - generic [ref=e1888] [cursor=pointer]:
+                - generic [ref=e1889]:
+                  - generic [ref=e1890]:
+                    - generic "Status Review" [ref=e1891]
+                    - generic [ref=e1892]: Dashboard Analytics
+                  - generic [ref=e1893]: Dashboard for Tenant and Users - Feature Listing from CGA's New PR
+                - generic [ref=e1894]:
+                  - generic [ref=e1895]: Review
+                  - generic [ref=e1896]: High
+                  - generic [ref=e1897]: Aditi, Prashant
+                  - generic "Due" [ref=e1898]:
+                    - img "due" [ref=e1899]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e1902] [cursor=pointer]:
+                - generic [ref=e1903]:
+                  - generic [ref=e1904]:
+                    - generic "Status Done" [ref=e1905]
+                    - generic [ref=e1906]: K-Diff Enabling Flow
+                  - generic [ref=e1907]: Implement K-Diff visualization flow to display differences between commit changes, enabling easy identification of regressions and code quality checks
+                - generic [ref=e1908]:
+                  - generic [ref=e1909]: Done
+                  - generic [ref=e1910]: High
+                  - generic [ref=e1911]: Prasanth
+                  - generic "Due" [ref=e1912]:
+                    - img "due" [ref=e1913]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e1916] [cursor=pointer]:
+                - generic [ref=e1917]:
+                  - generic [ref=e1918]:
+                    - generic "Status Review" [ref=e1919]
+                    - generic [ref=e1920]: Start Preview Run UI
+                  - generic [ref=e1921]: Enable UI based button to start preview newly - Build button to trigger preview building (Even when 502)
+                - generic [ref=e1922]:
+                  - generic [ref=e1923]: Review
+                  - generic [ref=e1924]: Critical
+                  - generic [ref=e1925]: Babu K
+                  - generic "Due" [ref=e1926]:
+                    - img "due" [ref=e1927]: 🗓️
+                    - text: 2025-11-27
+              - generic [ref=e1930] [cursor=pointer]:
+                - generic [ref=e1931]:
+                  - generic [ref=e1932]:
+                    - generic "Status Done" [ref=e1933]
+                    - generic [ref=e1934]: VSC Extension QA Release
+                  - generic [ref=e1935]: Release Visual Studio Code extension to enable Kavia AI features directly within VS Code IDE environment
+                - generic [ref=e1936]:
+                  - generic [ref=e1937]: Done
+                  - generic [ref=e1938]: High
+                  - generic [ref=e1939]: Jhonny and Niku
+                  - generic "Due" [ref=e1940]:
+                    - img "due" [ref=e1941]: 🗓️
+                    - text: 2025-11-27
+        - 'listitem "Column: Post Launch (V2) - Dec 15" [ref=e1942]':
+          - 'generic "Kanban Column: Post Launch (V2) - Dec 15" [ref=e1943]':
+            - generic [ref=e1944]:
+              - generic "Double-click to edit column name" [ref=e1945] [cursor=pointer]:
+                - text: Post Launch (V2) - Dec 15
+                - button "Edit column name" [ref=e1946]: ✎
+              - button "×" [ref=e1947] [cursor=pointer]
+            - generic [ref=e1948]:
+              - button "+ Add Card" [ref=e1949] [cursor=pointer]
+              - generic [ref=e1952] [cursor=pointer]:
+                - generic [ref=e1953]:
+                  - generic [ref=e1954]:
+                    - generic "Status In Progress" [ref=e1955]
+                    - generic [ref=e1956]: Chat with Plan and Figma Integration
+                  - generic [ref=e1957]: Enable comprehensive planning through chat interface with instant artifact generation, guided overview displaying requirements and architecture for collaborative planning phase
+                - generic [ref=e1958]:
+                  - generic [ref=e1959]: In Progress
+                  - generic [ref=e1960]: High
+                  - generic [ref=e1961]: Sanjay and Anjan
+                  - generic "Due" [ref=e1962]:
+                    - img "due" [ref=e1963]: 🗓️
+                    - text: 2025-12-04
+              - generic [ref=e1966] [cursor=pointer]:
+                - generic [ref=e1967]:
+                  - generic [ref=e1968]:
+                    - generic "Status In Progress" [ref=e1969]
+                    - generic [ref=e1970]: Jira Integrations MCP
+                  - generic [ref=e1971]: Integrate with Jira for seamless project management workflows.
+                - generic [ref=e1972]:
+                  - generic [ref=e1973]: In Progress
+                  - generic [ref=e1974]: High
+                  - generic [ref=e1975]: Saqiba
+                  - generic "Due" [ref=e1976]:
+                    - img "due" [ref=e1977]: 🗓️
+                    - text: 2025-11-27
+              - generic [ref=e1980] [cursor=pointer]:
+                - generic [ref=e1981]:
+                  - generic [ref=e1982]:
+                    - generic "Status In Progress" [ref=e1983]
+                    - generic [ref=e1984]: Skills Enabling (Anthropic)
+                  - generic [ref=e1985]: Enable Anthropic Skills feature in user settings, allowing users to add and configure custom skills to enhance AI capabilities and domain-specific knowledge - Add skill in File systems - Access the static skills and list in Settings - To enable modification. Followed by CGA Using the enabled Skills (Static or Dynamic) based on the changes
+                - generic [ref=e1986]:
+                  - generic [ref=e1987]: In Progress
+                  - generic [ref=e1988]: Medium
+                  - generic [ref=e1989]: Anjan
+                  - generic "Due" [ref=e1990]:
+                    - img "due" [ref=e1991]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e1994] [cursor=pointer]:
+                - generic [ref=e1995]:
+                  - generic [ref=e1996]:
+                    - generic "Status In Progress" [ref=e1997]
+                    - generic [ref=e1998]: SDK Building for Device Imaging and DEVVMs
+                  - generic [ref=e1999]: Build SDK tools for device imaging and developer virtual machines (DEVVMs) to enable running and testing applications directly on target devices
+                - generic [ref=e2000]:
+                  - generic [ref=e2001]: In Progress
+                  - generic [ref=e2002]: Critical
+                  - generic [ref=e2003]: Raphael
+                  - generic "Due" [ref=e2004]:
+                    - img "due" [ref=e2005]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e2008] [cursor=pointer]:
+                - generic [ref=e2009]:
+                  - generic [ref=e2010]:
+                    - generic "Status In Progress" [ref=e2011]
+                    - generic [ref=e2012]: Chat Settings, Dashboard and Onboarding flow
+                  - generic [ref=e2013]: Description here
+                - generic [ref=e2014]:
+                  - generic [ref=e2015]: In Progress
+                  - generic [ref=e2016]: High
+                  - generic [ref=e2017]: Babu K
+                  - generic "Due" [ref=e2018]:
+                    - img "due" [ref=e2019]: 🗓️
+                    - text: 2024-01-31
+              - generic [ref=e2022] [cursor=pointer]:
+                - generic [ref=e2023]:
+                  - generic [ref=e2024]:
+                    - generic "Status To Do" [ref=e2025]
+                    - generic [ref=e2026]: Interactive Chat Mode for Code Generation Agent
+                  - generic [ref=e2027]: Enable interactive chat mode for real-time code generation through the Code Generation Agent (CGA), allowing developers to generate, modify, and refine code through conversational interface
+                - generic [ref=e2028]:
+                  - generic [ref=e2029]: To Do
+                  - generic [ref=e2030]: High
+                  - generic [ref=e2031]: Labeeb
+                  - generic "Due" [ref=e2032]:
+                    - img "due" [ref=e2033]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e2036] [cursor=pointer]:
+                - generic [ref=e2037]:
+                  - generic [ref=e2038]:
+                    - generic "Status To Do" [ref=e2039]
+                    - generic [ref=e2040]: Cloning of Sessions and CGA
+                  - generic [ref=e2041]: Allow users to clone existing chat sessions and CGA configurations to reuse successful prompts, settings, and context for similar development tasks
+                - generic [ref=e2042]:
+                  - generic [ref=e2043]: To Do
+                  - generic [ref=e2044]: High
+                  - generic [ref=e2045]: Prasanth
+                  - generic "Due" [ref=e2046]:
+                    - img "due" [ref=e2047]: 🗓️
+                    - text: 2025-11-20
+              - generic [ref=e2050] [cursor=pointer]:
+                - generic [ref=e2051]:
+                  - generic [ref=e2052]:
+                    - generic "Status To Do" [ref=e2053]
+                    - generic [ref=e2054]: Device VM with Vantiva
+                  - generic [ref=e2055]: Build command change from Manifest and Run into a VM
+                - generic [ref=e2056]:
+                  - generic [ref=e2057]: To Do
+                  - generic [ref=e2058]: Critical
+                  - generic [ref=e2059]: Naveen
+                  - generic "Due" [ref=e2060]:
+                    - img "due" [ref=e2061]: 🗓️
+                    - text: 2025-11-27
+              - generic [ref=e2064] [cursor=pointer]:
+                - generic [ref=e2065]:
+                  - generic [ref=e2066]:
+                    - generic "Status In Progress" [ref=e2067]
+                    - generic [ref=e2068]: Figma Enhancements
+                  - generic [ref=e2069]: Enhance Figma integration capabilities for design system synchronization - MCP, UI component generation, and design-to-code workflows - Phase 3 - Parallel Extraction, Accuracy, Phase 4 - Component wise Extraction + Semantic + Navigation, Phase 5 - Transition and Animation
+                - generic [ref=e2070]:
+                  - generic [ref=e2071]: In Progress
+                  - generic [ref=e2072]: Critical
+                  - generic [ref=e2073]: Nadarajan/ Labeeb
+                  - generic "Due" [ref=e2074]:
+                    - img "due" [ref=e2075]: 🗓️
+                    - text: 2025-11-27
+              - generic [ref=e2078] [cursor=pointer]:
+                - generic [ref=e2079]:
+                  - generic [ref=e2080]:
+                    - generic "Status On Hold" [ref=e2081]
+                    - generic [ref=e2082]: Native/Generic Framework Validation
+                  - generic [ref=e2083]: Add validation framework to support both native and generic framework types, ensuring code generation compatibility across different technology stacks
+                - generic [ref=e2084]:
+                  - generic [ref=e2085]: On Hold
+                  - generic [ref=e2086]: High
+                  - generic [ref=e2087]: Derrick
+                  - generic "Due" [ref=e2088]:
+                    - img "due" [ref=e2089]: 🗓️
+                    - text: 2025-11-27
+              - generic [ref=e2092] [cursor=pointer]:
+                - generic [ref=e2093]:
+                  - generic [ref=e2094]:
+                    - generic "Status To Do" [ref=e2095]
+                    - generic [ref=e2096]: Emulator Support
+                  - generic [ref=e2097]: Implement emulator support for testing applications across different device configurations and environments without requiring physical hardware
+                - generic [ref=e2098]:
+                  - generic [ref=e2099]: To Do
+                  - generic [ref=e2100]: High
+                  - generic [ref=e2101]: Raphael
+                  - generic "Due" [ref=e2102]:
+                    - img "due" [ref=e2103]: 🗓️
+                    - text: 2025-11-27
+        - 'listitem "Column: Post Launch v3" [ref=e2104]':
+          - 'generic "Kanban Column: Post Launch v3" [ref=e2105]':
+            - generic [ref=e2106]:
+              - generic "Double-click to edit column name" [ref=e2107] [cursor=pointer]:
+                - text: Post Launch v3
+                - button "Edit column name" [ref=e2108]: ✎
+              - button "×" [ref=e2109] [cursor=pointer]
+            - generic [ref=e2110]:
+              - button "+ Add Card" [ref=e2111] [cursor=pointer]
+              - generic [ref=e2114] [cursor=pointer]:
+                - generic [ref=e2115]:
+                  - generic [ref=e2116]:
+                    - generic "Status To Do" [ref=e2117]
+                    - generic [ref=e2118]: CGA Accessing Plan Details with @kavia Tag
+                  - generic [ref=e2119]: Enable CGA to access plan details using @kavia tags (e.g., @kavia-epic) to retrieve and display epics, stories, and related work items as context for implementation, documentation, or testing
+                - generic [ref=e2120]:
+                  - generic [ref=e2121]: To Do
+                  - generic [ref=e2122]: Medium
+                  - generic [ref=e2123]: Anjan and Prashant
+                  - generic "Due" [ref=e2124]:
+                    - img "due" [ref=e2125]: 🗓️
+                    - text: 2025-12-04
+              - generic [ref=e2128] [cursor=pointer]:
+                - generic [ref=e2129]:
+                  - generic [ref=e2130]:
+                    - generic "Status To do" [ref=e2131]
+                    - generic [ref=e2132]: User Behaviour Tracking
+                  - generic [ref=e2133]: Enable Integrations to check the click through and heatmap of Kavia Usage
+                - generic [ref=e2134]:
+                  - generic [ref=e2135]: To do
+                  - generic [ref=e2136]: High
+                  - generic [ref=e2137]: Babu K
+                  - generic "Due" [ref=e2138]:
+                    - img "due" [ref=e2139]: 🗓️
+                    - text: 2025-08-21
+              - generic [ref=e2142] [cursor=pointer]:
+                - generic [ref=e2143]:
+                  - generic [ref=e2144]:
+                    - generic "Status To Do" [ref=e2145]
+                    - generic [ref=e2146]: Chat Planning Micro Agents
+                  - generic [ref=e2147]: Implement micro-agents for tracing and navigating through planning phase updates, providing clear visibility into plan evolution and changes
+                - generic [ref=e2148]:
+                  - generic [ref=e2149]: To Do
+                  - generic [ref=e2150]: Medium
+                  - generic [ref=e2151]: Anjan / Labeeb
+                  - generic "Due" [ref=e2152]:
+                    - img "due" [ref=e2153]: 🗓️
+                    - text: 2025-12-11
+              - generic [ref=e2156] [cursor=pointer]:
+                - generic [ref=e2157]:
+                  - generic [ref=e2158]:
+                    - generic "Status In Progress" [ref=e2159]
+                    - generic [ref=e2160]: SAM Feature Extraction
+                  - generic [ref=e2161]: Enabling Features to be extracted from the Codebase through SAM Structure
+                - generic [ref=e2162]:
+                  - generic [ref=e2163]: In Progress
+                  - generic [ref=e2164]: High
+                  - generic [ref=e2165]: Labeeb , Sasindu
+                  - generic "Due" [ref=e2166]:
+                    - img "due" [ref=e2167]: 🗓️
+                    - text: 2025-12-04
+              - generic [ref=e2170] [cursor=pointer]:
+                - generic [ref=e2171]:
+                  - generic [ref=e2172]:
+                    - generic "Status To Do" [ref=e2173]
+                    - generic [ref=e2174]: Brightscript for Tata
+                  - generic [ref=e2175]: Description here
+                - generic [ref=e2176]:
+                  - generic [ref=e2177]: To Do
+                  - generic [ref=e2178]: Medium
+                  - generic [ref=e2179]: Raphael
+                  - generic "Due" [ref=e2180]:
+                    - img "due" [ref=e2181]: 🗓️
+                    - text: 2025-11-27
+        - 'listitem "Column: Backlog" [ref=e2182]':
+          - 'generic "Kanban Column: Backlog" [ref=e2183]':
+            - generic [ref=e2184]:
+              - generic "Double-click to edit column name" [ref=e2185] [cursor=pointer]:
+                - text: Backlog
+                - button "Edit column name" [ref=e2186]: ✎
+              - button "×" [ref=e2187] [cursor=pointer]
+            - generic [ref=e2188]:
+              - button "+ Add Card" [ref=e2189] [cursor=pointer]
+              - generic [ref=e2192] [cursor=pointer]:
+                - generic [ref=e2193]:
+                  - generic [ref=e2194]:
+                    - generic "Status To Do" [ref=e2195]
+                    - generic [ref=e2196]: Legacy Modernization
+                  - generic [ref=e2197]: Code and Document based Planning - After Plan, modernize code based on work items and current code base correctly
+                - generic [ref=e2198]:
+                  - generic [ref=e2199]: To Do
+                  - generic [ref=e2200]: Medium
+                  - generic [ref=e2201]: Labeeb
+                  - generic "Due" [ref=e2202]:
+                    - img "due" [ref=e2203]: 🗓️
+                    - text: 2025-09-30
+              - generic [ref=e2206] [cursor=pointer]:
+                - generic [ref=e2207]:
+                  - generic [ref=e2208]:
+                    - generic "Status To Do" [ref=e2209]
+                    - generic [ref=e2210]: Wireframes from prompt
+                  - generic [ref=e2211]: Design from prompt
+                - generic [ref=e2212]:
+                  - generic [ref=e2213]: To Do
+                  - generic [ref=e2214]: Medium
+                  - generic "Due" [ref=e2215]:
+                    - img "due" [ref=e2216]: 🗓️
+                    - text: 2025-08-31
+              - generic [ref=e2219] [cursor=pointer]:
+                - generic [ref=e2220]:
+                  - generic [ref=e2221]:
+                    - generic "Status To Do" [ref=e2222]
+                    - generic [ref=e2223]: Bug Report Integration
+                  - generic [ref=e2224]: A floating button that allows users to capture the current screen, annotate, and submit a bug report with optional voice recording. Includes screenshot capture, drawing tools, and voice-to-text conversion.
+                - generic [ref=e2225]:
+                  - generic [ref=e2226]: To Do
+                  - generic [ref=e2227]: Medium
+                  - generic [ref=e2228]: Niku Singh
+                  - generic "Due" [ref=e2229]:
+                    - img "due" [ref=e2230]: 🗓️
+                    - text: 2024-01-31
+              - generic [ref=e2233] [cursor=pointer]:
+                - generic [ref=e2234]:
+                  - generic [ref=e2235]:
+                    - generic "Status In Progress" [ref=e2236]
+                    - generic [ref=e2237]: Custom Data Model for Planning
+                  - generic [ref=e2238]: Allow custom data models for project planning and requirement management - Edit Field option in Plan (custom)
+                - generic [ref=e2239]:
+                  - generic [ref=e2240]: In Progress
+                  - generic [ref=e2241]: High
+                  - generic [ref=e2242]: Veera
+                  - generic "Due" [ref=e2243]:
+                    - img "due" [ref=e2244]: 🗓️
+                    - text: 2025-08-21
+              - generic [ref=e2247] [cursor=pointer]:
+                - generic [ref=e2248]:
+                  - generic [ref=e2249]:
+                    - generic "Status To Do" [ref=e2250]
+                    - generic [ref=e2251]: Release Information Integration with Monitoring Tools
+                  - generic [ref=e2252]: Integration of release information with Git diffs analysis and debugging capabilities using external monitoring tools like Splunk, Datadog, and Dynatrace for comprehensive release management
+                - generic [ref=e2253]:
+                  - generic [ref=e2254]: To Do
+                  - generic [ref=e2255]: Low
+                  - generic "Due" [ref=e2256]:
+                    - img "due" [ref=e2257]: 🗓️
+                    - text: 2025-09-15
+              - generic [ref=e2260] [cursor=pointer]:
+                - generic [ref=e2261]:
+                  - generic [ref=e2262]:
+                    - generic "Status To Do" [ref=e2263]
+                    - generic [ref=e2264]: Quick Access Tool in Home
+                  - generic [ref=e2265]: Add quick access tools and shortcuts in the home dashboard.
+                - generic [ref=e2266]:
+                  - generic [ref=e2267]: To Do
+                  - generic [ref=e2268]: Low
+                  - generic [ref=e2269]: Babu K
+                  - generic "Due" [ref=e2270]:
+                    - img "due" [ref=e2271]: 🗓️
+                    - text: 2025-08-21
+              - generic [ref=e2274] [cursor=pointer]:
+                - generic [ref=e2275]:
+                  - generic [ref=e2276]:
+                    - generic "Status To Do" [ref=e2277]
+                    - generic [ref=e2278]: Model Configuration
+                  - generic [ref=e2279]: LLM Model restriction and selection for tenant-wise configuration. Allows organizations to control which models are available to different user groups with cost and compliance controls.
+                - generic [ref=e2280]:
+                  - generic [ref=e2281]: To Do
+                  - generic [ref=e2282]: High
+                  - generic [ref=e2283]: Jay and Prashant
+                  - generic "Due" [ref=e2284]:
+                    - img "due" [ref=e2285]: 🗓️
+                    - text: 2024-01-31
+              - generic [ref=e2288] [cursor=pointer]:
+                - generic [ref=e2289]:
+                  - generic [ref=e2290]:
+                    - generic "Status To Do" [ref=e2291]
+                    - generic [ref=e2292]: On-Demand Integration Connectors (Free Tier)
+                  - generic [ref=e2293]: Provide on-demand integration connectors for enterprise tools like Dynatrace, Splunk, Confluence, and other monitoring/collaboration platforms, offered free for the first 100 customers
+                - generic [ref=e2294]:
+                  - generic [ref=e2295]: To Do
+                  - generic [ref=e2296]: Medium
+                  - generic "Due" [ref=e2297]:
+                    - img "due" [ref=e2298]: 🗓️
+                    - text: 2025-09-30
+        - 'listitem "Column: Review 1764959854656" [ref=e2299]':
+          - 'generic "Kanban Column: Review 1764959854656" [ref=e2300]':
+            - generic [ref=e2301]:
+              - generic "Double-click to edit column name" [ref=e2302] [cursor=pointer]:
+                - text: Review 1764959854656
+                - button "Edit column name" [ref=e2303]: ✎
+              - button "×" [ref=e2304] [cursor=pointer]
+            - button "+ Add Card" [ref=e2306] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2307]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2308]':
+            - generic [ref=e2309]:
+              - generic "Double-click to edit column name" [ref=e2310] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2311]: ✎
+              - button "×" [ref=e2312] [cursor=pointer]
+            - button "+ Add Card" [ref=e2314] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2315]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2316]':
+            - generic [ref=e2317]:
+              - generic "Double-click to edit column name" [ref=e2318] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2319]: ✎
+              - button "×" [ref=e2320] [cursor=pointer]
+            - button "+ Add Card" [ref=e2322] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2323]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2324]':
+            - generic [ref=e2325]:
+              - generic "Double-click to edit column name" [ref=e2326] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2327]: ✎
+              - button "×" [ref=e2328] [cursor=pointer]
+            - button "+ Add Card" [ref=e2330] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2331]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2332]':
+            - generic [ref=e2333]:
+              - generic "Double-click to edit column name" [ref=e2334] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2335]: ✎
+              - button "×" [ref=e2336] [cursor=pointer]
+            - button "+ Add Card" [ref=e2338] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2339]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2340]':
+            - generic [ref=e2341]:
+              - generic "Double-click to edit column name" [ref=e2342] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2343]: ✎
+              - button "×" [ref=e2344] [cursor=pointer]
+            - button "+ Add Card" [ref=e2346] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2347]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2348]':
+            - generic [ref=e2349]:
+              - generic "Double-click to edit column name" [ref=e2350] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2351]: ✎
+              - button "×" [ref=e2352] [cursor=pointer]
+            - button "+ Add Card" [ref=e2354] [cursor=pointer]
+        - 'listitem "Column: Col 1764960162328" [ref=e2355]':
+          - 'generic "Kanban Column: Col 1764960162328" [ref=e2356]':
+            - generic [ref=e2357]:
+              - generic "Double-click to edit column name" [ref=e2358] [cursor=pointer]:
+                - text: Col 1764960162328
+                - button "Edit column name" [ref=e2359]: ✎
+              - button "×" [ref=e2360] [cursor=pointer]
+            - button "+ Add Card" [ref=e2362] [cursor=pointer]
+        - 'listitem "Column: Col 1764960193330" [ref=e2363]':
+          - 'generic "Kanban Column: Col 1764960193330" [ref=e2364]':
+            - generic [ref=e2365]:
+              - generic "Double-click to edit column name" [ref=e2366] [cursor=pointer]:
+                - text: Col 1764960193330
+                - button "Edit column name" [ref=e2367]: ✎
+              - button "×" [ref=e2368] [cursor=pointer]
+            - button "+ Add Card" [ref=e2370] [cursor=pointer]
+        - 'listitem "Column: Col 1764960223812" [ref=e2371]':
+          - 'generic "Kanban Column: Col 1764960223812" [ref=e2372]':
+            - generic [ref=e2373]:
+              - generic "Double-click to edit column name" [ref=e2374] [cursor=pointer]:
+                - text: Col 1764960223812
+                - button "Edit column name" [ref=e2375]: ✎
+              - button "×" [ref=e2376] [cursor=pointer]
+            - button "+ Add Card" [ref=e2378] [cursor=pointer]
+        - 'listitem "Column: Col 1764960255127" [ref=e2379]':
+          - 'generic "Kanban Column: Col 1764960255127" [ref=e2380]':
+            - generic [ref=e2381]:
+              - generic "Double-click to edit column name" [ref=e2382] [cursor=pointer]:
+                - text: Col 1764960255127
+                - button "Edit column name" [ref=e2383]: ✎
+              - button "×" [ref=e2384] [cursor=pointer]
+            - button "+ Add Card" [ref=e2386] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2387]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2388]':
+            - generic [ref=e2389]:
+              - generic "Double-click to edit column name" [ref=e2390] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2391]: ✎
+              - button "×" [ref=e2392] [cursor=pointer]
+            - button "+ Add Card" [ref=e2394] [cursor=pointer]
+        - 'listitem "Column: Col 1764960320405" [ref=e2395]':
+          - 'generic "Kanban Column: Col 1764960320405" [ref=e2396]':
+            - generic [ref=e2397]:
+              - generic "Double-click to edit column name" [ref=e2398] [cursor=pointer]:
+                - text: Col 1764960320405
+                - button "Edit column name" [ref=e2399]: ✎
+              - button "×" [ref=e2400] [cursor=pointer]
+            - button "+ Add Card" [ref=e2402] [cursor=pointer]
+        - 'listitem "Column: Col 1764961889458" [ref=e2403]':
+          - 'generic "Kanban Column: Col 1764961889458" [ref=e2404]':
+            - generic [ref=e2405]:
+              - generic "Double-click to edit column name" [ref=e2406] [cursor=pointer]:
+                - text: Col 1764961889458
+                - button "Edit column name" [ref=e2407]: ✎
+              - button "×" [ref=e2408] [cursor=pointer]
+            - button "+ Add Card" [ref=e2410] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2411]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2412]':
+            - generic [ref=e2413]:
+              - generic "Double-click to edit column name" [ref=e2414] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2415]: ✎
+              - button "×" [ref=e2416] [cursor=pointer]
+            - button "+ Add Card" [ref=e2418] [cursor=pointer]
+        - 'listitem "Column: Col 1764961890034" [ref=e2419]':
+          - 'generic "Kanban Column: Col 1764961890034" [ref=e2420]':
+            - generic [ref=e2421]:
+              - generic "Double-click to edit column name" [ref=e2422] [cursor=pointer]:
+                - text: Col 1764961890034
+                - button "Edit column name" [ref=e2423]: ✎
+              - button "×" [ref=e2424] [cursor=pointer]
+            - button "+ Add Card" [ref=e2426] [cursor=pointer]
+        - 'listitem "Column: Col 1764961890071" [ref=e2427]':
+          - 'generic "Kanban Column: Col 1764961890071" [ref=e2428]':
+            - generic [ref=e2429]:
+              - generic "Double-click to edit column name" [ref=e2430] [cursor=pointer]:
+                - text: Col 1764961890071
+                - button "Edit column name" [ref=e2431]: ✎
+              - button "×" [ref=e2432] [cursor=pointer]
+            - button "+ Add Card" [ref=e2434] [cursor=pointer]
+        - 'listitem "Column: Col 1764961891844" [ref=e2435]':
+          - 'generic "Kanban Column: Col 1764961891844" [ref=e2436]':
+            - generic [ref=e2437]:
+              - generic "Double-click to edit column name" [ref=e2438] [cursor=pointer]:
+                - text: Col 1764961891844
+                - button "Edit column name" [ref=e2439]: ✎
+              - button "×" [ref=e2440] [cursor=pointer]
+            - button "+ Add Card" [ref=e2442] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2443]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2444]':
+            - generic [ref=e2445]:
+              - generic "Double-click to edit column name" [ref=e2446] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2447]: ✎
+              - button "×" [ref=e2448] [cursor=pointer]
+            - button "+ Add Card" [ref=e2450] [cursor=pointer]
+        - 'listitem "Column: Col 1764961935009" [ref=e2451]':
+          - 'generic "Kanban Column: Col 1764961935009" [ref=e2452]':
+            - generic [ref=e2453]:
+              - generic "Double-click to edit column name" [ref=e2454] [cursor=pointer]:
+                - text: Col 1764961935009
+                - button "Edit column name" [ref=e2455]: ✎
+              - button "×" [ref=e2456] [cursor=pointer]
+            - button "+ Add Card" [ref=e2458] [cursor=pointer]
+        - 'listitem "Column: Col 1764961935208" [ref=e2459]':
+          - 'generic "Kanban Column: Col 1764961935208" [ref=e2460]':
+            - generic [ref=e2461]:
+              - generic "Double-click to edit column name" [ref=e2462] [cursor=pointer]:
+                - text: Col 1764961935208
+                - button "Edit column name" [ref=e2463]: ✎
+              - button "×" [ref=e2464] [cursor=pointer]
+            - button "+ Add Card" [ref=e2466] [cursor=pointer]
+        - 'listitem "Column: Col 1764961951935" [ref=e2467]':
+          - 'generic "Kanban Column: Col 1764961951935" [ref=e2468]':
+            - generic [ref=e2469]:
+              - generic "Double-click to edit column name" [ref=e2470] [cursor=pointer]:
+                - text: Col 1764961951935
+                - button "Edit column name" [ref=e2471]: ✎
+              - button "×" [ref=e2472] [cursor=pointer]
+            - button "+ Add Card" [ref=e2474] [cursor=pointer]
+        - 'listitem "Column: Col 1764961951988" [ref=e2475]':
+          - 'generic "Kanban Column: Col 1764961951988" [ref=e2476]':
+            - generic [ref=e2477]:
+              - generic "Double-click to edit column name" [ref=e2478] [cursor=pointer]:
+                - text: Col 1764961951988
+                - button "Edit column name" [ref=e2479]: ✎
+              - button "×" [ref=e2480] [cursor=pointer]
+            - button "+ Add Card" [ref=e2482] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2483]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2484]':
+            - generic [ref=e2485]:
+              - generic "Double-click to edit column name" [ref=e2486] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2487]: ✎
+              - button "×" [ref=e2488] [cursor=pointer]
+            - button "+ Add Card" [ref=e2490] [cursor=pointer]
+        - 'listitem "Column: Col 1764961999590" [ref=e2491]':
+          - 'generic "Kanban Column: Col 1764961999590" [ref=e2492]':
+            - generic [ref=e2493]:
+              - generic "Double-click to edit column name" [ref=e2494] [cursor=pointer]:
+                - text: Col 1764961999590
+                - button "Edit column name" [ref=e2495]: ✎
+              - button "×" [ref=e2496] [cursor=pointer]
+            - button "+ Add Card" [ref=e2498] [cursor=pointer]
+        - 'listitem "Column: Col 1764962000675" [ref=e2499]':
+          - 'generic "Kanban Column: Col 1764962000675" [ref=e2500]':
+            - generic [ref=e2501]:
+              - generic "Double-click to edit column name" [ref=e2502] [cursor=pointer]:
+                - text: Col 1764962000675
+                - button "Edit column name" [ref=e2503]: ✎
+              - button "×" [ref=e2504] [cursor=pointer]
+            - button "+ Add Card" [ref=e2506] [cursor=pointer]
+        - 'listitem "Column: Col 1764962000725" [ref=e2507]':
+          - 'generic "Kanban Column: Col 1764962000725" [ref=e2508]':
+            - generic [ref=e2509]:
+              - generic "Double-click to edit column name" [ref=e2510] [cursor=pointer]:
+                - text: Col 1764962000725
+                - button "Edit column name" [ref=e2511]: ✎
+              - button "×" [ref=e2512] [cursor=pointer]
+            - button "+ Add Card" [ref=e2514] [cursor=pointer]
+        - 'listitem "Column: Col 1764962000550" [ref=e2515]':
+          - 'generic "Kanban Column: Col 1764962000550" [ref=e2516]':
+            - generic [ref=e2517]:
+              - generic "Double-click to edit column name" [ref=e2518] [cursor=pointer]:
+                - text: Col 1764962000550
+                - button "Edit column name" [ref=e2519]: ✎
+              - button "×" [ref=e2520] [cursor=pointer]
+            - button "+ Add Card" [ref=e2522] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2523]':
+          - 'generic "Kanban Column: To Do" [ref=e2524]':
+            - generic [ref=e2525]:
+              - generic "Double-click to edit column name" [ref=e2526] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2527]: ✎
+              - button "×" [ref=e2528] [cursor=pointer]
+            - button "+ Add Card" [ref=e2530] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2531]':
+          - 'generic "Kanban Column: To Do" [ref=e2532]':
+            - generic [ref=e2533]:
+              - generic "Double-click to edit column name" [ref=e2534] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2535]: ✎
+              - button "×" [ref=e2536] [cursor=pointer]
+            - button "+ Add Card" [ref=e2538] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2539]':
+          - 'generic "Kanban Column: To Do" [ref=e2540]':
+            - generic [ref=e2541]:
+              - generic "Double-click to edit column name" [ref=e2542] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2543]: ✎
+              - button "×" [ref=e2544] [cursor=pointer]
+            - button "+ Add Card" [ref=e2546] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2547]':
+          - 'generic "Kanban Column: To Do" [ref=e2548]':
+            - generic [ref=e2549]:
+              - generic "Double-click to edit column name" [ref=e2550] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2551]: ✎
+              - button "×" [ref=e2552] [cursor=pointer]
+            - button "+ Add Card" [ref=e2554] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2555]':
+          - 'generic "Kanban Column: To Do" [ref=e2556]':
+            - generic [ref=e2557]:
+              - generic "Double-click to edit column name" [ref=e2558] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2559]: ✎
+              - button "×" [ref=e2560] [cursor=pointer]
+            - button "+ Add Card" [ref=e2562] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2563]':
+          - 'generic "Kanban Column: To Do" [ref=e2564]':
+            - generic [ref=e2565]:
+              - generic "Double-click to edit column name" [ref=e2566] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2567]: ✎
+              - button "×" [ref=e2568] [cursor=pointer]
+            - button "+ Add Card" [ref=e2570] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2571]':
+          - 'generic "Kanban Column: To Do" [ref=e2572]':
+            - generic [ref=e2573]:
+              - generic "Double-click to edit column name" [ref=e2574] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2575]: ✎
+              - button "×" [ref=e2576] [cursor=pointer]
+            - button "+ Add Card" [ref=e2578] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2579]':
+          - 'generic "Kanban Column: To Do" [ref=e2580]':
+            - generic [ref=e2581]:
+              - generic "Double-click to edit column name" [ref=e2582] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2583]: ✎
+              - button "×" [ref=e2584] [cursor=pointer]
+            - button "+ Add Card" [ref=e2586] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2587]':
+          - 'generic "Kanban Column: To Do" [ref=e2588]':
+            - generic [ref=e2589]:
+              - generic "Double-click to edit column name" [ref=e2590] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2591]: ✎
+              - button "×" [ref=e2592] [cursor=pointer]
+            - button "+ Add Card" [ref=e2594] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2595]':
+          - 'generic "Kanban Column: To Do" [ref=e2596]':
+            - generic [ref=e2597]:
+              - generic "Double-click to edit column name" [ref=e2598] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2599]: ✎
+              - button "×" [ref=e2600] [cursor=pointer]
+            - button "+ Add Card" [ref=e2602] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2603]':
+          - 'generic "Kanban Column: To Do" [ref=e2604]':
+            - generic [ref=e2605]:
+              - generic "Double-click to edit column name" [ref=e2606] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2607]: ✎
+              - button "×" [ref=e2608] [cursor=pointer]
+            - button "+ Add Card" [ref=e2610] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2611]':
+          - 'generic "Kanban Column: To Do" [ref=e2612]':
+            - generic [ref=e2613]:
+              - generic "Double-click to edit column name" [ref=e2614] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2615]: ✎
+              - button "×" [ref=e2616] [cursor=pointer]
+            - button "+ Add Card" [ref=e2618] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2619]':
+          - 'generic "Kanban Column: To Do" [ref=e2620]':
+            - generic [ref=e2621]:
+              - generic "Double-click to edit column name" [ref=e2622] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2623]: ✎
+              - button "×" [ref=e2624] [cursor=pointer]
+            - button "+ Add Card" [ref=e2626] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2627]':
+          - 'generic "Kanban Column: To Do" [ref=e2628]':
+            - generic [ref=e2629]:
+              - generic "Double-click to edit column name" [ref=e2630] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2631]: ✎
+              - button "×" [ref=e2632] [cursor=pointer]
+            - button "+ Add Card" [ref=e2634] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2635]':
+          - 'generic "Kanban Column: To Do" [ref=e2636]':
+            - generic [ref=e2637]:
+              - generic "Double-click to edit column name" [ref=e2638] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2639]: ✎
+              - button "×" [ref=e2640] [cursor=pointer]
+            - button "+ Add Card" [ref=e2642] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2643]':
+          - 'generic "Kanban Column: To Do" [ref=e2644]':
+            - generic [ref=e2645]:
+              - generic "Double-click to edit column name" [ref=e2646] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2647]: ✎
+              - button "×" [ref=e2648] [cursor=pointer]
+            - button "+ Add Card" [ref=e2650] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2651]':
+          - 'generic "Kanban Column: To Do" [ref=e2652]':
+            - generic [ref=e2653]:
+              - generic "Double-click to edit column name" [ref=e2654] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2655]: ✎
+              - button "×" [ref=e2656] [cursor=pointer]
+            - button "+ Add Card" [ref=e2658] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2659]':
+          - 'generic "Kanban Column: To Do" [ref=e2660]':
+            - generic [ref=e2661]:
+              - generic "Double-click to edit column name" [ref=e2662] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2663]: ✎
+              - button "×" [ref=e2664] [cursor=pointer]
+            - button "+ Add Card" [ref=e2666] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2667]':
+          - 'generic "Kanban Column: To Do" [ref=e2668]':
+            - generic [ref=e2669]:
+              - generic "Double-click to edit column name" [ref=e2670] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2671]: ✎
+              - button "×" [ref=e2672] [cursor=pointer]
+            - button "+ Add Card" [ref=e2674] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2675]':
+          - 'generic "Kanban Column: To Do" [ref=e2676]':
+            - generic [ref=e2677]:
+              - generic "Double-click to edit column name" [ref=e2678] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2679]: ✎
+              - button "×" [ref=e2680] [cursor=pointer]
+            - button "+ Add Card" [ref=e2682] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2683]':
+          - 'generic "Kanban Column: To Do" [ref=e2684]':
+            - generic [ref=e2685]:
+              - generic "Double-click to edit column name" [ref=e2686] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2687]: ✎
+              - button "×" [ref=e2688] [cursor=pointer]
+            - button "+ Add Card" [ref=e2690] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2691]':
+          - 'generic "Kanban Column: To Do" [ref=e2692]':
+            - generic [ref=e2693]:
+              - generic "Double-click to edit column name" [ref=e2694] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2695]: ✎
+              - button "×" [ref=e2696] [cursor=pointer]
+            - button "+ Add Card" [ref=e2698] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2699]':
+          - 'generic "Kanban Column: To Do" [ref=e2700]':
+            - generic [ref=e2701]:
+              - generic "Double-click to edit column name" [ref=e2702] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2703]: ✎
+              - button "×" [ref=e2704] [cursor=pointer]
+            - button "+ Add Card" [ref=e2706] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2707]':
+          - 'generic "Kanban Column: To Do" [ref=e2708]':
+            - generic [ref=e2709]:
+              - generic "Double-click to edit column name" [ref=e2710] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2711]: ✎
+              - button "×" [ref=e2712] [cursor=pointer]
+            - button "+ Add Card" [ref=e2714] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2715]':
+          - 'generic "Kanban Column: To Do" [ref=e2716]':
+            - generic [ref=e2717]:
+              - generic "Double-click to edit column name" [ref=e2718] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2719]: ✎
+              - button "×" [ref=e2720] [cursor=pointer]
+            - button "+ Add Card" [ref=e2722] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2723]':
+          - 'generic "Kanban Column: To Do" [ref=e2724]':
+            - generic [ref=e2725]:
+              - generic "Double-click to edit column name" [ref=e2726] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2727]: ✎
+              - button "×" [ref=e2728] [cursor=pointer]
+            - button "+ Add Card" [ref=e2730] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2731]':
+          - 'generic "Kanban Column: To Do" [ref=e2732]':
+            - generic [ref=e2733]:
+              - generic "Double-click to edit column name" [ref=e2734] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2735]: ✎
+              - button "×" [ref=e2736] [cursor=pointer]
+            - button "+ Add Card" [ref=e2738] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2739]':
+          - 'generic "Kanban Column: To Do" [ref=e2740]':
+            - generic [ref=e2741]:
+              - generic "Double-click to edit column name" [ref=e2742] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2743]: ✎
+              - button "×" [ref=e2744] [cursor=pointer]
+            - button "+ Add Card" [ref=e2746] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2747]':
+          - 'generic "Kanban Column: To Do" [ref=e2748]':
+            - generic [ref=e2749]:
+              - generic "Double-click to edit column name" [ref=e2750] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2751]: ✎
+              - button "×" [ref=e2752] [cursor=pointer]
+            - button "+ Add Card" [ref=e2754] [cursor=pointer]
+        - 'listitem "Column: To Do" [ref=e2755]':
+          - 'generic "Kanban Column: To Do" [ref=e2756]':
+            - generic [ref=e2757]:
+              - generic "Double-click to edit column name" [ref=e2758] [cursor=pointer]:
+                - text: To Do
+                - button "Edit column name" [ref=e2759]: ✎
+              - button "×" [ref=e2760] [cursor=pointer]
+            - button "+ Add Card" [ref=e2762] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2763]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2764]':
+            - generic [ref=e2765]:
+              - generic "Double-click to edit column name" [ref=e2766] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2767]: ✎
+              - button "×" [ref=e2768] [cursor=pointer]
+            - button "+ Add Card" [ref=e2770] [cursor=pointer]
+        - 'listitem "Column: Col 1764963440609" [ref=e2771]':
+          - 'generic "Kanban Column: Col 1764963440609" [ref=e2772]':
+            - generic [ref=e2773]:
+              - generic "Double-click to edit column name" [ref=e2774] [cursor=pointer]:
+                - text: Col 1764963440609
+                - button "Edit column name" [ref=e2775]: ✎
+              - button "×" [ref=e2776] [cursor=pointer]
+            - button "+ Add Card" [ref=e2778] [cursor=pointer]
+        - 'listitem "Column: Col 1764963440694" [ref=e2779]':
+          - 'generic "Kanban Column: Col 1764963440694" [ref=e2780]':
+            - generic [ref=e2781]:
+              - generic "Double-click to edit column name" [ref=e2782] [cursor=pointer]:
+                - text: Col 1764963440694
+                - button "Edit column name" [ref=e2783]: ✎
+              - button "×" [ref=e2784] [cursor=pointer]
+            - button "+ Add Card" [ref=e2786] [cursor=pointer]
+        - 'listitem "Column: Col 1764963440907" [ref=e2787]':
+          - 'generic "Kanban Column: Col 1764963440907" [ref=e2788]':
+            - generic [ref=e2789]:
+              - generic "Double-click to edit column name" [ref=e2790] [cursor=pointer]:
+                - text: Col 1764963440907
+                - button "Edit column name" [ref=e2791]: ✎
+              - button "×" [ref=e2792] [cursor=pointer]
+            - button "+ Add Card" [ref=e2794] [cursor=pointer]
+        - 'listitem "Column: Col 1764963443010" [ref=e2795]':
+          - 'generic "Kanban Column: Col 1764963443010" [ref=e2796]':
+            - generic [ref=e2797]:
+              - generic "Double-click to edit column name" [ref=e2798] [cursor=pointer]:
+                - text: Col 1764963443010
+                - button "Edit column name" [ref=e2799]: ✎
+              - button "×" [ref=e2800] [cursor=pointer]
+            - button "+ Add Card" [ref=e2802] [cursor=pointer]
+        - 'listitem "Column: Col 1765209657901" [ref=e2803]':
+          - 'generic "Kanban Column: Col 1765209657901" [ref=e2804]':
+            - generic [ref=e2805]:
+              - generic "Double-click to edit column name" [ref=e2806] [cursor=pointer]:
+                - text: Col 1765209657901
+                - button "Edit column name" [ref=e2807]: ✎
+              - button "×" [ref=e2808] [cursor=pointer]
+            - button "+ Add Card" [ref=e2810] [cursor=pointer]
+        - 'listitem "Column: Col 1765209657962" [ref=e2811]':
+          - 'generic "Kanban Column: Col 1765209657962" [ref=e2812]':
+            - generic [ref=e2813]:
+              - generic "Double-click to edit column name" [ref=e2814] [cursor=pointer]:
+                - text: Col 1765209657962
+                - button "Edit column name" [ref=e2815]: ✎
+              - button "×" [ref=e2816] [cursor=pointer]
+            - button "+ Add Card" [ref=e2818] [cursor=pointer]
+        - 'listitem "Column: Col 1765209658580" [ref=e2819]':
+          - 'generic "Kanban Column: Col 1765209658580" [ref=e2820]':
+            - generic [ref=e2821]:
+              - generic "Double-click to edit column name" [ref=e2822] [cursor=pointer]:
+                - text: Col 1765209658580
+                - button "Edit column name" [ref=e2823]: ✎
+              - button "×" [ref=e2824] [cursor=pointer]
+            - button "+ Add Card" [ref=e2826] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2827]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2828]':
+            - generic [ref=e2829]:
+              - generic "Double-click to edit column name" [ref=e2830] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2831]: ✎
+              - button "×" [ref=e2832] [cursor=pointer]
+            - button "+ Add Card" [ref=e2834] [cursor=pointer]
+        - 'listitem "Column: Order Col 1765209658708" [ref=e2835]':
+          - 'generic "Kanban Column: Order Col 1765209658708" [ref=e2836]':
+            - generic [ref=e2837]:
+              - generic "Double-click to edit column name" [ref=e2838] [cursor=pointer]:
+                - text: Order Col 1765209658708
+                - button "Edit column name" [ref=e2839]: ✎
+              - button "×" [ref=e2840] [cursor=pointer]
+            - button "+ Add Card" [ref=e2842] [cursor=pointer]
+        - 'listitem "Column: Col 1765209661339" [ref=e2843]':
+          - 'generic "Kanban Column: Col 1765209661339" [ref=e2844]':
+            - generic [ref=e2845]:
+              - generic "Double-click to edit column name" [ref=e2846] [cursor=pointer]:
+                - text: Col 1765209661339
+                - button "Edit column name" [ref=e2847]: ✎
+              - button "×" [ref=e2848] [cursor=pointer]
+            - button "+ Add Card" [ref=e2850] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2851]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2852]':
+            - generic [ref=e2853]:
+              - generic "Double-click to edit column name" [ref=e2854] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2855]: ✎
+              - button "×" [ref=e2856] [cursor=pointer]
+            - button "+ Add Card" [ref=e2858] [cursor=pointer]
+        - 'listitem "Column: Col 1765209699025" [ref=e2859]':
+          - 'generic "Kanban Column: Col 1765209699025" [ref=e2860]':
+            - generic [ref=e2861]:
+              - generic "Double-click to edit column name" [ref=e2862] [cursor=pointer]:
+                - text: Col 1765209699025
+                - button "Edit column name" [ref=e2863]: ✎
+              - button "×" [ref=e2864] [cursor=pointer]
+            - button "+ Add Card" [ref=e2866] [cursor=pointer]
+        - 'listitem "Column: Col 1765209701328" [ref=e2867]':
+          - 'generic "Kanban Column: Col 1765209701328" [ref=e2868]':
+            - generic [ref=e2869]:
+              - generic "Double-click to edit column name" [ref=e2870] [cursor=pointer]:
+                - text: Col 1765209701328
+                - button "Edit column name" [ref=e2871]: ✎
+              - button "×" [ref=e2872] [cursor=pointer]
+            - button "+ Add Card" [ref=e2874] [cursor=pointer]
+        - 'listitem "Column: Col 1765209702876" [ref=e2875]':
+          - 'generic "Kanban Column: Col 1765209702876" [ref=e2876]':
+            - generic [ref=e2877]:
+              - generic "Double-click to edit column name" [ref=e2878] [cursor=pointer]:
+                - text: Col 1765209702876
+                - button "Edit column name" [ref=e2879]: ✎
+              - button "×" [ref=e2880] [cursor=pointer]
+            - button "+ Add Card" [ref=e2882] [cursor=pointer]
+        - 'listitem "Column: Order Col 1765209701705" [ref=e2883]':
+          - 'generic "Kanban Column: Order Col 1765209701705" [ref=e2884]':
+            - generic [ref=e2885]:
+              - generic "Double-click to edit column name" [ref=e2886] [cursor=pointer]:
+                - text: Order Col 1765209701705
+                - button "Edit column name" [ref=e2887]: ✎
+              - button "×" [ref=e2888] [cursor=pointer]
+            - button "+ Add Card" [ref=e2890] [cursor=pointer]
+        - 'listitem "Column: Col 1765209704738" [ref=e2891]':
+          - 'generic "Kanban Column: Col 1765209704738" [ref=e2892]':
+            - generic [ref=e2893]:
+              - generic "Double-click to edit column name" [ref=e2894] [cursor=pointer]:
+                - text: Col 1765209704738
+                - button "Edit column name" [ref=e2895]: ✎
+              - button "×" [ref=e2896] [cursor=pointer]
+            - button "+ Add Card" [ref=e2898] [cursor=pointer]
+        - 'listitem "Column: Review 1765209738298" [ref=e2899]':
+          - 'generic "Kanban Column: Review 1765209738298" [ref=e2900]':
+            - generic [ref=e2901]:
+              - generic "Double-click to edit column name" [ref=e2902] [cursor=pointer]:
+                - text: Review 1765209738298
+                - button "Edit column name" [ref=e2903]: ✎
+              - button "×" [ref=e2904] [cursor=pointer]
+            - button "+ Add Card" [ref=e2906] [cursor=pointer]
+        - 'listitem "Column: Duplicate Test" [ref=e2907]':
+          - 'generic "Kanban Column: Duplicate Test" [ref=e2908]':
+            - generic [ref=e2909]:
+              - generic "Double-click to edit column name" [ref=e2910] [cursor=pointer]:
+                - text: Duplicate Test
+                - button "Edit column name" [ref=e2911]: ✎
+              - button "×" [ref=e2912] [cursor=pointer]
+            - button "+ Add Card" [ref=e2914] [cursor=pointer]
+        - 'listitem "Column: Col 1765209745945" [ref=e2915]':
+          - 'generic "Kanban Column: Col 1765209745945" [ref=e2916]':
+            - generic [ref=e2917]:
+              - generic "Double-click to edit column name" [ref=e2918] [cursor=pointer]:
+                - text: Col 1765209745945
+                - button "Edit column name" [ref=e2919]: ✎
+              - button "×" [ref=e2920] [cursor=pointer]
+            - button "+ Add Card" [ref=e2922] [cursor=pointer]
+        - 'listitem "Column: Col 1765209745990" [ref=e2923]':
+          - 'generic "Kanban Column: Col 1765209745990" [ref=e2924]':
+            - generic [ref=e2925]:
+              - generic "Double-click to edit column name" [ref=e2926] [cursor=pointer]:
+                - text: Col 1765209745990
+                - button "Edit column name" [ref=e2927]: ✎
+              - button "×" [ref=e2928] [cursor=pointer]
+            - button "+ Add Card" [ref=e2930] [cursor=pointer]
+        - 'listitem "Column: Col 1765209746184" [ref=e2931]':
+          - 'generic "Kanban Column: Col 1765209746184" [ref=e2932]':
+            - generic [ref=e2933]:
+              - generic "Double-click to edit column name" [ref=e2934] [cursor=pointer]:
+                - text: Col 1765209746184
+                - button "Edit column name" [ref=e2935]: ✎
+              - button "×" [ref=e2936] [cursor=pointer]
+            - button "+ Add Card" [ref=e2938] [cursor=pointer]
+        - 'listitem "Column: Col 1765209748189" [ref=e2939]':
+          - 'generic "Kanban Column: Col 1765209748189" [ref=e2940]':
+            - generic [ref=e2941]:
+              - generic "Double-click to edit column name" [ref=e2942] [cursor=pointer]:
+                - text: Col 1765209748189
+                - button "Edit column name" [ref=e2943]: ✎
+              - button "×" [ref=e2944] [cursor=pointer]
+            - button "+ Add Card" [ref=e2946] [cursor=pointer]
+```

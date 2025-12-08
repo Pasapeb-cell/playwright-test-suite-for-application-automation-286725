@@ -1,0 +1,1244 @@
+<testsuites id="" name="" tests="60" failures="36" skipped="1" errors="0" time="146.23199300000002">
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.406" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="3.406">
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="4" failures="0" skipped="0" time="20.151" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="4.518">
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="5.874">
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="5.124">
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="4.635">
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="4" failures="4" skipped="0" time="104.751" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.245">
+<failure message="drag_and_drop.spec.ts:15:7 TC-11: Move task to next column @TC-11" type="FAILURE">
+<![CDATA[  [chromium] › kanban/DragAndDrop/drag_and_drop.spec.ts:15:7 › Drag & Drop @DragAndDrop › TC-11: Move task to next column @TC-11 › Drag task to next column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Drag Me 1765209658086' }).first()
+
+
+      27 |
+      28 |     await test.step('Drag task to next column', async () => {
+    > 29 |       await card.dragTo(col2);
+         |                  ^
+      30 |     });
+      31 |
+      32 |     await test.step('Actual Result: Task snaps into In Progress (next) column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:29:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:28:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.184">
+<failure message="drag_and_drop.spec.ts:39:7 TC-12: Move task backwards @TC-12" type="FAILURE">
+<![CDATA[  [chromium] › kanban/DragAndDrop/drag_and_drop.spec.ts:39:7 › Drag & Drop @DragAndDrop › TC-12: Move task backwards @TC-12 › Drag task back to previous column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Backwards 1765209658106' }).first()
+
+
+      51 |  
+      52 |      await test.step('Drag task back to previous column', async () => {
+    > 53 |        await card.dragTo(col1);
+         |                   ^
+      54 |      });
+      55 |  
+      56 |      await test.step('Actual Result: Task moves back to first column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:53:19
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:52:17
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="14.146">
+<failure message="drag_and_drop.spec.ts:61:7 TC-13: Reorder tasks within column @TC-13" type="FAILURE">
+<![CDATA[  [chromium] › kanban/DragAndDrop/drag_and_drop.spec.ts:61:7 › Drag & Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: locator('.kanban-column').filter({ hasText: 'Order Col 1765209658708' }).locator('.kanban-card')
+    Timeout: 5000ms
+    - Expected  - 4
+    + Received  + 1
+
+    - Array [
+    -   "Task A 1765209660016",
+    -   "Task B 1765209660016",
+    - ]
+    + Array []
+
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('.kanban-column').filter({ hasText: 'Order Col 1765209658708' }).locator('.kanban-card')
+        9 × locator resolved to 0 elements
+
+
+      83 |
+      84 |     // Initial check to ensure order is A, B
+    > 85 |     await expect(column.locator('.kanban-card')).toHaveText([taskA, taskB]);
+         |                                                  ^
+      86 |
+      87 |     await test.step('Drag bottom task to top', async () => {
+      88 |       // Drag B to A
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:85:50
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.176">
+<failure message="drag_and_drop.spec.ts:99:7 TC-14: Drop task outside valid area @TC-14" type="FAILURE">
+<![CDATA[  [chromium] › kanban/DragAndDrop/drag_and_drop.spec.ts:99:7 › Drag & Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14 › Drag task outside 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Outside 1765209661474' })
+
+
+      109 |     await test.step('Drag task outside', async () => {
+      110 |       // Drag to body or somewhere "empty"
+    > 111 |       await card.dragTo(page.locator('body'), { targetPosition: { x: 0, y: 0 } });
+          |                  ^
+      112 |     });
+      113 |
+      114 |     await test.step('Actual Result: Task snaps back, no data lost', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:111:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:109:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.193" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="30.193">
+<failure message="performance.spec.ts:5:7 TC-19: Rapid task creation @TC-19" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Performance/performance.spec.ts:5:7 › Performance @Performance › TC-19: Rapid task creation @TC-19 › Quickly add 5 tasks in succession 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').first().locator('input[name="feature"]')
+
+
+      16 |       for (let i = 0; i < 5; i++) {
+      17 |         await col.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 18 |         await col.locator('input[name="feature"]').fill(`Rapid Task ${i}`);
+         |                                                    ^
+      19 |         await col.getByRole('button', { name: 'Add', exact: true }).click();
+      20 |       }
+      21 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:18:52
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:15:5
+
+    Error Context: ../test-results/kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.196" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="30.196">
+<failure message="search_filter.spec.ts:5:7 TC-18: Search for a task @TC-18" type="FAILURE">
+<![CDATA[  [chromium] › kanban/SearchFilter/search_filter.spec.ts:5:7 › Search/Filter @SearchFilter › TC-18: Search for a task @TC-18 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').first().locator('input[name="feature"]')
+
+
+      20 |
+      21 |     await col.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 22 |     await col.locator('input[name="feature"]').fill('Banana');
+         |                                                ^
+      23 |     await col.getByRole('button', { name: 'Add', exact: true }).click();
+      24 |
+      25 |     await test.step('1. Enter keyword in search bar', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/SearchFilter/search_filter.spec.ts:22:48
+
+    Error Context: ../test-results/kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.245" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="30.245">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20" type="FAILURE">
+<![CDATA[  [chromium] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 › 1. Look for Clear Board button 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /confirm|yes/i })
+
+
+      12 |         
+      13 |       // Confirm
+    > 14 |       await page.getByRole('button', { name: /confirm|yes/i }).click();
+         |                                                                ^
+      15 |         
+      16 |       // Verify
+      17 |       await expect(page.locator('.kanban-column')).toHaveCount(0);
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:14:64
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:8:5
+
+    Error Context: ../test-results/kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="5" failures="4" skipped="0" time="91.281" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="13.398">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 › Actual Result: A new task card appears 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'New Task 1765209661083' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'New Task 1765209661083' })
+
+
+      35 |
+      36 |     await test.step('Actual Result: A new task card appears', async () => {
+    > 37 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+         |                                                                          ^
+      38 |       await page.reload();
+      39 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+      40 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:37:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:36:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="2.837">
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="30.267">
+<failure message="tasks.spec.ts:62:7 TC-08: Edit task details @TC-08" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Tasks/tasks.spec.ts:62:7 › Tasks @Tasks › TC-08: Edit task details @TC-08 › 1. Click on an existing task 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Edit Me 1765209673196' }).first()
+
+
+      72 |
+      73 |     await test.step('1. Click on an existing task', async () => {
+    > 74 |       await card.click(); // Opens modal
+         |                  ^
+      75 |     });
+      76 |
+      77 |     await test.step('2. Modify the description', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:74:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:73:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="30.281">
+<failure message="tasks.spec.ts:102:7 TC-09: Delete a task @TC-09" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Tasks/tasks.spec.ts:102:7 › Tasks @Tasks › TC-09: Delete a task @TC-09 › 1. Click the delete icon 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Delete Me 1765209675298' }).first()
+
+
+      110 |
+      111 |     await test.step('1. Click the delete icon', async () => {
+    > 112 |       await card.click(); // Open modal
+          |                  ^
+      113 |       // Delete icon in header: aria-label="Delete card"
+      114 |       await page.getByRole('button', { name: 'Delete card' }).click();
+      115 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:112:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:111:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-09-Delete-a-task-TC-09-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-09-Delete-a-task-TC-09-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="14.498">
+<failure message="tasks.spec.ts:126:7 TC-10: Task persistence after refresh @TC-10" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Tasks/tasks.spec.ts:126:7 › Tasks @Tasks › TC-10: Task persistence after refresh @TC-10 › Actual Result: Task is still visible 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'Persistence 1765209687133' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'Persistence 1765209687133' })
+
+
+      136 |
+      137 |     await test.step('Actual Result: Task is still visible', async () => {
+    > 138 |       await expect(page.locator('.kanban-card', { hasText: taskName })).toBeVisible({ timeout: 10000 });
+          |                                                                         ^
+      139 |     });
+      140 |   });
+      141 |
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:138:73
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:137:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="chromium" tests="3" failures="1" skipped="0" time="14.5" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="4.112">
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="8.072">
+<failure message="ui_ux.spec.ts:33:7 TC-16: Special characters in input @TC-16" type="FAILURE">
+<![CDATA[  [chromium] › kanban/UI_UX/ui_ux.spec.ts:33:7 › UI/UX @UI_UX › TC-16: Special characters in input @TC-16 › Actual Result: Characters display correctly, sanitized 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+
+
+      42 |
+      43 |     await test.step('Actual Result: Characters display correctly, sanitized', async () => {
+    > 44 |       await expect(page.locator('.kanban-card', { hasText: '@#$%^&*' })).toBeVisible();
+         |                                                                          ^
+      45 |       // Ensure no actual alert popped up (Playwright auto-dismisses dialogs but we can verify content)
+      46 |     });
+      47 |   });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:44:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:43:16
+
+    Error Context: ../test-results/kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="2.316">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.106" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="3.106">
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="4" failures="0" skipped="0" time="21.415" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="4.514">
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="7.43">
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="5.582">
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="3.889">
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="4" failures="4" skipped="0" time="123.758" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.828">
+<failure message="drag_and_drop.spec.ts:15:7 TC-11: Move task to next column @TC-11" type="FAILURE">
+<![CDATA[  [firefox] › kanban/DragAndDrop/drag_and_drop.spec.ts:15:7 › Drag & Drop @DragAndDrop › TC-11: Move task to next column @TC-11 › Drag task to next column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Drag Me 1765209699356' }).first()
+
+
+      27 |
+      28 |     await test.step('Drag task to next column', async () => {
+    > 29 |       await card.dragTo(col2);
+         |                  ^
+      30 |     });
+      31 |
+      32 |     await test.step('Actual Result: Task snaps into In Progress (next) column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:29:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:28:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="31.005">
+<failure message="drag_and_drop.spec.ts:39:7 TC-12: Move task backwards @TC-12" type="FAILURE">
+<![CDATA[  [firefox] › kanban/DragAndDrop/drag_and_drop.spec.ts:39:7 › Drag & Drop @DragAndDrop › TC-12: Move task backwards @TC-12 › Drag task back to previous column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Backwards 1765209705099' }).first()
+
+
+      51 |  
+      52 |      await test.step('Drag task back to previous column', async () => {
+    > 53 |        await card.dragTo(col1);
+         |                   ^
+      54 |      });
+      55 |  
+      56 |      await test.step('Actual Result: Task moves back to first column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:53:19
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:52:17
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.941">
+<failure message="drag_and_drop.spec.ts:61:7 TC-13: Reorder tasks within column @TC-13" type="FAILURE">
+<![CDATA[  [firefox] › kanban/DragAndDrop/drag_and_drop.spec.ts:61:7 › Drag & Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').filter({ hasText: 'Order Col 1765209701705' }).locator('input[name="feature"]')
+
+
+      76 |     
+      77 |     await column.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 78 |     await column.locator('input[name="feature"]').fill(taskB);
+         |                                                   ^
+      79 |     await column.getByRole('button', { name: 'Add', exact: true }).click();
+      80 |
+      81 |     const cardA = column.locator('.kanban-card', { hasText: taskA });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:78:51
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.984">
+<failure message="drag_and_drop.spec.ts:99:7 TC-14: Drop task outside valid area @TC-14" type="FAILURE">
+<![CDATA[  [firefox] › kanban/DragAndDrop/drag_and_drop.spec.ts:99:7 › Drag & Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14 › Drag task outside 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Outside 1765209703245' })
+
+
+      109 |     await test.step('Drag task outside', async () => {
+      110 |       // Drag to body or somewhere "empty"
+    > 111 |       await card.dragTo(page.locator('body'), { targetPosition: { x: 0, y: 0 } });
+          |                  ^
+      112 |     });
+      113 |
+      114 |     await test.step('Actual Result: Task snaps back, no data lost', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:111:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:109:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="1" failures="1" skipped="0" time="30.926" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="30.926">
+<failure message="performance.spec.ts:5:7 TC-19: Rapid task creation @TC-19" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Performance/performance.spec.ts:5:7 › Performance @Performance › TC-19: Rapid task creation @TC-19 › Quickly add 5 tasks in succession 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').first().locator('input[name="feature"]')
+
+
+      16 |       for (let i = 0; i < 5; i++) {
+      17 |         await col.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 18 |         await col.locator('input[name="feature"]').fill(`Rapid Task ${i}`);
+         |                                                    ^
+      19 |         await col.getByRole('button', { name: 'Add', exact: true }).click();
+      20 |       }
+      21 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:18:52
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:15:5
+
+    Error Context: ../test-results/kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="1" failures="1" skipped="0" time="30.919" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="30.919">
+<failure message="search_filter.spec.ts:5:7 TC-18: Search for a task @TC-18" type="FAILURE">
+<![CDATA[  [firefox] › kanban/SearchFilter/search_filter.spec.ts:5:7 › Search/Filter @SearchFilter › TC-18: Search for a task @TC-18 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').first().locator('input[name="feature"]')
+
+
+      20 |
+      21 |     await col.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 22 |     await col.locator('input[name="feature"]').fill('Banana');
+         |                                                ^
+      23 |     await col.getByRole('button', { name: 'Add', exact: true }).click();
+      24 |
+      25 |     await test.step('1. Enter keyword in search bar', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/SearchFilter/search_filter.spec.ts:22:48
+
+    Error Context: ../test-results/kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="1" failures="1" skipped="0" time="31.402" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="31.402">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20" type="FAILURE">
+<![CDATA[  [firefox] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 › 1. Look for Clear Board button 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /confirm|yes/i })
+
+
+      12 |         
+      13 |       // Confirm
+    > 14 |       await page.getByRole('button', { name: /confirm|yes/i }).click();
+         |                                                                ^
+      15 |         
+      16 |       // Verify
+      17 |       await expect(page.locator('.kanban-column')).toHaveCount(0);
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:14:64
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:8:5
+
+    Error Context: ../test-results/kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="5" failures="4" skipped="0" time="101.16" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="16.034">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 › Actual Result: A new task card appears 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'New Task 1765209709180' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'New Task 1765209709180' })
+
+
+      35 |
+      36 |     await test.step('Actual Result: A new task card appears', async () => {
+    > 37 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+         |                                                                          ^
+      38 |       await page.reload();
+      39 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+      40 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:37:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:36:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="4.415">
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="31.035">
+<failure message="tasks.spec.ts:62:7 TC-08: Edit task details @TC-08" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Tasks/tasks.spec.ts:62:7 › Tasks @Tasks › TC-08: Edit task details @TC-08 › 1. Click on an existing task 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Edit Me 1765209730662' }).first()
+
+
+      72 |
+      73 |     await test.step('1. Click on an existing task', async () => {
+    > 74 |       await card.click(); // Opens modal
+         |                  ^
+      75 |     });
+      76 |
+      77 |     await test.step('2. Modify the description', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:74:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:73:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="31.02">
+<failure message="tasks.spec.ts:102:7 TC-09: Delete a task @TC-09" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Tasks/tasks.spec.ts:102:7 › Tasks @Tasks › TC-09: Delete a task @TC-09 › 1. Click the delete icon 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Delete Me 1765209730286' }).first()
+
+
+      110 |
+      111 |     await test.step('1. Click the delete icon', async () => {
+    > 112 |       await card.click(); // Open modal
+          |                  ^
+      113 |       // Delete icon in header: aria-label="Delete card"
+      114 |       await page.getByRole('button', { name: 'Delete card' }).click();
+      115 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:112:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:111:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-09-Delete-a-task-TC-09-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-09-Delete-a-task-TC-09-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="18.656">
+<failure message="tasks.spec.ts:126:7 TC-10: Task persistence after refresh @TC-10" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Tasks/tasks.spec.ts:126:7 › Tasks @Tasks › TC-10: Task persistence after refresh @TC-10 › Actual Result: Task is still visible 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'Persistence 1765209733458' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'Persistence 1765209733458' })
+
+
+      136 |
+      137 |     await test.step('Actual Result: Task is still visible', async () => {
+    > 138 |       await expect(page.locator('.kanban-card', { hasText: taskName })).toBeVisible({ timeout: 10000 });
+          |                                                                         ^
+      139 |     });
+      140 |   });
+      141 |
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:138:73
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:137:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="firefox" tests="3" failures="1" skipped="0" time="21.291" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="5.806">
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="11.82">
+<failure message="ui_ux.spec.ts:33:7 TC-16: Special characters in input @TC-16" type="FAILURE">
+<![CDATA[  [firefox] › kanban/UI_UX/ui_ux.spec.ts:33:7 › UI/UX @UI_UX › TC-16: Special characters in input @TC-16 › Actual Result: Characters display correctly, sanitized 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+
+
+      42 |
+      43 |     await test.step('Actual Result: Characters display correctly, sanitized', async () => {
+    > 44 |       await expect(page.locator('.kanban-card', { hasText: '@#$%^&*' })).toBeVisible();
+         |                                                                          ^
+      45 |       // Ensure no actual alert popped up (Playwright auto-dismisses dialogs but we can verify content)
+      46 |     });
+      47 |   });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:44:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:43:16
+
+    Error Context: ../test-results/kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="3.665">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.876" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01" classname="kanban/BoardLayout/board_layout.spec.ts" time="3.876">
+</testcase>
+</testsuite>
+<testsuite name="kanban/Columns/columns.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="4" failures="1" skipped="0" time="23.048" errors="0">
+<testcase name="Columns @Columns › TC-02: Add a new column @TC-02" classname="kanban/Columns/columns.spec.ts" time="6.687">
+</testcase>
+<testcase name="Columns @Columns › TC-03: Rename an existing column @TC-03" classname="kanban/Columns/columns.spec.ts" time="4.141">
+<failure message="columns.spec.ts:30:7 TC-03: Rename an existing column @TC-03" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Columns/columns.spec.ts:30:7 › Columns @Columns › TC-03: Rename an existing column @TC-03 › 1. Click on a column title 
+
+    Error: locator.dblclick: Element is not visible
+    Call log:
+      - waiting for locator('.kanban-column-title').first()
+        - locator resolved to <span tabindex="0" class="kanban-column-title" title="Double-click to edit column name">…</span>
+      - attempting dblclick action
+        - scrolling into view if needed
+        - done scrolling
+
+
+      35 |     await test.step('1. Click on a column title', async () => {
+      36 |       // Code uses onDoubleClick to trigger edit
+    > 37 |       await firstColumnTitle.dblclick({ force: true });
+         |                              ^
+      38 |     });
+      39 |
+      40 |     await test.step('2. Change text', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Columns/columns.spec.ts:37:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Columns/columns.spec.ts:35:16
+
+    Error Context: ../test-results/kanban-Columns-columns-Col-20a6c-me-an-existing-column-TC-03-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Columns-columns-Col-20a6c-me-an-existing-column-TC-03-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Columns @Columns › TC-04: Delete a column @TC-04" classname="kanban/Columns/columns.spec.ts" time="6.251">
+</testcase>
+<testcase name="Columns @Columns › TC-05: Duplicate column names @TC-05" classname="kanban/Columns/columns.spec.ts" time="5.969">
+</testcase>
+</testsuite>
+<testsuite name="kanban/DragAndDrop/drag_and_drop.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="4" failures="4" skipped="0" time="121.021" errors="0">
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-11: Move task to next column @TC-11" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.276">
+<failure message="drag_and_drop.spec.ts:15:7 TC-11: Move task to next column @TC-11" type="FAILURE">
+<![CDATA[  [webkit] › kanban/DragAndDrop/drag_and_drop.spec.ts:15:7 › Drag & Drop @DragAndDrop › TC-11: Move task to next column @TC-11 › Drag task to next column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Drag Me 1765209746836' }).first()
+
+
+      27 |
+      28 |     await test.step('Drag task to next column', async () => {
+    > 29 |       await card.dragTo(col2);
+         |                  ^
+      30 |     });
+      31 |
+      32 |     await test.step('Actual Result: Task snaps into In Progress (next) column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:29:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:28:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-3fb5d-e-task-to-next-column-TC-11-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-12: Move task backwards @TC-12" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.276">
+<failure message="drag_and_drop.spec.ts:39:7 TC-12: Move task backwards @TC-12" type="FAILURE">
+<![CDATA[  [webkit] › kanban/DragAndDrop/drag_and_drop.spec.ts:39:7 › Drag & Drop @DragAndDrop › TC-12: Move task backwards @TC-12 › Drag task back to previous column 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Backwards 1765209747600' }).first()
+
+
+      51 |  
+      52 |      await test.step('Drag task back to previous column', async () => {
+    > 53 |        await card.dragTo(col1);
+         |                   ^
+      54 |      });
+      55 |  
+      56 |      await test.step('Actual Result: Task moves back to first column', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:53:19
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:52:17
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-fb8ab-2-Move-task-backwards-TC-12-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.239">
+<failure message="drag_and_drop.spec.ts:61:7 TC-13: Reorder tasks within column @TC-13" type="FAILURE">
+<![CDATA[  [webkit] › kanban/DragAndDrop/drag_and_drop.spec.ts:61:7 › Drag & Drop @DragAndDrop › TC-13: Reorder tasks within column @TC-13 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-column').filter({ hasText: 'Order Col 1765209747753' }).locator('input[name="feature"]')
+
+
+      76 |     
+      77 |     await column.getByRole('button', { name: /\+? ?add card/i }).click();
+    > 78 |     await column.locator('input[name="feature"]').fill(taskB);
+         |                                                   ^
+      79 |     await column.getByRole('button', { name: 'Add', exact: true }).click();
+      80 |
+      81 |     const cardA = column.locator('.kanban-card', { hasText: taskA });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:78:51
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-d236f-r-tasks-within-column-TC-13-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Drag &amp; Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14" classname="kanban/DragAndDrop/drag_and_drop.spec.ts" time="30.23">
+<failure message="drag_and_drop.spec.ts:99:7 TC-14: Drop task outside valid area @TC-14" type="FAILURE">
+<![CDATA[  [webkit] › kanban/DragAndDrop/drag_and_drop.spec.ts:99:7 › Drag & Drop @DragAndDrop › TC-14: Drop task outside valid area @TC-14 › Drag task outside 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.dragTo: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Outside 1765209749885' })
+
+
+      109 |     await test.step('Drag task outside', async () => {
+      110 |       // Drag to body or somewhere "empty"
+    > 111 |       await card.dragTo(page.locator('body'), { targetPosition: { x: 0, y: 0 } });
+          |                  ^
+      112 |     });
+      113 |
+      114 |     await test.step('Actual Result: Task snaps back, no data lost', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:111:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/DragAndDrop/drag_and_drop.spec.ts:109:16
+
+    Error Context: ../test-results/kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-DragAndDrop-drag_an-1059d-sk-outside-valid-area-TC-14-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Performance/performance.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="1" failures="1" skipped="0" time="21.134" errors="0">
+<testcase name="Performance @Performance › TC-19: Rapid task creation @TC-19" classname="kanban/Performance/performance.spec.ts" time="21.134">
+<failure message="performance.spec.ts:5:7 TC-19: Rapid task creation @TC-19" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Performance/performance.spec.ts:5:7 › Performance @Performance › TC-19: Rapid task creation @TC-19 › Actual Result: App handles gracefully 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'Rapid Task 4' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'Rapid Task 4' })
+
+
+      22 |
+      23 |     await test.step('Actual Result: App handles gracefully', async () => {
+    > 24 |       await expect(page.locator('.kanban-card', { hasText: 'Rapid Task 4' })).toBeVisible();
+         |                                                                               ^
+      25 |     });
+      26 |   });
+      27 |
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:24:79
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Performance/performance.spec.ts:23:16
+
+    Error Context: ../test-results/kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Performance-perform-47f0b-9-Rapid-task-creation-TC-19-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/SearchFilter/search_filter.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="1" failures="1" skipped="0" time="11.954" errors="0">
+<testcase name="Search/Filter @SearchFilter › TC-18: Search for a task @TC-18" classname="kanban/SearchFilter/search_filter.spec.ts" time="11.954">
+<failure message="search_filter.spec.ts:5:7 TC-18: Search for a task @TC-18" type="FAILURE">
+<![CDATA[  [webkit] › kanban/SearchFilter/search_filter.spec.ts:5:7 › Search/Filter @SearchFilter › TC-18: Search for a task @TC-18 › 1. Enter keyword in search bar 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByPlaceholder(/search|filter/i)
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByPlaceholder(/search|filter/i)
+
+
+      25 |     await test.step('1. Enter keyword in search bar', async () => {
+      26 |        const searchInput = page.getByPlaceholder(/search|filter/i);
+    > 27 |        await expect(searchInput).toBeVisible();
+         |                                  ^
+      28 |        await searchInput.fill('Apple');
+      29 |     });
+      30 |
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/SearchFilter/search_filter.spec.ts:27:34
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/SearchFilter/search_filter.spec.ts:25:16
+
+    Error Context: ../test-results/kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-SearchFilter-search-bd118--18-Search-for-a-task-TC-18-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="1" failures="1" skipped="0" time="30.147" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20" classname="kanban/System/system.spec.ts" time="30.147">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20" type="FAILURE">
+<![CDATA[  [webkit] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 › 1. Look for Clear Board button 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /confirm|yes/i })
+
+
+      12 |         
+      13 |       // Confirm
+    > 14 |       await page.getByRole('button', { name: /confirm|yes/i }).click();
+         |                                                                ^
+      15 |         
+      16 |       // Verify
+      17 |       await expect(page.locator('.kanban-column')).toHaveCount(0);
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:14:64
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:8:5
+
+    Error Context: ../test-results/kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-5873e--20-Clear-Board-Reset-TC-20-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="5" failures="3" skipped="1" time="94.771" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06" classname="kanban/Tasks/tasks.spec.ts" time="14.445">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 › Actual Result: A new task card appears 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'New Task 1765209763381' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'New Task 1765209763381' })
+
+
+      35 |
+      36 |     await test.step('Actual Result: A new task card appears', async () => {
+    > 37 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+         |                                                                          ^
+      38 |       await page.reload();
+      39 |       await expect(page.locator('.kanban-card', { hasText: taskTitle })).toBeVisible({ timeout: 10000 });
+      40 |     });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:37:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:36:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-06-Create-a-new-task-TC-06-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-07: Add empty task @TC-07" classname="kanban/Tasks/tasks.spec.ts" time="5.144">
+</testcase>
+<testcase name="Tasks @Tasks › TC-08: Edit task details @TC-08" classname="kanban/Tasks/tasks.spec.ts" time="30.253">
+<failure message="tasks.spec.ts:62:7 TC-08: Edit task details @TC-08" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Tasks/tasks.spec.ts:62:7 › Tasks @Tasks › TC-08: Edit task details @TC-08 › 1. Click on an existing task 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.kanban-card').filter({ hasText: 'Edit Me 1765209769783' }).first()
+
+
+      72 |
+      73 |     await test.step('1. Click on an existing task', async () => {
+    > 74 |       await card.click(); // Opens modal
+         |                  ^
+      75 |     });
+      76 |
+      77 |     await test.step('2. Modify the description', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:74:18
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:73:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-Tasks-TC-08-Edit-task-details-TC-08-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Tasks @Tasks › TC-09: Delete a task @TC-09" classname="kanban/Tasks/tasks.spec.ts" time="28.732">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Tasks @Tasks › TC-10: Task persistence after refresh @TC-10" classname="kanban/Tasks/tasks.spec.ts" time="16.197">
+<failure message="tasks.spec.ts:126:7 TC-10: Task persistence after refresh @TC-10" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Tasks/tasks.spec.ts:126:7 › Tasks @Tasks › TC-10: Task persistence after refresh @TC-10 › Actual Result: Task is still visible 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: 'Persistence 1765209778659' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('.kanban-card').filter({ hasText: 'Persistence 1765209778659' })
+
+
+      136 |
+      137 |     await test.step('Actual Result: Task is still visible', async () => {
+    > 138 |       await expect(page.locator('.kanban-card', { hasText: taskName })).toBeVisible({ timeout: 10000 });
+          |                                                                         ^
+      139 |     });
+      140 |   });
+      141 |
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:138:73
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:137:16
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-60d39-istence-after-refresh-TC-10-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="kanban/UI_UX/ui_ux.spec.ts" timestamp="2025-12-08T16:00:52.964Z" hostname="webkit" tests="3" failures="1" skipped="0" time="18.811" errors="0">
+<testcase name="UI/UX @UI_UX › TC-15: Long task descriptions @TC-15" classname="kanban/UI_UX/ui_ux.spec.ts" time="5.859">
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-16: Special characters in input @TC-16" classname="kanban/UI_UX/ui_ux.spec.ts" time="10.062">
+<failure message="ui_ux.spec.ts:33:7 TC-16: Special characters in input @TC-16" type="FAILURE">
+<![CDATA[  [webkit] › kanban/UI_UX/ui_ux.spec.ts:33:7 › UI/UX @UI_UX › TC-16: Special characters in input @TC-16 › Actual Result: Characters display correctly, sanitized 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-card').filter({ hasText: '@#$%^&*' })
+
+
+      42 |
+      43 |     await test.step('Actual Result: Characters display correctly, sanitized', async () => {
+    > 44 |       await expect(page.locator('.kanban-card', { hasText: '@#$%^&*' })).toBeVisible();
+         |                                                                          ^
+      45 |       // Ensure no actual alert popped up (Playwright auto-dismisses dialogs but we can verify content)
+      46 |     });
+      47 |   });
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:44:74
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/UI_UX/ui_ux.spec.ts:43:16
+
+    Error Context: ../test-results/kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-UI_UX-ui_ux-UI-UX-U-599b6-l-characters-in-input-TC-16-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="UI/UX @UI_UX › TC-17: Mobile responsiveness @TC-17" classname="kanban/UI_UX/ui_ux.spec.ts" time="2.89">
+</testcase>
+</testsuite>
+</testsuites>
