@@ -1,0 +1,1034 @@
+<testsuites id="" name="" tests="18" failures="9" skipped="0" errors="0" time="443.39175">
+<testsuite name="example.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.833" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0.374">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0.459">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="chromium" tests="1" failures="1" skipped="0" time="18.334" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke" classname="kanban/BoardLayout/board_layout.spec.ts" time="18.334">
+<failure message="board_layout.spec.ts:5:7 TC-01: Verify default board load @TC-01 @smoke" type="FAILURE">
+<![CDATA[  [chromium] › kanban/BoardLayout/board_layout.spec.ts:5:7 › Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke › 2. Observe the initial state 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-chromium-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="chromium" tests="1" failures="1" skipped="0" time="21.365" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20 @smoke" classname="kanban/System/system.spec.ts" time="21.365">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20 @smoke" type="FAILURE">
+<![CDATA[  [chromium] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 @smoke › 1. Verify Clear Board button exists 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-chromium-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="chromium" tests="1" failures="1" skipped="0" time="90.286" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke" classname="kanban/Tasks/tasks.spec.ts" time="90.286">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06 @smoke" type="FAILURE">
+<![CDATA[  [chromium] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-chromium-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.343" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0.343">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="firefox" tests="2" failures="0" skipped="0" time="2.216" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="1.383">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="0.833">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="firefox" tests="1" failures="1" skipped="0" time="21.136" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke" classname="kanban/BoardLayout/board_layout.spec.ts" time="21.136">
+<failure message="board_layout.spec.ts:5:7 TC-01: Verify default board load @TC-01 @smoke" type="FAILURE">
+<![CDATA[  [firefox] › kanban/BoardLayout/board_layout.spec.ts:5:7 › Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke › 2. Observe the initial state 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-firefox-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="firefox" tests="1" failures="1" skipped="0" time="25.881" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20 @smoke" classname="kanban/System/system.spec.ts" time="25.881">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20 @smoke" type="FAILURE">
+<![CDATA[  [firefox] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 @smoke › 1. Verify Clear Board button exists 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-firefox-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="firefox" tests="1" failures="1" skipped="0" time="91.091" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke" classname="kanban/Tasks/tasks.spec.ts" time="91.091">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06 @smoke" type="FAILURE">
+<![CDATA[  [firefox] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-firefox-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.205" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="1.205">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="webkit" tests="2" failures="0" skipped="0" time="2.054" errors="0">
+<testcase name="has title @smoke" classname="example.spec.ts" time="0.856">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+<testcase name="get started link @smoke" classname="example.spec.ts" time="1.198">
+</testcase>
+</testsuite>
+<testsuite name="kanban/BoardLayout/board_layout.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="webkit" tests="1" failures="1" skipped="0" time="17.655" errors="0">
+<testcase name="Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke" classname="kanban/BoardLayout/board_layout.spec.ts" time="17.655">
+<failure message="board_layout.spec.ts:5:7 TC-01: Verify default board load @TC-01 @smoke" type="FAILURE">
+<![CDATA[  [webkit] › kanban/BoardLayout/board_layout.spec.ts:5:7 › Board Layout @BoardLayout › TC-01: Verify default board load @TC-01 @smoke › 2. Observe the initial state 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.kanban-board')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('.kanban-board')
+
+
+      10 |     await test.step('2. Observe the initial state', async () => {
+      11 |       // Verify that the board container is visible
+    > 12 |       await expect(page.locator('.kanban-board')).toBeVisible();
+         |                                                   ^
+      13 |       
+      14 |       // Expect at least some default columns or an empty state
+      15 |       // Common defaults are To Do, In Progress, Done
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:12:51
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/BoardLayout/board_layout.spec.ts:10:16
+
+    Error Context: ../test-results/kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-BoardLayout-board_l-ef7c4-ault-board-load-TC-01-smoke-webkit-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/System/system.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="webkit" tests="1" failures="1" skipped="0" time="21.29" errors="0">
+<testcase name="System @System › TC-20: Clear Board / Reset @TC-20 @smoke" classname="kanban/System/system.spec.ts" time="21.29">
+<failure message="system.spec.ts:5:7 TC-20: Clear Board / Reset @TC-20 @smoke" type="FAILURE">
+<![CDATA[  [webkit] › kanban/System/system.spec.ts:5:7 › System @System › TC-20: Clear Board / Reset @TC-20 @smoke › 1. Verify Clear Board button exists 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('clear-board-btn')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('clear-board-btn')
+
+
+      11 |     await test.step('1. Verify Clear Board button exists', async () => {
+      12 |       const clearBtn = page.getByTestId('clear-board-btn');
+    > 13 |       await expect(clearBtn).toBeVisible();
+         |                              ^
+      14 |     });
+      15 |
+      16 |     await test.step('2. Click Clear Board and verify confirmation modal', async () => {
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:13:30
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/System/system.spec.ts:11:16
+
+    Error Context: ../test-results/kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-System-system-Syste-70574-ear-Board-Reset-TC-20-smoke-webkit-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="kanban/Tasks/tasks.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="webkit" tests="1" failures="1" skipped="0" time="90.299" errors="0">
+<testcase name="Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke" classname="kanban/Tasks/tasks.spec.ts" time="90.299">
+<failure message="tasks.spec.ts:17:7 TC-06: Create a new task @TC-06 @smoke" type="FAILURE">
+<![CDATA[  [webkit] › kanban/Tasks/tasks.spec.ts:17:7 › Tasks @Tasks › TC-06: Create a new task @TC-06 @smoke 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Tasks @Tasks', () => {
+      4 |
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     // Reset filters to ensure new tasks are visible
+      8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:5:8
+
+    Error: locator.count: Target page, context or browser has been closed
+
+       8 |     await page.getByRole('button', { name: /reset all filters/i }).click().catch(() => {});
+       9 |     // Ensure at least one column exists
+    > 10 |     if (await page.locator('.kanban-column').count() === 0) {
+         |                                              ^
+      11 |       await page.getByRole('button', { name: '+ Add Column' }).click();
+      12 |       await page.getByPlaceholder(/column title/i).fill('To Do');
+      13 |       await page.getByRole('button', { name: 'Add Column', exact: true }).click();
+        at /home/kavia/workspace/code-generation/playwright-test-suite-for-application-automation-286725/tests/kanban/Tasks/tasks.spec.ts:10:46
+
+    Error Context: ../test-results/kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry2/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry1/trace.zip]]
+
+[[ATTACHMENT|kanban-Tasks-tasks-Tasks-T-71656-eate-a-new-task-TC-06-smoke-webkit-retry2/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="sample.spec.ts" timestamp="2025-12-08T18:13:26.167Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.678" errors="0">
+<testcase name="Sample suite › can open example.com and have title containing Example @smoke" classname="sample.spec.ts" time="0.678">
+<system-err>
+<![CDATA[Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>
